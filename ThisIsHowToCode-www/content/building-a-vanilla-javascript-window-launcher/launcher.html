@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JavaScrtip Window Launcher</title>
+<script>
+function open_timer() {
+    windowFeatures = "screenX=250,screenY=250,width=150,height=250,menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+    window.open('file:///Users/alans/Desktop/ThisIsHowYouProgram/building-a-javascript-timer/build-timer.html', 'ClockWindow', windowFeatures);
+}
+
+function open_timer_2(event) {
+            windowFeatures = "screenX=450,screenY=450,width=150,height=250,menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+            window.open('file:///Users/alans/Desktop/ThisIsHowYouProgram/building-a-javascript-timer/build-timer.html', 'ClockWindow', windowFeatures);
+            event.preventDefault();
+}
+</script>
+
+</head>
+<body>
+    <button id="time_launcher">Launch Time</button>
+    <script>
+        const launch_button = document.getElementById('time_launcher');
+        launch_button.addEventListener('click', open_timer);
+    </script>
+
+    <p><a href="#" id="please_work">This is a test</a></p>
+
+    <script>
+        const launch_link = document.getElementById('please_work');
+        launch_link.addEventListener('click', function(event) { open_timer_2(event) });
+    </script>
+
+</body>
+</html>

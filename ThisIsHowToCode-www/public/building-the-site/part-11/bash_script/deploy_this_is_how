@@ -1,0 +1,15 @@
+#!/bin/bash 
+
+# NOTE: This is under:
+# /usr/local/bin 
+
+echo "Deploying ThisIsHowToCode.com"
+
+cd /Users/alans/Desktop/ThisIsHowToCode/thisishowyouprogram-site
+
+hugo 
+
+aws s3 sync --size-only /Users/alans/Desktop/ThisIsHowToCode/thisishowyouprogram-site/public/ s3://www.thisishowtocode.com/
+
+aws cloudfront create-invalidation --distribution-id E16XG7IV228BY3 --paths "/*"
+

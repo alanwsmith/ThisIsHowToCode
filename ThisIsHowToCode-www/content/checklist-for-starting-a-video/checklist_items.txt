@@ -1,0 +1,40 @@
+Shave
+Write in your journal
+Switch GitHub Desktop to ThisIsHowYouProgram and clean it up
+Run Grimoire Prep Script
+Run Keyboard Maestro Prep Script (TKTKTKT)
+Unlock password manager
+Log out of webmail
+Set VS Code font to 19pt
+Set PyCharm font to 19pt
+Set iTerm font to 19pt
+Set nvAlt font to 19pt
+Set Sublime Text 2 font to 23pt
+Set Sublime Text 3 font to 20pt
+Switch System to Light Mode
+Turn on lights
+Turn on fan
+Check camera positions 
+Check camera color balance
+Move mic in front of your face
+Set Safari zoom to 125%
+Review open windows with F3
+Close Browser Tabs
+Remove DBeaver work connections
+Log into <a href="https://console.aws.amazon.com/console/home?region=us-east-1" target="_blank">Greenfield</a>
+Turn down speaker on OBS machine
+Make a pitstop
+Refill water bottles
+Figure out the Video title and folder you're going to make
+Set OBS main title (available via mounted drive)
+Set OBS byline title (available via mounted drive)
+Center the main OBS title
+Check OBS Volume Meters
+Check OBS White Balance
+Move apps to second monitor
+Make sure your collar isn't doing something weird
+Close Discord
+Make sure the click highlighter presentation app is turned on
+Move OBS so you can see it and make sure you don't stay in headshot mode
+<a href="#" id="time_launcher">Start Clock</a>
+Go...

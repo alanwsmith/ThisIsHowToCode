@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How To on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/how-to/</link>
+    <description>Recent content in How To on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jan 2021 22:10:54 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How-To Setup A Static Site In AWS Using Route 53, Certificate Manager, CloudFront, and S3</title>
+      <link>https://www.thisishowtocode.com/how-to-setup-a-static-site-in-aws/</link>
+      <pubDate>Fri, 01 Jan 2021 22:10:54 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/how-to-setup-a-static-site-in-aws/</guid>
+      <description>Steps  Make sure you have setup your AWS Account Go got https://aws.amazon.com Click &amp;ldquo;Sign In To the Console&amp;rdquo; Search for and click on Route 53 Scroll down to &amp;ldquo;Register domain&amp;rdquo; Put in the domain name you  Before We Begin   Th
+  AWS Changes the design of their pages all the time. Don&amp;rsquo;t be surprised if things look different. Look around a little and you&amp;rsquo;ll find it.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Setting Up Multi-Factor Authentication (MFA) On AWS Accounts &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto py-5">
+    <a href="/"><h2 class="nav-title">This Is How To Code</h2></a>	
+</div>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Setting Up Multi-Factor Authentication (MFA) On AWS Accounts</h1>
+<div class="post-line"></div>
+
+		
+
+		<h3 id="in-this-episode">In This Episode</h3>
+<p>Started out by talking a little about what Multi-Factor Authentication (MFA) is and why you&rsquo;d want to use it.</p>
+<p>Added MFA to the web console user which was no problem.</p>
+<p>Adding it to the CLI user turned into more of a trick. I thought all you had to do was assign MFA to a <a href="/tktktk/">programatic access user</a> and it would be enforced, but that&rsquo;s not the case. The Access Key and Secret Key still work just fine.</p>
+<p>Getting MFA to be enforced for programmatic access requires putting in a policy. The way we did it was:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;Version&#34;</span>: <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
+    <span style="color:#e6db74">&#34;Statement&#34;</span>: <span style="color:#f92672">[</span>
+        <span style="color:#f92672">{</span>
+            <span style="color:#e6db74">&#34;Sid&#34;</span>: <span style="color:#e6db74">&#34;BlockAccessUnlessSignedInWithMFA&#34;</span>,
+            <span style="color:#e6db74">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Deny&#34;</span>,
+            <span style="color:#e6db74">&#34;NotAction&#34;</span>: <span style="color:#f92672">[</span>
+                <span style="color:#e6db74">&#34;iam:ResyncMFADevice&#34;</span>
+            <span style="color:#f92672">]</span>,
+            <span style="color:#e6db74">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;*&#34;</span>,
+            <span style="color:#e6db74">&#34;Condition&#34;</span>: <span style="color:#f92672">{</span>
+                <span style="color:#e6db74">&#34;BoolIfExists&#34;</span>: <span style="color:#f92672">{</span>
+                    <span style="color:#e6db74">&#34;aws:MultiFactorAuthPresent&#34;</span>: <span style="color:#e6db74">&#34;false&#34;</span>
+                <span style="color:#f92672">}</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">]</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Once that was in place, MFA locked down as expected.</p>
+<h3 id="links">Links</h3>
+<ul>
+<li><a href="https://aws.amazon.com/iam/features/mfa/">Apps you can use for MFA on AWS</a></li>
+<li>TKTKTK: Video on how to setup Encrypted AWS credentials</li>
+<li>TKTKTK: Install AWS Command Line</li>
+<li><a href="https://aws.amazon.com/premiumsupport/knowledge-center/authenticate-mfa-cli/">Authenticate access using MFA through the AWS CLI</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=aws+cli+mfa&amp;ie=UTF-8&amp;oe=UTF-8">aws cli mfa - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=aws+setup+cli&amp;ie=UTF-8&amp;oe=UTF-8">aws setup cli - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html">Enabling a virtual multi-factor authentication (MFA) device (console) - AWS&hellip;</a></li>
+<li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_cliapi.html">Enabling and managing virtual MFA devices (AWS CLI or AWS API) - AWS Identity&hellip;</a></li>
+<li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable.html">Enabling MFA devices for users in AWS - AWS Identity and Access Management</a></li>
+<li><a href="https://aws.amazon.com/premiumsupport/knowledge-center/mfa-iam-user-aws-cli/">Enforce MFA authentication for IAM users that use the AWS CLI</a></li>
+<li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_grammar.html">Grammar of the IAM JSON policy language - AWS Identity and Access Management</a></li>
+<li><a href="https://www.google.com/search?newwindow=1&amp;client=safari&amp;rls=en&amp;ei=WrPnX7qxFLHz5gK5-4OwBA&amp;q=how+long+does+it+take+to+enable+mfa+aws+">how long does it take to enable mfa aws - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console">Managing access keys for IAM users - AWS Identity and Access Management</a></li>
+<li><a href="https://www.google.com/search?q=qr+code">qr code - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html">Step 3.1: Set Up the AWS Command Line Interface (AWS CLI) - Amazon Polly</a></li>
+<li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html">Using multi-factor authentication (MFA) in AWS - AWS Identity and Access Management</a></li>
+<li><a href="https://code.visualstudio.com/docs/getstarted/settings">Visual Studio Code User and Workspace Settings</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=vs+code+config+file&amp;ie=UTF-8&amp;oe=UTF-8">vs code config file - Google Search</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/notes/setup-a-static-site-with-aws-s3-cloudfront-certificate-manager-and-route-53/" class="left arrow">&#8592;</a>
+		<a href="/setting-up-an-aws-account/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        <footer></footer>
+
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Building The Site (Part 7) - Changing Nameserver from Hover to Route 53 &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto py-5">
+    <a href="/"><h2 class="nav-title">This Is How To Code</h2></a>	
+</div>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Building The Site (Part 7) - Changing Nameserver from Hover to Route 53</h1>
+<div class="post-line"></div>
+
+		
+
+		<h3 id="overview">Overview</h3>
+<p>I registered the ThisIsHowYouProgram.com domain on Hover. I already had an account there and when I woke up at 3 in the morning with the idea for the site that&rsquo;s where I went.</p>
+<p>But, I want to use Amazon&rsquo;s Route 53 service to manage the domain so that everything is in the AWS ecosystem. Route 53 is designed to work with CloudFront in a way that other systems can&rsquo;t (via an <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html">ALIAS record</a>)</p>
+<p>I&rsquo;ve got two options to get the site managed by Route 53.</p>
+<ol>
+<li>Transfer the domain from Hover to Route 53</li>
+<li>Just change the Name Servers to point to Route 53.</li>
+</ol>
+<p>For now, I&rsquo;m doing the latter since transferring is a little more of a hassle. (You have to turn off some protection services and do some authorization. This is good stuff, otherwise it would be easy to steal domains. I&rsquo;ll do it eventually, but going the Name Server route lets me get moving faster)</p>
+<p>NOTE: Did changes at 4:20.</p>
+<p>TODO: Figure out how to redirect www traffic to the non-www.</p>
+<p>Note that when you updated the Name Server on Hover, you had to remove the <code>.</code> at the end of the of the domain name. (AWS had it in their system)</p>
+<h3 id="links">Links</h3>
+<ul>
+<li>
+<p>TKTKTK - www vs non-www reasoning.</p>
+</li>
+<li>
+<p>TKTKTK - Caching DNS</p>
+</li>
+<li>
+<p>TKTKTK - Video about A Records and DNS and Cloudfront</p>
+</li>
+<li>
+<p>TKTKTK - Video on Route 53 ALIAS records -</p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html">https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html</a></p>
+</li>
+<li>
+<p><a href="https://help.hover.com/hc/en-us/articles/217282477--Changing-your-domain-nameservers">https://help.hover.com/hc/en-us/articles/217282477--Changing-your-domain-nameservers</a></p>
+</li>
+<li>
+<p><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=a+dns+record&amp;ie=UTF-8&amp;oe=UTF-8">a dns record - Google Search</a></p>
+</li>
+<li>
+<p><a href="https://stackoverflow.com/questions/50305126/root-domain-behind-aws-cloudfront">amazon web services - Root domain behind AWS CloudFront - Stack Overflow</a></p>
+</li>
+<li>
+<p><a href="https://help.hover.com/hc/en-us/articles/217282477--Changing-your-domain-nameservers">Changing your domain nameservers – Hover Help Center</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html">Choosing between alias and non-alias records - Amazon Route 53</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-configuring.html">Configuring Amazon Route 53 as your DNS service - Amazon Route 53</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-configuring-dnssec.html">Configuring DNSSEC signing in Amazon Route 53 - Amazon Route 53</a></p>
+</li>
+<li>
+<p><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=hover+change+nameserver&amp;ie=UTF-8&amp;oe=UTF-8">hover change nameserver - Google Search</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-in-use.html#migrate-dns-change-name-servers-with-provider">Making Route 53 the DNS service for a domain that&rsquo;s in use - Amazon Route 53</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-in-use.html#migrate-dns-create-hosted-zone">Making Route 53 the DNS service for a domain that&rsquo;s in use - Amazon Route 53</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-in-use.html#migrate-dns-create-records">Making Route 53 the DNS service for a domain that&rsquo;s in use - Amazon Route 53</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-routing-traffic-for-subdomains.html">Routing traffic for subdomains - Amazon Route 53</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-cloudfront-distribution.html">Routing traffic to an Amazon CloudFront web distribution by using your domain&hellip;</a></p>
+</li>
+<li>
+<p><a href="https://d8tyl6rs7fmpy.cloudfront.net/">ThisIsHowYouProgram.com</a></p>
+</li>
+<li>
+<p><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=use+cloudfront+for+root+domain&amp;ie=UTF-8&amp;oe=UTF-8">use cloudfront for root domain - Google Search</a></p>
+</li>
+<li>
+<p><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=wildcard+dns&amp;ie=UTF-8&amp;oe=UTF-8">wildcard dns - Google Search</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Wildcard_DNS_record">Wildcard DNS record - Wikipedia</a></p>
+</li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/building-the-site/part-8/" class="left arrow">&#8592;</a>
+		<a href="/building-the-site/part-6/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        <footer></footer>
+
+    </body>
+</html>

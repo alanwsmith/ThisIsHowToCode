@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Timer</title>
+
+<style>
+.red {
+    color: red; 
+}
+</style>
+
+</head>
+<body>
+
+    <div id="timer" style="font-size: 12rem;">0</div>
+    
+    <script>
+    
+    async function check_time() {
+        let second = 1;
+        while (true) {
+            minute = parseInt(second / 60);
+            number_of_five_minute_increment_remainder = parseInt(second % 300);
+            if (number_of_five_minute_increment_remainder == 0) {
+                document.getElementById('timer').innerHTML = minute;
+                if (minute >=50) {
+                    document.getElementById('timer').className = 'red';
+                }
+            }
+            await new Promise(r => setTimeout(r, 1000));
+            second++;
+        }
+    }
+
+    check_time();
+
+
+    </script>
+
+</body>
+</html>

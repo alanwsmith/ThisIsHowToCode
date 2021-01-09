@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Live Coding A Directory Diff Tool In Python &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto py-5">
+    <a href="/"><h2 class="nav-title">This Is How To Code</h2></a>	
+</div>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Live Coding A Directory Diff Tool In Python</h1>
+<div class="post-line"></div>
+
+		
+
+		<h3 id="video">Video</h3>
+<p>&ndash; Video goes here when it&rsquo;s ready &ndash;</p>
+<h3 id="warning---inelegant-code-ahead">Warning - Inelegant Code Ahead</h3>
+<p>This is not elegant code. Except for one function at the top, it&rsquo;s one big procedure from top to bottom. Coding is keeping context in your head. That&rsquo;s harder to do when things aren&rsquo;t broken into parts. This script is riiiight at the limit for me being able to hang-on to the entire thing.</p>
+<p>This also isn&rsquo;t how I code most of the time. And, there are times when you <strong>absolutely should not</strong> run in this type of procedural manner without automated tests (TKTKTK: Video about procedural code). But, it&rsquo;s a tool in the toolkit. For small jobs with little risk it can be just fine.</p>
+<h3 id="overview">Overview</h3>
+<p>My photography archive is spread out across multiple hard drives and directories. I&rsquo;m consolidating it down into one location. I want to make <em>really</em> sure that all the files end up getting moved and none of them get corrupted.</p>
+<p>Solution: Build a script that verifies everything is in the right place and had the right bits.</p>
+<h3 id="details">Details</h3>
+<ul>
+<li>The script I ended up with is a bit of a hack, but it works.</li>
+<li>While this would have been a good time to practice a little TDD, the script deals with the file system and that&rsquo;s always tripped me up. In retrospect, there are parts I could have tested. It&rsquo;s just a one off script though. So, I opted to test it manually.</li>
+<li>The script is used by setting two directories. A source and a destination.</li>
+<li>When the script is run, it does two things: 1) Make sure that all the files in the source directory show up in the destination directory, and 2) Make sure that the contents of the files are identical.</li>
+<li>I&rsquo;m using a sha256 hash of the files to do the comparison that ensure they are the same.</li>
+<li>The script produces a simple report of missing files and invalid files. If any files have problems their relative paths are there so I can troubleshoot.</li>
+<li>Files that are missing show up on the invalid list. That&rsquo;s a little duplication and not expected, but I&rsquo;m fine with it for this script. If I was going to put this into production and run it repeatedly I&rsquo;d adjust that. But, I only need to run this once right now and will maybe run it a handful of times in the future.</li>
+</ul>
+<h3 id="notes">Notes</h3>
+<p>This is the method I&rsquo;m using to generate the sha256 hash sum signatures for each file:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sha_sum_256</span>(file_path):
+    hasher <span style="color:#f92672">=</span> hashlib<span style="color:#f92672">.</span>sha256()
+    <span style="color:#66d9ef">with</span> open(file_path, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> file_to_hash:
+        <span style="color:#66d9ef">for</span> chunk <span style="color:#f92672">in</span> iter(<span style="color:#66d9ef">lambda</span>: file_to_hash<span style="color:#f92672">.</span>read(<span style="color:#ae81ff">4096</span>), <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;&#39;</span>):
+            hasher<span style="color:#f92672">.</span>update(chunk)
+    <span style="color:#66d9ef">return</span> hasher<span style="color:#f92672">.</span>hexdigest()</code></pre></td></tr></table>
+</div>
+</div>
+<p>There are a couple parts of that I don&rsquo;t understand. So:</p>
+<ul>
+<li>TODO: Figure out what <code>b''</code> does at the end of the lambda.</li>
+<li>TODO: Figure out how lambdas work.</li>
+</ul>
+<h3 id="links">Links</h3>
+<ul>
+<li>TKTKTK globs and how glob works</li>
+<li><a href="https://docs.python.org/2/library/os.html#os.listdir">15.1. os — Miscellaneous operating system interfaces — Python 2.7.18 documentation</a></li>
+<li><a href="https://docs.python.org/3/library/hashlib.html">hashlib — Secure hashes and message digests — Python 3.9.1 documentation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MD5#Collision_vulnerabilities">MD5 - Wikipedia</a></li>
+<li><a href="https://stackoverflow.com/questions/3431825/generating-an-md5-checksum-of-a-file/3431838#3431838">python - Generating an MD5 checksum of a file - Stack Overflow</a></li>
+<li><a href="https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory">python - How do I list all files of a directory? - Stack Overflow</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=python+directory+list+recursive&amp;ie=UTF-8&amp;oe=UTF-8">python directory list recursive - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=python+get+list+of+files+in+a+directorty&amp;ie=UTF-8&amp;oe=UTF-8">python get list of files in a directorty - Google Search</a></li>
+<li><a href="https://www.google.com/search?newwindow=1&amp;client=safari&amp;rls=en&amp;ei=QrfzX9XpCIrW5gLrhpXYBw&amp;q=rsync">rsync - Google Search</a></li>
+<li><a href="https://linux.die.net/man/1/rsync">rsync(1) - Linux man page</a></li>
+<li><a href="https://stackoverflow.com/questions/2212643/python-recursive-folder-read">scripting - Python recursive folder read - Stack Overflow</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/replacing-a-dead-freenas-drive/" class="left arrow">&#8592;</a>
+		<a href="/setup/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        <footer></footer>
+
+    </body>
+</html>

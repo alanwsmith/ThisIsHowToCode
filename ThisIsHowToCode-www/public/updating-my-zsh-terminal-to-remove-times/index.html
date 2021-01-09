@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Updating My ZSH Terminal To Remove Times &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">This Is How To Code</h2>
+				</a>
+				<ul>
+    
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Updating My ZSH Terminal To Remove Times</h1>
+<div class="post-line"></div>
+
+		
+
+		<h2 id="overview">Overview</h2>
+<p>Just like it says on the tin. I removed the times
+that were showing up on my terminal. It&rsquo;s irrelevant
+info and can be a little distracting so it got the
+boot.</p>
+<p>While taking them out, I added a section to the
+prompt that shows the website name. Makes for a nice
+touch if you ask me.</p>
+<p>The way I stopped the initial login message was to do:</p>
+<pre><code>touch ~/.hushlogin
+</code></pre>
+<p>That turns off the &ldquo;Last Login&rdquo; message as well as
+the Message Of The Day (aka MOTD). I don&rsquo;t use the
+MOTD so that&rsquo;s not a big deal. Though&hellip; I might
+use it in the future. If I do, one recommendation
+was to add <code>cat /etc/motd</code> to the top of my .zshrc
+file, but that would only output the text. I might
+want to do something dynamic with it in which case
+I&rsquo;ll need to find another option.</p>
+<h3 id="links">Links</h3>
+<ul>
+<li>TKTKTKT ZSH</li>
+<li>TKTKTKT Terminals</li>
+<li><a href="https://osxdaily.com/2007/01/30/change-the-mac-os-x-terminals-message-of-the-day/">Change the Terminal Message of the Day in Mac OS X</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=dont+show+login+time+in+terminal&amp;ie=UTF-8&amp;oe=UTF-8">dont show login time in terminal - Google Search</a></li>
+<li><a href="https://www.google.com/search?newwindow=1&amp;client=safari&amp;rls=en&amp;ei=9hTpX8HIKIyG5wLh6qfwAw&amp;q=motd+without+last+login+mac&amp;oq=motd+without+last+login+mac&amp;gs_lcp=CgZwc3ktYWIQAzIFCCEQoAEyBQghEKABMgUIIRCrAjIFCCEQqwIyBQghEKsCOgQIABBHUKuQAliSlAJg9pgCaABwAngAgAFriAHvApIBAzIuMpgBAKABAaoBB2d3cy13aXrIAQjAAQE&amp;sclient=psy-ab&amp;ved=0ahUKEwjBm4PhpO_tAhUMw1kKHWH1CT4Q4dUDCAw&amp;uact=5">motd without last login mac - Google Search</a></li>
+<li><a href="https://apple.stackexchange.com/questions/254690/remove-last-login-message-but-keep-motd-in-terminal">Remove last login message but keep motd in terminal? - Ask Different</a></li>
+<li><a href="https://unix.stackexchange.com/questions/125531/how-to-prevent-last-login-message-from-showing-up-when-using-sftp">ssh - How to prevent &ldquo;Last Login:&rdquo; message from showing up when using sftp? -&hellip;</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/tktktk/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2021-01-03 23:06:18.817383 -0500 EST m=&#43;0.143008873">2021</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/notes/</link>
+    <description>Recent content on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.thisishowtocode.com/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup A Static Site With AWS  S3 CloudFront Certificate Manager And Route 53</title>
+      <link>https://www.thisishowtocode.com/notes/setup-a-static-site-with-aws-s3-cloudfront-certificate-manager-and-route-53/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/notes/setup-a-static-site-with-aws-s3-cloudfront-certificate-manager-and-route-53/</guid>
+      <description>If your domain is registered on another site, that&amp;rsquo;s fine. You can send over the name server and then decide if you want to transfer to Route 53.
+  Register Domain Name
+  There are two ways to setup.
+  Links  TKTKTK How to register in other services TKTKTK How to point over to Route 53 from other services by updating the name servers.  </description>
+    </item>
+    
+  </channel>
+</rss>

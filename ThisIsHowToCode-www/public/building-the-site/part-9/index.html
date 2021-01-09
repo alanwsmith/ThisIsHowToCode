@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Building The Site (Part 9) - Configuring the Domains With Redirects &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto py-5">
+    <a href="/"><h2 class="nav-title">This Is How To Code</h2></a>	
+</div>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Building The Site (Part 9) - Configuring the Domains With Redirects</h1>
+<div class="post-line"></div>
+
+		
+
+		<h2 id="the-plan">The Plan</h2>
+<ul>
+<li>
+<p>Setup both domains:</p>
+<ul>
+<li>thisishowtocode.com, and</li>
+<li><a href="http://www.thisishowtocode.com">www.thisishowtocode.com</a></li>
+</ul>
+</li>
+<li>
+<p>Make sure they both have SSL/TLS certs</p>
+</li>
+<li>
+<p>Redirect traffic from the non-www to the www version.</p>
+</li>
+</ul>
+<h3 id="process">Process</h3>
+<ul>
+<li>Create S3 bucket</li>
+</ul>
+<h3 id="links">Links</h3>
+<ul>
+<li>
+<p>SSL/TLS Certs -</p>
+</li>
+<li>
+<p>TKTKTKT CNAME - DNS Types.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <a href="http://ThisIsHowToCode.com">http://ThisIsHowToCode.com</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://ThisIsHowToCode.com">https://ThisIsHowToCode.com</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="http://www.ThisIsHowToCode.com">http://www.ThisIsHowToCode.com</a></li>
+</ul>
+<p>-&gt; <a href="https://www.ThisIsHowToCode.com">https://www.ThisIsHowToCode.com</a></p>
+<hr>
+<p>TODO: confirm we don&rsquo;t need static hosting on the <a href="http://www.example.com">www.example.com</a> bucket.</p>
+<h3 id="links-1">Links</h3>
+<ul>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html#redirect-endpoint-host">(Optional) Configuring a webpage redirect - Amazon Simple Storage Service</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=amazon+cloudfront+redirect+www+traffic+to+non-www&amp;ie=UTF-8&amp;oe=UTF-8">amazon cloudfront redirect www traffic to non-www - Google Search</a></li>
+<li><a href="https://stackoverflow.com/questions/22740084/amazon-s3-redirect-and-cloudfront">Amazon S3 Redirect and Cloudfront - Stack Overflow</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Choosing_between_www_and_non-www_URLs">Choosing between www and non-www URLs - HTTP | MDN</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=cloudfront+redirect&amp;ie=UTF-8&amp;oe=UTF-8">cloudfront redirect - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=cloudfront+redirect+s3+www&amp;ie=UTF-8&amp;oe=UTF-8">cloudfront redirect s3 www - Google Search</a></li>
+<li><a href="https://stackoverflow.com/questions/28675620/cloudfront-redirect-www-to-naked-domain-with-ssl/42869783#42869783">Cloudfront redirect www to naked domain with ssl - Stack Overflow</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=cloudfront+s3+policy&amp;ie=UTF-8&amp;oe=UTF-8">cloudfront s3 policy - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html">Configuring a static website using a custom domain registered with Route 53 -&hellip;</a></li>
+<li><a href="https://thisishowtocode.com/">Failed to open page</a></li>
+<li><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started.html">Getting started with Amazon Route 53 - Amazon Route 53</a></li>
+<li><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html">How internet traffic is routed to your website or web application - Amazon Route 53</a></li>
+<li><a href="https://stackoverflow.com/questions/36265027/how-to-forward-non-www-to-www-with-aws-amazon-cloud-front-behind-https-cloud-fro">How to forward non WWW to WWW with AWS Amazon Cloud front behind HTTPS cloud&hellip;</a></li>
+<li><a href="https://d15pzq9ux7jg75.cloudfront.net/">https://d15pzq9ux7jg75.cloudfront.net</a></li>
+<li><a href="https://d1gvnj3dmmvze0.cloudfront.net/">https://d1gvnj3dmmvze0.cloudfront.net</a></li>
+<li><a href="https://simonecarletti.com/blog/2016/08/redirect-domain-https-amazon-cloudfront/">Redirecting a domain with HTTPS using Amazon S3 and CloudFront — Simone Carletti</a></li>
+<li><a href="https://medium.com/@chrispointon/redirecting-non-www-to-www-website-in-aws-cloudfront-658d97764b42">Redirecting non-www to www website in AWS CloudFront | by Chris Pointon | Medium</a></li>
+<li><a href="https://www.goguardian.com/blog/engineering/redirects-in-aws-cloudfront/">Redirects in AWS CloudFront</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https-viewers-to-cloudfront.html">Requiring HTTPS for Communication Between Viewers and CloudFront - Amazon CloudFront</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html">Restricting Access to Amazon S3 Content by Using an Origin Access Identity -&hellip;</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#private-content-granting-permissions-to-oai">Restricting Access to Amazon S3 Content by Using an Origin Access Identity -&hellip;</a></li>
+<li><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/RoutingToS3Bucket.html">Routing traffic to a website that is hosted in an Amazon S3 bucket - Amazon Route 53</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html">Serving private content with signed URLs and signed cookies - Amazon CloudFront</a></li>
+<li><a href="https://www.netlify.com/blog/2017/02/28/to-www-or-not-www/">To WWW or not WWW | Netlify</a></li>
+<li><a href="https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-access-to-amazon-s3/">Use Your CloudFront Distribution to Restrict Access to an Amazon S3 Bucket</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=using+www+vs+non-www&amp;ie=UTF-8&amp;oe=UTF-8">using www vs non-www - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html">What Is AWS Certificate Manager? - AWS Certificate Manager</a></li>
+<li><a href="https://www.yes-www.org/why-use-www/">Why use www? | www. is not deprecated</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/scratchpad/fstring_test/" class="left arrow">&#8592;</a>
+		<a href="/how-to-setup-a-static-site-in-aws/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        <footer></footer>
+
+    </body>
+</html>

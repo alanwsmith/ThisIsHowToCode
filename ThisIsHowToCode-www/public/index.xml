@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/</link>
+    <description>Recent content on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Jan 2021 20:22:10 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Camera Test 4</title>
+      <link>https://www.thisishowtocode.com/camera-test-4/</link>
+      <pubDate>Fri, 08 Jan 2021 20:20:08 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/camera-test-4/</guid>
+      <description>Canon 90D clean HDMI feed
+  Canon 16-35mm lens at about 18mm
+  f/3.5 - 1/50 with auto ISO (which seems to do great, but will probably lock into a specific at some point)
+  White balance locked at 5200K.
+  Canon 90D thru Elgato Cam Link into OBS at 1920x1080 with 1920x1080 canvas.
+  Desktop into OBS via Elgato 4K60 Pro mk. II.</description>
+    </item>
+    
+    <item>
+      <title>Testing The New Canon 90D</title>
+      <link>https://www.thisishowtocode.com/testing-the-new-camera/</link>
+      <pubDate>Thu, 07 Jan 2021 23:05:46 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/testing-the-new-camera/</guid>
+      <description>Well, the camera works, but the Cam Link doesn&amp;rsquo;t work for me. My computer can&amp;rsquo;t process fast enough to use it at 4K. So, falling back to 1080&amp;hellip; Bummer.
+Here&amp;rsquo;s a test at 1080 just make sure things work.
+A little preview of a future session where I&amp;rsquo;ll parse out datatime stamps from when files were created to add dates to the site files that are missing them.</description>
+    </item>
+    
+    <item>
+      <title>Signing Up With Mailblast (Part 2)</title>
+      <link>https://www.thisishowtocode.com/signing-up-with-mailblast-part-2/</link>
+      <pubDate>Thu, 07 Jan 2021 22:43:25 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/signing-up-with-mailblast-part-2/</guid>
+      <description>See the email from AWS.</description>
+    </item>
+    
+    <item>
+      <title>Elgato Cam Link 4K Is A No Go</title>
+      <link>https://www.thisishowtocode.com/blog/elgato-cam-link-is-a-no-go/</link>
+      <pubDate>Thu, 07 Jan 2021 20:22:10 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/blog/elgato-cam-link-is-a-no-go/</guid>
+      <description>This is a test of the Elgato Cam Link.
+ There&amp;rsquo;s a Canon 90D plugged into it with Clean HDMI signal It was connected to my Early 2015 13&amp;quot; MacBook Pro Obviously, the CPU can&amp;rsquo;t keep up.  The Elgato site says you need a 4th generation i5 or better. That certainly wasn&amp;rsquo;t clear on purchase.
+I use a 4K60 Pro Mk. II for recording the desktop. It works great. I thought the Cam Link would work the same way, but that&amp;rsquo;s not the case.</description>
+    </item>
+    
+    <item>
+      <title>Thank You For Subscribing</title>
+      <link>https://www.thisishowtocode.com/thank-you-for-subscribing/</link>
+      <pubDate>Wed, 06 Jan 2021 23:15:49 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/thank-you-for-subscribing/</guid>
+      <description>Thanks for subscribing!
+-Alan</description>
+    </item>
+    
+    <item>
+      <title>Signing up with mailblast to provide email newsletters</title>
+      <link>https://www.thisishowtocode.com/signing-up-with-mainblast-to-deliver-email-newsletters/</link>
+      <pubDate>Wed, 06 Jan 2021 23:14:57 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/signing-up-with-mainblast-to-deliver-email-newsletters/</guid>
+      <description>Signed up for an email newsletter service with Mailblast.io.
+  Setup an IAM account for it.
+  The account starts off in the SES sandbox. Filled out the form to get full access.
+   Note there there&amp;rsquo;s a follow up to this, there&amp;rsquo;s more work that you have to do to get things working. It&amp;rsquo;s not listed in the Mailblast docs, but probably should be as a heads up.</description>
+    </item>
+    
+    <item>
+      <title>Camera Position Question</title>
+      <link>https://www.thisishowtocode.com/blog/camera-position-question/</link>
+      <pubDate>Wed, 06 Jan 2021 22:15:23 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/blog/camera-position-question/</guid>
+      <description>I&amp;rsquo;ve been exploring Premiere and After Effects and green screen keying. I&amp;rsquo;ve made a lot of progress and have a couple more softboxes coming in to help even more. (Basically every post about green screen keying says get your light right or you&amp;rsquo;re in for a world of hurt)
+While thinking about the green screen and the new camera that&amp;rsquo;s on the way I started thinking about camera angles. I&amp;rsquo;ve already pushed my monitor farther away from me that I&amp;rsquo;d normally use it so that I can enlarge the fonts to make them readable on small screens.</description>
+    </item>
+    
+    <item>
+      <title>Video Setup Tests</title>
+      <link>https://www.thisishowtocode.com/camera-tests/</link>
+      <pubDate>Wed, 06 Jan 2021 20:05:34 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/camera-tests/</guid>
+      <description>Video Test 1  GoPro - 30fps OBS - 30fps  Won&amp;rsquo;t really be using the GoPro. This is really more about practicing with the green screen lighting and keying.
+  Everything looks pretty good. Need to do a little more on the color balance and on the edges. I&amp;rsquo;ve got another set of soft boxes coming in to get more even light on the green screen which should help.</description>
+    </item>
+    
+    <item>
+      <title>Buying A New Camera</title>
+      <link>https://www.thisishowtocode.com/blog/buying-a-new-camera/</link>
+      <pubDate>Wed, 06 Jan 2021 11:45:30 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/blog/buying-a-new-camera/</guid>
+      <description>Dec. 6, 2020
+Bought a new camera last night.
+Unfortunately, my old Canon 5D Mk III doesn&amp;rsquo;t do auto-focus during while shooting video. Also, it only shoot 1080p. I want 4K.
+4K is overkill for what I&amp;rsquo;m doing right now. But, I&amp;rsquo;m thinking long term. Like 20 years long term. I want to get the best available now so that as tech progresses, it holds up as well as possible.</description>
+    </item>
+    
+    <item>
+      <title>Live Coding The Site (Part 12)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-12/</link>
+      <pubDate>Tue, 05 Jan 2021 22:57:00 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-12/</guid>
+      <description>Working on the site.
+  Got tailwind setup
+  Got a size checking bar in place
+  Got a responsive vimeo video on the site.
+  Stayed up way too late.
+  Links  TKTKTK Show how to pull full size tailwind. (which is not really what you want to do.) A Brief History &amp;amp; Ethos of the Digital Garden Grid Column Start / End - Tailwind CSS How to embed your gorgeous videos across the nets - Vimeo Blog hugo embed video - Google Search hugo relurl - Google Search relURL | Hugo Shortcodes | Hugo Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.</description>
+    </item>
+    
+    <item>
+      <title>Setup</title>
+      <link>https://www.thisishowtocode.com/setup/</link>
+      <pubDate>Mon, 04 Jan 2021 18:25:23 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/setup/</guid>
+      <description>Things I&amp;rsquo;ve done for the setup:
+  System Preferences -&amp;gt; Display -&amp;gt; Cursor Size = up about halfway. see screenshot
+  VS Code:
+ Window: Zoom Level = 3 Editor: Font Family = Menlo, Monaco, &amp;lsquo;Courier New&amp;rsquo;, monospace Editor: Font Size = 15 Editor: Line Height = 19  This enlarges the entire UI to make it easier to read.
+Also updated the theme font to make it pure black.</description>
+    </item>
+    
+    <item>
+      <title>Live Coding A Directory Diff Tool In Python</title>
+      <link>https://www.thisishowtocode.com/building-a-directory-diff-tool-in-python/</link>
+      <pubDate>Mon, 04 Jan 2021 18:09:39 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-a-directory-diff-tool-in-python/</guid>
+      <description>Video &amp;ndash; Video goes here when it&amp;rsquo;s ready &amp;ndash;
+Warning - Inelegant Code Ahead This is not elegant code. Except for one function at the top, it&amp;rsquo;s one big procedure from top to bottom. Coding is keeping context in your head. That&amp;rsquo;s harder to do when things aren&amp;rsquo;t broken into parts. This script is riiiight at the limit for me being able to hang-on to the entire thing.
+This also isn&amp;rsquo;t how I code most of the time.</description>
+    </item>
+    
+    <item>
+      <title>Replacing A Dead FreeNAS Drive</title>
+      <link>https://www.thisishowtocode.com/replacing-a-dead-freenas-drive/</link>
+      <pubDate>Sun, 03 Jan 2021 22:13:47 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/replacing-a-dead-freenas-drive/</guid>
+      <description>Hopefully this worked&amp;hellip;
+Links  8. Storage — FreeNAS® User Guide 9.10.2-U2 Table of Contents Drives identification infos (SATA) - Pastebin.com freebsd - Need to identify disk in zpool &amp;hellip; how? - Server Fault freenas 10 manual - Google Search freenas documentation - Google Search freenas documentation repo - Google Search freenas get serial numbers - Google Search freenas manual 10 - Google Search freenas replace failed drive - Google Search freenas replace UNAVAIL - Google Search freenas serial number unavailable drive - Google Search freenas/documentation: TrueNAS Documentation Hub gptid - Google Search Notes of a Programmer: Finding a Disk&amp;rsquo;s Serial Number in FreeNAS Releases · gohugoio/hugo Scripts to report SMART, ZPool and UPS status, HDD/CPU T°, HDD identification&amp;hellip; SOLVED - Unable to replace failed, UNAVAIL disk | TrueNAS Community TrueNAS Documentation Hub | TrueNAS Documentation Hub Trying to Determine serial number of failed HDD in Pool | TrueNAS Community vault3 - FreeNAS-9.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 11) - Making A Basic Deployer</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-11/</link>
+      <pubDate>Sun, 03 Jan 2021 14:39:31 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-11/</guid>
+      <description>Overview Started to build the deployer in the last session but found an issue where links weren&amp;rsquo;t working. Now that that&amp;rsquo;s solved, it&amp;rsquo;s back to the deployer.
+ EDIT: Points about 10:40 and some beffore when it showed the Access Key. Check all termial hits.
+Make sure to edit out when you fire up keychain access.
+Steps to do  Build the site Deploy the site Invalidate the site  aws cloudfront create-invalidation &amp;ndash;distribution-id E16XG7IV228BY3 &amp;ndash;paths &amp;ldquo;/*&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Think Of Variables As Place Holders</title>
+      <link>https://www.thisishowtocode.com/think-of-variables-like-placeholders/</link>
+      <pubDate>Sat, 02 Jan 2021 21:35:14 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/think-of-variables-like-placeholders/</guid>
+      <description>We can think of variables like placeholders where the computer puts in the stuff for us.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 10) - Building A Deployer but then dealing with index files not showing up</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-10/</link>
+      <pubDate>Sat, 02 Jan 2021 21:17:33 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-10/</guid>
+      <description>Started off by building a deployer but then discovered our index.html files weren&amp;rsquo;t showing up. Fix is a Lambda@Edge function that looks for calls that need to add the files and adds them.
+Was thinking about trying to remove the trailing slashes, but that&amp;rsquo;s begging for problems. Also, realized that it would take hacking Hugo itself to deal with removing the slashes since it puts them in the URLs when it makes them.</description>
+    </item>
+    
+    <item>
+      <title>How-To Setup A Static Site In AWS Using Route 53, Certificate Manager, CloudFront, and S3</title>
+      <link>https://www.thisishowtocode.com/how-to-setup-a-static-site-in-aws/</link>
+      <pubDate>Fri, 01 Jan 2021 22:10:54 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/how-to-setup-a-static-site-in-aws/</guid>
+      <description>Steps  Make sure you have setup your AWS Account Go got https://aws.amazon.com Click &amp;ldquo;Sign In To the Console&amp;rdquo; Search for and click on Route 53 Scroll down to &amp;ldquo;Register domain&amp;rdquo; Put in the domain name you  Before We Begin   Th
+  AWS Changes the design of their pages all the time. Don&amp;rsquo;t be surprised if things look different. Look around a little and you&amp;rsquo;ll find it.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 9) - Configuring the Domains With Redirects</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-9/</link>
+      <pubDate>Fri, 01 Jan 2021 14:45:17 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-9/</guid>
+      <description>The Plan   Setup both domains:
+ thisishowtocode.com, and www.thisishowtocode.com    Make sure they both have SSL/TLS certs
+  Redirect traffic from the non-www to the www version.
+  Process  Create S3 bucket  Links   SSL/TLS Certs -
+  TKTKTKT CNAME - DNS Types.
+    http://ThisIsHowToCode.com https://ThisIsHowToCode.com http://www.ThisIsHowToCode.com  -&amp;gt; https://www.ThisIsHowToCode.com
+ TODO: confirm we don&amp;rsquo;t need static hosting on the www.</description>
+    </item>
+    
+    <item>
+      <title>Format String Tests</title>
+      <link>https://www.thisishowtocode.com/scratchpad/fstring_test/</link>
+      <pubDate>Wed, 30 Dec 2020 18:54:43 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/scratchpad/fstring_test/</guid>
+      <description>Checking to see if there&amp;rsquo;s a way to create a variable with {} in it and pass it to an f-string for interpretation.
+Doesn&amp;rsquo;t look like that&amp;rsquo;s possible.
+You can add {} to a string variable and then apply .format() later.</description>
+    </item>
+    
+    <item>
+      <title>Building A JavaScript Epoch Date In Text Expander</title>
+      <link>https://www.thisishowtocode.com/building-a-javascript-epoch-date-in-text-expander/</link>
+      <pubDate>Tue, 29 Dec 2020 12:59:21 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-a-javascript-epoch-date-in-text-expander/</guid>
+      <description>Overview  I want to add dates to my posts, but I don&amp;rsquo;t want the date to be a distraction I setup a Text Expander snippet to produce a epoch seconds timestamp I got super confused and thrown off by a sample of code After the first take, I did dug in and figured out I was right. Seconds since epoch is always the same.  Code The Text Expander Code we ended up with turned out to be this super straight forward line:</description>
+    </item>
+    
+    <item>
+      <title>Building A Vanilla JavaScript Window Launcher</title>
+      <link>https://www.thisishowtocode.com/building-a-vanilla-javascript-window-launcher/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-a-vanilla-javascript-window-launcher/</guid>
+      <description>In this one I build a little vanilla javascript function to launch my timer window from a link. I can control the size and position of the window to fit just my timer and put it where I want on the screen.
+I start off with a button and then move to an &amp;lt;a&amp;gt; anchor tag. While doing the anchor tag I discovered I couldn&amp;rsquo;t pass parameters to a function called by addEventListener.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (part 2)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-2/</guid>
+      <description>Overview  I goofed and kept the camera in giant head mode. You can still see most of what&amp;rsquo;s going on and the parts you miss will show up again in Part 3 Setup a new Hugo site that&amp;rsquo;s where we&amp;rsquo;ll build everything Tried a couple themes and picked outAxiom to get started with  Links  Hugo - The static site engine I&amp;rsquo;m using to build the site Vim basics Video where we deploy the site alex-shpak/hugo-book: Hugo documentation theme as simple as plain book Axiom | Hugo Themes Complete List | Hugo Themes hugo - Google Search Hugo Book | Hugo Themes marketempower/axiom: Axiom - A Hugo Theme Quick Start | Hugo  </description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 3)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-3/</guid>
+      <description>Overview  Adding content into the site.  Links  Video on how ports work Schema.org - Schema.org  </description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 4)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-4/</guid>
+      <description>The Plan  Finish moving in content to be served by Hugo  The Result  Got stuck working with sub directories. Files wouldn&amp;rsquo;t output where expected. Did some troubleshooting by switching Hugo to actually build the site with the plain hugo command instead of serving it from memory with hugo server. This let me look in the public directory at the files that were actually output. Finally figured out that if there&amp;rsquo;s a subfolder that you want content rendered it, the folder above has to contain and _index.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 5)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-5/</guid>
+      <description>We got a web site live!
+Well, it&amp;rsquo;s just a page and it&amp;rsquo;s not on the domain we want and it&amp;rsquo;s not secure, but it&amp;rsquo;s live!
+We setup basic hosting on Amazon S3. The goal is to use CloudFront and that&amp;rsquo;s where we started, but this turned out to be a good first step. A test just to make sure the pipes are working and to get us moving.
+Next steps are in the next video.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 6)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-6/</guid>
+      <description>Notes Amazon changes their web console all the time. Don&amp;rsquo;t be surprised if things look different and you have to search for them a little.
+The Plan  Get the site served via CloudFront over HTTPS.  The Details   Started off by showing where we left off with an S3 bucket being served out directly via it&amp;rsquo;s &amp;ldquo;Static website hosting&amp;rdquo; option property. We turned that off since we only want traffic to be able to hit the bucket via CloudFront.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 7) - Changing Nameserver from Hover to Route 53</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-7/</guid>
+      <description>Overview I registered the ThisIsHowYouProgram.com domain on Hover. I already had an account there and when I woke up at 3 in the morning with the idea for the site that&amp;rsquo;s where I went.
+But, I want to use Amazon&amp;rsquo;s Route 53 service to manage the domain so that everything is in the AWS ecosystem. Route 53 is designed to work with CloudFront in a way that other systems can&amp;rsquo;t (via an ALIAS record)</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 8)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-8/</guid>
+      <description>Overview   I decided to change the name of the project from:
+ This Is How You Program  To:
+ This Is How You Code    This is me registering the website domain name
+  Details Up to this point, I&amp;rsquo;ve been calling this project. This Is How You Program. Recording on of the episodes, I said &amp;ldquo;This Is How You Code&amp;rdquo; and immediately realized that&amp;rsquo;s a better name.</description>
+    </item>
+    
+    <item>
+      <title>How-To Build A Javascript Timer</title>
+      <link>https://www.thisishowtocode.com/how-to-build-a-javascript-timer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/how-to-build-a-javascript-timer/</guid>
+      <description>Overview Make a browser based javascript timer that:
+ Updates once every five minutes Turns the numbers yellow at 50 minutes Turns the numbers red at 60 minutes  The original building of this is at TKTKTKT
+Documents from the Grimoire  js- Sleep js- Document Ready - DOMContentLoaded  </description>
+    </item>
+    
+    <item>
+      <title>How-To: Sort By Size On The Command Line</title>
+      <link>https://www.thisishowtocode.com/how-to-sort-by-size-on-the-command-line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/how-to-sort-by-size-on-the-command-line/</guid>
+      <description>Goal I&amp;rsquo;ve got 1,142 sample video files with various compressions settings that I built with an automatic Handbrake script. The files show up sorted by name, but I want them sorted by size to get a better idea of which ones I should look at.
+Solution The solution I ended up with was to combine the ls and awk commands. The ls command does the listing an sorting while the awk command parses the data down to just the columns I need.</description>
+    </item>
+    
+    <item>
+      <title>Ideas and TODOs</title>
+      <link>https://www.thisishowtocode.com/ideas-and-todos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/ideas-and-todos/</guid>
+      <description>Examples:
+  Cash register:
+Making change with things like N number of quarters, dimes, and nickels.
+    Make the Git repo
+  Use this license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  Do code reading where you look at other folks code in github and analyse it to see what&amp;rsquo;s up with it.
+  Setup a newsletter
+  Figure out what all this mean:
+ function sleep(ms) { return new Promise(resolve =&amp;gt; setTimeout(resolve, ms)); }    Figure out how async functions work in JavaScript</description>
+    </item>
+    
+    <item>
+      <title>Introduction - Building The Site (Part 1)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-1/</guid>
+      <description>This is it. The kick off.
+Mission Build free tools that teach people of all ages, abilities, classes, education levels, genders, orientations, races, and religions how to program while giving them the confidence to take on the world.
+Links  Choose A License My Mission Statement GitHub This Is How You Program GitHub Repo Visual Studio Code GitHub Pages  </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Timer</title>
+      <link>https://www.thisishowtocode.com/building-a-javascript-timer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-a-javascript-timer/</guid>
+      <description>This is our JavaScript Timer. It&amp;rsquo;s what I use to keep track of time when recording videos. The basic details are:
+ The timer starts when the page is opened The number displayed only updates every 300 seconds (which is 5 minutes) The way we do this is by using the % operator. It gives us the remainder of one number divided by another. Using this, we can see when the remainder of our target number is zero and know that we hit something that divides by it directly.</description>
+    </item>
+    
+    <item>
+      <title>Making A Checklist</title>
+      <link>https://www.thisishowtocode.com/checklist-for-starting-a-video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/checklist-for-starting-a-video/</guid>
+      <description>Overview Creating a basic checklist that I&amp;rsquo;ll use to get setup to make a video.
+Notes I mentioned radio buttons but forgot to talk about them. Here&amp;rsquo;s another video that talks about the difference (TKTKTKTK radio buttons vs checkboxes).
+I missed changing the ids for the checkboxes and the labels the first time through. Oops. I caught it when I started to use the checklist. So, there&amp;rsquo;s a quick addendum showing where I goofed and the fix.</description>
+    </item>
+    
+    <item>
+      <title>Marketing Ideas</title>
+      <link>https://www.thisishowtocode.com/marketing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/marketing/</guid>
+      <description>Get email news letters up on the site
+  Once you get email news letters up, put the site in for: https://github.com/jackmcdade/weird-wide-webring
+  Once you get email newsletters setup publish your font size findings.
+  Do your personal site on there too.
+  Put your streams up.
+  [] Publish the videos where you show the resolution differences between 1080p and 1920x1080 on Mac.</description>
+    </item>
+    
+    <item>
+      <title>OBS Audio Video Sync Calibration Tool - Part 1</title>
+      <link>https://www.thisishowtocode.com/obs-audio-video-sync-helper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/obs-audio-video-sync-helper/</guid>
+      <description>I had some problems with audio/video syncing on some of my recordings. They turned out to be because of the Windows media player, but I wanted to make sure.
+TODO: Take the last message about things working onto Part-2
+ Audacity ® | Free, open source, cross-platform audio software for multi-track&amp;hellip; Audio to Base64 | Base64 Encode | Base64 Converter | Base64 Beep Sounds | Free Sound Effects | Beep Sound Clips | Sound Bites Can I use&amp;hellip; Support tables for HTML5, CSS3, etc Edit fiddle - JSFiddle - Code Playground Electronic Chime Sounds | Effects | Sound Bites | Sound Clips from SoundBible.</description>
+    </item>
+    
+    <item>
+      <title>Playing Around With list-style In CSS</title>
+      <link>https://www.thisishowtocode.com/playing-around-with-list-style-in-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/playing-around-with-list-style-in-css/</guid>
+      <description>Overview The Tailwind CSS framework I use for my site clears out default styles including the bullets that normally show up on lists. This video is playing around with list-style to put them back in.
+Links  : The External Resource Link element - HTML: HyperText Markup Language | MDN css rem - Google Search link css call - Google Search list-style - CSS: Cascading Style Sheets | MDN list-style - Google Search list-style css - Google Search Rem in CSS: Understanding and Using rem Units - SitePoint  </description>
+    </item>
+    
+    <item>
+      <title>Setting Up An AWS Account</title>
+      <link>https://www.thisishowtocode.com/setting-up-an-aws-account/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/setting-up-an-aws-account/</guid>
+      <description>Overview This video is about getting started with an Amazon Web Services (AWS) Account. You&amp;rsquo;ll need a credit card, phone number, and email address.
+The first thing to setup is a &amp;ldquo;Root&amp;rdquo; account. It has the power to do everything. It is THE main account. Because it&amp;rsquo;s so powerful, you actually don&amp;rsquo;t use it for much. Instead you create other user accounts in the AWS Identity and Access Management (also know as IAM) service and use them.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Multi-Factor Authentication (MFA) On AWS Accounts</title>
+      <link>https://www.thisishowtocode.com/setting-up-mfa-on-aws-accounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/setting-up-mfa-on-aws-accounts/</guid>
+      <description>In This Episode Started out by talking a little about what Multi-Factor Authentication (MFA) is and why you&amp;rsquo;d want to use it.
+Added MFA to the web console user which was no problem.
+Adding it to the CLI user turned into more of a trick. I thought all you had to do was assign MFA to a programatic access user and it would be enforced, but that&amp;rsquo;s not the case. The Access Key and Secret Key still work just fine.</description>
+    </item>
+    
+    <item>
+      <title>Setup A Static Site With AWS  S3 CloudFront Certificate Manager And Route 53</title>
+      <link>https://www.thisishowtocode.com/notes/setup-a-static-site-with-aws-s3-cloudfront-certificate-manager-and-route-53/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/notes/setup-a-static-site-with-aws-s3-cloudfront-certificate-manager-and-route-53/</guid>
+      <description>If your domain is registered on another site, that&amp;rsquo;s fine. You can send over the name server and then decide if you want to transfer to Route 53.
+  Register Domain Name
+  There are two ways to setup.
+  Links  TKTKTK How to register in other services TKTKTK How to point over to Route 53 from other services by updating the name servers.  </description>
+    </item>
+    
+    <item>
+      <title>Spell Check for VS Code</title>
+      <link>https://www.thisishowtocode.com/spell-check-for-vs-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/spell-check-for-vs-code/</guid>
+      <description>Trying to setup so I can get a replacement for misspelled words like Privilege.
+This one took waaaaay longer than expected. But, that&amp;rsquo;s how it goes sometimes.
+It&amp;rsquo;s time well spent. This is getting my editor setup so that I don&amp;rsquo;t have to worry about it.
+The extension I used in the video is:
+Spell Right  The command to do the fix is &amp;ldquo;Quick Fix&amp;hellip;&amp;rdquo; which I can hotkey with:</description>
+    </item>
+    
+    <item>
+      <title>Timer For Videos</title>
+      <link>https://www.thisishowtocode.com/timer-for-videos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/timer-for-videos/</guid>
+      <description>This is the version of the timer I use.
+I pulled it out to it&amp;rsquo;s own thing to make it easier for me to find and so I can continue to tweak it without adding confusion to folks who watch the video who would see the code being different.
+Argggg&amp;hellip; this isn&amp;rsquo;t working&amp;hellip;Launch The Timer</description>
+    </item>
+    
+    <item>
+      <title>TKTKTK</title>
+      <link>https://www.thisishowtocode.com/tktktk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/tktktk/</guid>
+      <description>Hey there!
+You just clicked on a place holder link. I haven&amp;rsquo;t built the page that it&amp;rsquo;s going to yet, but I wanted to make sure I remembered it so I pointed it here.
+I take care of these as soon as I can so it should be up soon.
+-a</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Building The Site (Part 11) - Making A Basic Deployer &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto py-5">
+    <a href="/"><h2 class="nav-title">This Is How To Code</h2></a>	
+</div>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Building The Site (Part 11) - Making A Basic Deployer</h1>
+<div class="post-line"></div>
+
+		
+
+		<h2 id="overview">Overview</h2>
+<p>Started to build the deployer in the last session but found an issue where links weren&rsquo;t working. Now that that&rsquo;s solved, it&rsquo;s back to the deployer.</p>
+<hr>
+<p>EDIT: Points about 10:40 and some beffore when it showed the Access Key. Check all termial hits.</p>
+<p>Make sure to edit out when you fire up keychain access.</p>
+<h3 id="steps-to-do">Steps to do</h3>
+<ul>
+<li>Build the site</li>
+<li>Deploy the site</li>
+<li>Invalidate the site</li>
+</ul>
+<p>aws cloudfront create-invalidation &ndash;distribution-id E16XG7IV228BY3 &ndash;paths &ldquo;/*&rdquo;</p>
+<p>link to permiossions.</p>
+<p>talk about dots in command line movement</p>
+<p>link pwc</p>
+<p>link putting things on the command line in /usr/local/bin</p>
+<p>Show How PATH works on the command line</p>
+<p>TODO: Figure out how to make the CLI account just have CloudFront access to invalidations.</p>
+<h3 id="links">Links</h3>
+<ul>
+<li>TKTKTK Video on how to make bash functions as well as scripts</li>
+<li><a href="https://stackoverflow.com/questions/33616678/access-denied-when-calling-the-createinvalidation-operation-on-aws-cli">amazon web services - Access Denied when calling the CreateInvalidation&hellip;</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=An+error+occurred+(IncompleteSignature)+when+calling+the+CreateInvalidation+operation&amp;ie=UTF-8&amp;oe=UTF-8">An error occurred (IncompleteSignature) when calling the CreateInvalidation&hellip;</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=aws+cli+cloudfront&amp;ie=UTF-8&amp;oe=UTF-8">aws cli cloudfront - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=aws+cli+sync&amp;ie=UTF-8&amp;oe=UTF-8">aws cli sync - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=aws+cloudfront+(IncompleteSignature)&amp;ie=UTF-8&amp;oe=UTF-8">aws cloudfront (IncompleteSignature) - Google Search</a></li>
+<li><a href="https://github.com/aws/aws-cli/issues/2929">aws s3 cp without recursive can produce a useless error message · Issue #2929&hellip;</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=chmod&amp;ie=UTF-8&amp;oe=UTF-8">chmod - Google Search</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chmod">chmod - Wikipedia</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cf-api-permissions-ref.html#required-permissions-invalidations">CloudFront API Permissions: Actions, Resources, and Conditions Reference -&hellip;</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=cloudfront+invalidation+aws+permission&amp;ie=UTF-8&amp;oe=UTF-8">cloudfront invalidation aws permission - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/cli/latest/reference/cloudfront/create-invalidation.html">create-invalidation — AWS CLI 1.18.207 Command Reference</a></li>
+<li><a href="https://github.com/aws/aws-sdk-js/issues/3313">IncompleteSignature error when calling Cloudfront from Github action · Issue&hellip;</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=Parameter+validation+failed:+s3+aws+cp&amp;ie=UTF-8&amp;oe=UTF-8">Parameter validation failed: s3 aws cp - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html">sync — AWS CLI 1.18.207 Command Reference</a></li>
+<li><a href="https://www.thisishowtocode.com/">This Is How To Code</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/access-control-managing-permissions.html">Using Identity-Based Policies (IAM Policies) for CloudFront - Amazon CloudFront</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/think-of-variables-like-placeholders/" class="left arrow">&#8592;</a>
+		<a href="/replacing-a-dead-freenas-drive/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        <footer></footer>
+
+    </body>
+</html>

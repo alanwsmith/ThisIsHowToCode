@@ -1,0 +1,12 @@
+ul {
+    list-style: disc inside; 
+    margin-bottom: 1rem;
+}
+
+.rocket {
+    list-style: inside url("https://interactive-examples.mdn.mozilla.net/media/examples/rocket.svg");
+}
+
+main {
+    padding-left: 3rem;
+}

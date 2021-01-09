@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/javascript/</link>
+    <description>Recent content in JavaScript on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Dec 2020 12:59:21 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building A JavaScript Epoch Date In Text Expander</title>
+      <link>https://www.thisishowtocode.com/building-a-javascript-epoch-date-in-text-expander/</link>
+      <pubDate>Tue, 29 Dec 2020 12:59:21 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-a-javascript-epoch-date-in-text-expander/</guid>
+      <description>Overview  I want to add dates to my posts, but I don&amp;rsquo;t want the date to be a distraction I setup a Text Expander snippet to produce a epoch seconds timestamp I got super confused and thrown off by a sample of code After the first take, I did dug in and figured out I was right. Seconds since epoch is always the same.  Code The Text Expander Code we ended up with turned out to be this super straight forward line:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>OBS Audio Video Sync Calibration Tool - Part 1 &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto py-5">
+    <a href="/"><h2 class="nav-title">This Is How To Code</h2></a>	
+</div>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">OBS Audio Video Sync Calibration Tool - Part 1</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>I had some problems with audio/video syncing on some of my recordings. They turned out to be because of the Windows media player, but I wanted to make sure.</p>
+<p>TODO: Take the last message about things working onto Part-2</p>
+<ul>
+<li><a href="https://www.audacityteam.org/?__cf_chl_jschl_tk__=400296754fe650105f709d9c8a41f5d45522ceb7-1608598251-0-Aei_RGEZtdnMiBKfyPNbvayUAqgxbRoXTciJMLrhmhLM8gidISkrCQytEBCGSmBSyO5Xprj7jPRu969m9-VOtoMN9uGQzh450CrfDJDraVN8pnGtSiwu4FTqBJvrT39KObCHtZo-AaS3NJ0XjI6Jw4TBkFgWZYFVPx5k33qn7u0aDb2B2PCIo3lC6yj90_tuN-gbhTDRC5cG1maKTG6vuYl8R6Ix1EowZ0o0BUCtG7aiQSfrzdDRous5Xscavg0YGdYh1xaQJxJvg8duEOLj7BbngcFTHKdN01rwtrNb9dJR6bhrNrfup2wHwb7s88iy2RK4DVirDPG_mbwCNZtXrc9_FdgsdNzCgDFUG144lmgzmrFmz3gN2HsZpU3MWBUszg">Audacity ® | Free, open source, cross-platform audio software for multi-track&hellip;</a></li>
+<li><a href="https://base64.guru/converter/encode/audio">Audio to Base64 | Base64 Encode | Base64 Converter | Base64</a></li>
+<li><a href="http://soundbible.com/tags-beep.html">Beep Sounds | Free Sound Effects | Beep Sound Clips | Sound Bites</a></li>
+<li><a href="https://caniuse.com/datauri">Can I use&hellip; Support tables for HTML5, CSS3, etc</a></li>
+<li><a href="http://jsfiddle.net/7EAgz/">Edit fiddle - JSFiddle - Code Playground</a></li>
+<li><a href="http://soundbible.com/1598-Electronic-Chime.html">Electronic Chime Sounds | Effects | Sound Bites | Sound Clips from SoundBible.com</a></li>
+<li><a href="https://www.geeksforgeeks.org/encoding-and-decoding-base64-strings-in-python/">Encoding and Decoding Base64 Strings in Python - GeeksforGeeks</a></li>
+<li><a href="https://freesound.org/people/pan14/sounds/263133/">Freesound - &ldquo;tone beep.wav&rdquo; by pan14</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=audacity&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: audacity</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=base64+encode+audio&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: base64 encode audio</a></li>
+<li><a href="https://www.google.com/search?newwindow=1&amp;client=safari&amp;rls=en&amp;ei=AjrhX5C1GYqa5gLjw7DoCA&amp;q=free+beep+open+source&amp;oq=free+beep+open+source&amp;gs_lcp=CgZwc3ktYWIQAzIFCCEQoAEyBQghEKsCMgUIIRCrAjoECAAQRzoJCAAQyQMQFhAeOggIABAWEAoQHjoICCEQFhAdEB5QvZgCWOOgAmDGogJoAHACeACAAW2IAfYGkgEEMTAuMZgBAKABAaoBB2d3cy13aXrIAQjAAQE&amp;sclient=psy-ab&amp;ved=0ahUKEwiQvp37puDtAhUKjVkKHeMhDI0Q4dUDCAw&amp;uact=5">Google Search: free beep open source</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=javascript+make+sound&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: javascript make sound</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=javascript+set+class+name&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: javascript set class name</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=javascript+sleep&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: javascript sleep</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=python+base+64+encode&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: python base 64 encode</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=python+bytes+to+string&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: python bytes to string</a></li>
+<li><a href="https://www.w3schools.com/jsref/prop_html_classname.asp">HTML DOM className Property</a></li>
+<li><a href="https://obsproject.com/">Open Broadcaster Software®️ | OBS</a></li>
+<li><a href="https://docs.python.org/3/library/base64.html">Python 3.9.1 Documentation: base64 — Base16, Base32, Base64, Base85 Data Encodings</a></li>
+<li><a href="https://stackoverflow.com/questions/6448865/base64-encode-audio-file-and-send-as-a-string-then-decode-the-string">Stack Overflow: base64 encode audio file and send as a String then decode the String</a></li>
+<li><a href="https://stackoverflow.com/questions/606191/convert-bytes-to-a-string">Stack Overflow: Convert bytes to a string</a></li>
+<li><a href="https://stackoverflow.com/questions/879152/how-do-i-make-javascript-beep">Stack Overflow: How do I make JavaScript beep?</a></li>
+<li><a href="https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep">Stack Overflow: What is the JavaScript version of sleep()?</a></li>
+<li><a href="https://stackoverflow.com/questions/8908287/why-do-i-need-b-to-encode-a-string-with-base64">Stack Overflow: Why do I need &lsquo;b&rsquo; to encode a string with Base64?</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/playing-around-with-list-style-in-css/" class="left arrow">&#8592;</a>
+		<a href="/marketing/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        <footer></footer>
+
+    </body>
+</html>

@@ -1,0 +1,7 @@
+Work on ThisIsHowYouProgram
+Go for a walk
+Tend my <a href="https://www.alanwsmith.com">digital garden</a>
+Watch the sunset
+Wash the dishes
+<a href="#" id="time_launcher">Start Clock</a>
+Try to take over the world

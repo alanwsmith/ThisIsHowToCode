@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scratchpads on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/scratchpad/</link>
+    <description>Recent content in Scratchpads on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Dec 2020 18:54:43 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/scratchpad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Format String Tests</title>
+      <link>https://www.thisishowtocode.com/scratchpad/fstring_test/</link>
+      <pubDate>Wed, 30 Dec 2020 18:54:43 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/scratchpad/fstring_test/</guid>
+      <description>Checking to see if there&amp;rsquo;s a way to create a variable with {} in it and pass it to an f-string for interpretation.
+Doesn&amp;rsquo;t look like that&amp;rsquo;s possible.
+You can add {} to a string variable and then apply .format() later.</description>
+    </item>
+    
+  </channel>
+</rss>

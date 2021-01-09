@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrtip Timer</title>
+
+<style>
+html, body {
+    margin-top: 0;
+    padding-top: 0;
+}
+#timer {
+    font-size: 10rem;
+    line-height: 0.9em;
+    text-align: right;
+    padding-right: 0.3rem;
+    padding-top: 0.2rem;
+}
+.red {
+    color: red;
+}
+.yellow {
+    color: #e1d61f;
+}
+</style>
+
+<script>
+async function countIt() {
+    let second = 1; 
+
+    while (true) {
+        minute = parseInt(second / 60);
+        five_min_marker = parseInt(second % 300);
+        if (five_min_marker == 0) {
+            document.getElementById('timer').innerHTML = minute;
+            if (minute >= 50) {
+                document.getElementById('timer').className = 'yellow';
+            }
+            if (minute >= 60) {
+                document.getElementById('timer').className = 'red';
+            }
+        }
+        await new Promise(r => setTimeout(r, 1000));
+        second++;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', countIt);
+</script>
+</head>
+<body>
+    <div id="timer">0</div>
+</body>
+</html>

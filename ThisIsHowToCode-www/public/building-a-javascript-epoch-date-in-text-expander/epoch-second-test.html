@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoch Second Test</title>
+</head>
+<body>
+
+<div id="this_is_probably_right"></div>
+
+<div id="i_do_no_think_this_is_right"></div>
+
+<div id="maybe_let_us_see"></div>
+
+<div id="the_date"></div>
+
+<script>
+    const probablyRight = document.getElementById('this_is_probably_right')
+    probablyRight.innerHTML = Math.round(Date.now() / 1000);
+</script>
+
+<script>
+    const now = new Date()  
+    const utcMilllisecondsSinceEpoch = now.getTime() + (now.getTimezoneOffset() * 60 * 1000)  
+    const utcSecondsSinceEpoch = Math.round(utcMilllisecondsSinceEpoch / 1000)  
+    const doNotThinkSo = document.getElementById('i_do_no_think_this_is_right')
+    doNotThinkSo.innerHTML = utcSecondsSinceEpoch
+</script>
+
+<script>
+    const now2 = new Date()
+    const utcMillSinceEpoch = now.getTime()
+    const utcSecSinceEpoch = Math.round( utcMillSinceEpoch / 1000 )
+    document.getElementById('maybe_let_us_see').innerHTML = utcSecSinceEpoch
+</script>
+
+
+<script>
+    const now3 = new Date()
+    document.getElementById('the_date').innerHTML = now3 
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+{{ define "main" }}
+
+
+<div class="bg-yellow-300 sm:bg-green-700 md:bg-red-400 lg:bg-purple-600 xl:bg-blue-400">
+    <div class="block sm:hidden">Size check: Less than small</div>
+    <div class="hidden sm:block md:hidden">Size check: Small (sm)</div>
+    <div class="hidden md:block lg:hidden">Size check: Medium (md)</div>
+    <div class="hidden lg:block xl:hidden">Size check: Large (lg)</div>
+    <div class="hidden xl:block">Size check: Extra Large (xl)</div>
+</div>
+
+
+
+<main> 
+    <div class="container max-w-screen-lg mx-auto py-5">
+        <div class="grid grid-cols-1 md:grid-cols-11">
+
+            <div class="col-span-1 md:col-span-5 px-2">
+                <p>Hi there!</p>
+                <p>My name is Alan and this is my new project: A free, comprehensive education in computer programming.</p>
+                <p>I going to build it piece by piece. Publishing each part as I go. It's a <a href="https://maggieappleton.com/garden-history">Digital Garden</a> approach. One that will grow and adapt as it progresses.</p>
+                <p>I started it on Dec. 19th, 2020. Right now, I'm still figuring everything out.</p> 
+
+                <p>You can sign up for the newsletter if you want to keep tabs. I'll send updates once a month. (No names required because I'm trying to track as little personal information as possible)
+                    </p>
+
+                    <!--Start Signup Form-->
+<div class="mb-embed">
+  <link rel="stylesheet" media="screen" href="https://cdn.mailblast.io/stylesheets/mb-embed-1-2.css">
+  <style type="text/css">
+    /* Add any css overrides you require here */
+  </style>
+
+  <!-- You can customize the default success message here -->
+  <h2 class="mb-message mb-success-message" default-message="Thank you for Subscribing!"></h2>
+  <h2 class="mb-message mb-error-message"></h2>
+
+  <form method="post" action="https://www.mailblast.io/lists/c63e080f-7d9d-4d43-b760-242d408d0eb7/subscribers/create_external" class="mb-form" novalidate="novalidate">
+    <h2 class="mb-form-title">Subscribe for Newsletter updates</h2>
+
+    <div class="mb-form-group">
+      <label>Email Address</label>
+      <input type="email" name="subscriber[email]" class="mb-email" required="" aria-required="true">
+    </div>
+
+    <div class="mb-form-group-tk" aria-hidden="true">
+      <input type="text" name="mb_c63e080f7d9d4d43b760242d408d0eb7" tabindex="-1" value="">
+    </div>
+
+    <div class="mb-form-group mb-subscribe">
+      <input type="hidden" name="success_redirect" class="mb-subscribe-redirect-url" value="https://www.thisishowtocode.com/thank-you-for-subscribing/">
+      <button type="submit" class="button mb-subscribe">Subscribe</button>
+    </div>
+  </form>
+  <script src="https://cdn.mailblast.io/javascripts/mb-embed-1-2.js"></script>
+</div>
+<!--End Signup Form-->
+
+            </div>
+
+            <div class="col-span-1 md:col-span-6 px-2">
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/493198171?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                (yep, less than a month old and the name changed.)
+            </div>
+
+            <div class="md:col-span-9 px-2">
+
+                <p>Some other things:</p>
+                <ul>
+                    <li>Everything on the site will be 100% free.</li>
+                    <li>This site will not have ads. Ads may have their place, but it's not in education.</li>
+                    <li>This site won't have invasive tracking. There will be some analytics, but only so I can monitor the site's performance. It'll all be anonymous.</li>
+                    <li>The content will be licensed in an open source way that will let anyone use it.</li>
+                    <li>There will be no requirement to sign up. You can use the site completely anonymously and with no hassle. (There will eventually be user accounts that make it easier to track progress, but they won't be required.)</li>
+                    <li>This is in no way a money making venture. I'm building this because I love programming and in a very real way I would have been lost without it. I'm standing on the shoulders of giants. It's my duty and my calling to help others up.</li>
+                </ul>
+
+                <p>If you want to reach out, I'm on Twitter and my personal site is alanwsmith.com. Feel free to stop by and say hi.</p>
+
+                <p>-a</p>
+            </div>
+
+     
+
+        </div>
+    </div>
+</main>
+
+
+
+	<div class="catalogue">
+		{{ range (.Paginate .Site.RegularPages).Pages }}
+			{{ .Render "summary" }}
+		{{ end }}
+	</div>
+               
+
+
+{{ end }}

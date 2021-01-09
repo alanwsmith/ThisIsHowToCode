@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building-the-sites on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/building-the-site/</link>
+    <description>Recent content in Building-the-sites on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2021 22:57:00 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/building-the-site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Live Coding The Site (Part 12)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-12/</link>
+      <pubDate>Tue, 05 Jan 2021 22:57:00 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-12/</guid>
+      <description>Working on the site.
+  Got tailwind setup
+  Got a size checking bar in place
+  Got a responsive vimeo video on the site.
+  Stayed up way too late.
+  Links  TKTKTK Show how to pull full size tailwind. (which is not really what you want to do.) A Brief History &amp;amp; Ethos of the Digital Garden Grid Column Start / End - Tailwind CSS How to embed your gorgeous videos across the nets - Vimeo Blog hugo embed video - Google Search hugo relurl - Google Search relURL | Hugo Shortcodes | Hugo Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 11) - Making A Basic Deployer</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-11/</link>
+      <pubDate>Sun, 03 Jan 2021 14:39:31 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-11/</guid>
+      <description>Overview Started to build the deployer in the last session but found an issue where links weren&amp;rsquo;t working. Now that that&amp;rsquo;s solved, it&amp;rsquo;s back to the deployer.
+ EDIT: Points about 10:40 and some beffore when it showed the Access Key. Check all termial hits.
+Make sure to edit out when you fire up keychain access.
+Steps to do  Build the site Deploy the site Invalidate the site  aws cloudfront create-invalidation &amp;ndash;distribution-id E16XG7IV228BY3 &amp;ndash;paths &amp;ldquo;/*&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 10) - Building A Deployer but then dealing with index files not showing up</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-10/</link>
+      <pubDate>Sat, 02 Jan 2021 21:17:33 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-10/</guid>
+      <description>Started off by building a deployer but then discovered our index.html files weren&amp;rsquo;t showing up. Fix is a Lambda@Edge function that looks for calls that need to add the files and adds them.
+Was thinking about trying to remove the trailing slashes, but that&amp;rsquo;s begging for problems. Also, realized that it would take hacking Hugo itself to deal with removing the slashes since it puts them in the URLs when it makes them.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 9) - Configuring the Domains With Redirects</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-9/</link>
+      <pubDate>Fri, 01 Jan 2021 14:45:17 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-9/</guid>
+      <description>The Plan   Setup both domains:
+ thisishowtocode.com, and www.thisishowtocode.com    Make sure they both have SSL/TLS certs
+  Redirect traffic from the non-www to the www version.
+  Process  Create S3 bucket  Links   SSL/TLS Certs -
+  TKTKTKT CNAME - DNS Types.
+    http://ThisIsHowToCode.com https://ThisIsHowToCode.com http://www.ThisIsHowToCode.com  -&amp;gt; https://www.ThisIsHowToCode.com
+ TODO: confirm we don&amp;rsquo;t need static hosting on the www.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (part 2)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-2/</guid>
+      <description>Overview  I goofed and kept the camera in giant head mode. You can still see most of what&amp;rsquo;s going on and the parts you miss will show up again in Part 3 Setup a new Hugo site that&amp;rsquo;s where we&amp;rsquo;ll build everything Tried a couple themes and picked outAxiom to get started with  Links  Hugo - The static site engine I&amp;rsquo;m using to build the site Vim basics Video where we deploy the site alex-shpak/hugo-book: Hugo documentation theme as simple as plain book Axiom | Hugo Themes Complete List | Hugo Themes hugo - Google Search Hugo Book | Hugo Themes marketempower/axiom: Axiom - A Hugo Theme Quick Start | Hugo  </description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 3)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-3/</guid>
+      <description>Overview  Adding content into the site.  Links  Video on how ports work Schema.org - Schema.org  </description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 4)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-4/</guid>
+      <description>The Plan  Finish moving in content to be served by Hugo  The Result  Got stuck working with sub directories. Files wouldn&amp;rsquo;t output where expected. Did some troubleshooting by switching Hugo to actually build the site with the plain hugo command instead of serving it from memory with hugo server. This let me look in the public directory at the files that were actually output. Finally figured out that if there&amp;rsquo;s a subfolder that you want content rendered it, the folder above has to contain and _index.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 5)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-5/</guid>
+      <description>We got a web site live!
+Well, it&amp;rsquo;s just a page and it&amp;rsquo;s not on the domain we want and it&amp;rsquo;s not secure, but it&amp;rsquo;s live!
+We setup basic hosting on Amazon S3. The goal is to use CloudFront and that&amp;rsquo;s where we started, but this turned out to be a good first step. A test just to make sure the pipes are working and to get us moving.
+Next steps are in the next video.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 6)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-6/</guid>
+      <description>Notes Amazon changes their web console all the time. Don&amp;rsquo;t be surprised if things look different and you have to search for them a little.
+The Plan  Get the site served via CloudFront over HTTPS.  The Details   Started off by showing where we left off with an S3 bucket being served out directly via it&amp;rsquo;s &amp;ldquo;Static website hosting&amp;rdquo; option property. We turned that off since we only want traffic to be able to hit the bucket via CloudFront.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 7) - Changing Nameserver from Hover to Route 53</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-7/</guid>
+      <description>Overview I registered the ThisIsHowYouProgram.com domain on Hover. I already had an account there and when I woke up at 3 in the morning with the idea for the site that&amp;rsquo;s where I went.
+But, I want to use Amazon&amp;rsquo;s Route 53 service to manage the domain so that everything is in the AWS ecosystem. Route 53 is designed to work with CloudFront in a way that other systems can&amp;rsquo;t (via an ALIAS record)</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 8)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-8/</guid>
+      <description>Overview   I decided to change the name of the project from:
+ This Is How You Program  To:
+ This Is How You Code    This is me registering the website domain name
+  Details Up to this point, I&amp;rsquo;ve been calling this project. This Is How You Program. Recording on of the episodes, I said &amp;ldquo;This Is How You Code&amp;rdquo; and immediately realized that&amp;rsquo;s a better name.</description>
+    </item>
+    
+    <item>
+      <title>Introduction - Building The Site (Part 1)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-1/</guid>
+      <description>This is it. The kick off.
+Mission Build free tools that teach people of all ages, abilities, classes, education levels, genders, orientations, races, and religions how to program while giving them the confidence to take on the world.
+Links  Choose A License My Mission Statement GitHub This Is How You Program GitHub Repo Visual Studio Code GitHub Pages  </description>
+    </item>
+    
+  </channel>
+</rss>

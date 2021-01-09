@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>How-To: Sort By Size On The Command Line &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto py-5">
+    <a href="/"><h2 class="nav-title">This Is How To Code</h2></a>	
+</div>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">How-To: Sort By Size On The Command Line</h1>
+<div class="post-line"></div>
+
+		
+
+		<h3 id="goal">Goal</h3>
+<p>I&rsquo;ve got 1,142 sample video files with various compressions settings that I <a href="/automating-handbrake/">built with an automatic Handbrake script</a>. The files show up sorted by name, but I want them sorted by size to get a better idea of which ones I should look at.</p>
+<h3 id="solution">Solution</h3>
+<p>The solution I ended up with was to combine the <code>ls</code> and <code>awk</code> commands. The <code>ls</code> command does the listing an sorting while the <code>awk</code> command parses the data down to just the columns I need. Using <code>awk</code> for this type of parsing is not something you&rsquo;d want to do for a system you&rsquo;re going to put into production as you&rsquo;ll see in the video, but for my need it worked just fine.</p>
+<p>Here&rsquo;s the command that displays the text on the command line:</p>
+<pre><code>ls -lSh | awk '{print $5 &quot;\t&quot; $9}'
+</code></pre>
+<p>And here&rsquo;s the version that writes to a file</p>
+<pre><code>ls -lSh | awk '{print $5 &quot;\t&quot; $9}' &gt; report.txt
+</code></pre>
+<p>(In the video, I used <code>../report.txt</code> to create the file one folder up. It&rsquo;s a little clearer without that so I&rsquo;m leaving it as just <code>report.txt</code> here.)</p>
+<h3 id="quick-reference">Quick Reference</h3>
+<ul>
+<li>I used <code>man ls</code> to get to the &ldquo;manual&rdquo; file (aka a &ldquo;man page&rdquo;) for the ls command. <code>man</code> works with most command on a mac and linux. (TKTKTKT: Figure out what the man command equivalent on a Windows machine is)</li>
+<li>The first thing to know about man pages is that you just need to type <code>q</code> to get you out of one.</li>
+<li>The <code>/</code> key is how you start a search once you&rsquo;re in a man page. Just do something like <code>/display</code> to search for the word &ldquo;display&rdquo;. Note that the search is <a href="/tktktk/">case sensitive</a>. So, your search will find &ldquo;display&rdquo; with a lower case &ldquo;d&rdquo;, but not &ldquo;Display&rdquo; with an upper case &ldquo;D&rdquo;.</li>
+<li>You can do case insensitive searches by typing <code>-i</code> at the <code>:</code> which will flash a message like <code>Ignore case in searches  (press RETURN)</code>. After that, <code>/display</code> will also match &ldquo;Display&rdquo;.</li>
+<li>If you want to turn off the case insensitive search for some reason just to <code>-i</code> again.</li>
+</ul>
+<h3 id="links">Links</h3>
+<ul>
+<li>TKTKTK: Setting Up Your Mac Terminal</li>
+<li>TKTKTK: Setting Up Your Windows Terminal</li>
+<li><a href="https://www.tutorialspoint.com/awk/awk_basic_examples.htm">AWK - Basic Examples - Tutorialspoint</a></li>
+<li><a href="https://unix.stackexchange.com/questions/101580/how-do-i-echo-just-1-column-of-output-from-ls-command">bash - How do I echo just 1 column of output from ls command? - Unix &amp; Linux&hellip;</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=awk+basics&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: awk basics</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=awk+ls&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: awk ls</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=grep+not&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: grep not</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=ls+show+only+certainly+columns&amp;ie=UTF-8&amp;oe=UTF-8">Google Search: ls show only certainly columns</a></li>
+<li><a href="https://superuser.com/questions/1432701/can-i-show-certain-columns-in-ls-l-command">linux - Can I show certain columns in ls -l command? - Super User</a></li>
+<li><a href="http://mywiki.wooledge.org/ParsingLs">ParsingLs - Greg&rsquo;s Wiki</a></li>
+<li><a href="https://stackoverflow.com/questions/1447809/awk-print-9-the-last-ls-l-column-including-any-spaces-in-the-file-name">Stack Overflow: awk &lsquo;{print $9}&rsquo; the last ls -l column including any spaces&hellip;</a></li>
+<li><a href="https://stackoverflow.com/questions/3548453/negative-matching-using-grep-match-lines-that-do-not-contain-foo">Stack Overflow: Negative matching using grep (match lines that do not contain foo)</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/ideas-and-todos/" class="left arrow">&#8592;</a>
+		<a href="/how-to-build-a-javascript-timer/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        <footer></footer>
+
+    </body>
+</html>

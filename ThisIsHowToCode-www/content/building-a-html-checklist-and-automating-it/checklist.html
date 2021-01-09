@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Startup Checklist</title>
+<style>
+#checklist {
+    list-style-type: none;
+}
+body {
+    font-size: 1.2rem;
+}
+li {
+    margin-bottom: 0.3rem;
+}
+
+</style>
+<script>
+function open_timer(event) {
+    windowFeatures = "screenX=0,screenY=140,width=240,height=210,menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+    window.open('file:///Users/alans/Desktop/ThisIsHowYouProgram/how-to-build-a-javascript-timer/timer.html', 'ClockWindow', windowFeatures);
+    event.preventDefault();
+}
+</script>
+
+</head>
+<body>
+    <ul id="checklist">
+    
+<li>
+  <input type="checkbox" id="checkbox_1">
+  <label for="checkbox_1">
+    Work on ThisIsHowYouProgram
+  </label>
+</li>
+<li>
+  <input type="checkbox" id="checkbox_2">
+  <label for="checkbox_2">
+    Go for a walk
+  </label>
+</li>
+<li>
+  <input type="checkbox" id="checkbox_3">
+  <label for="checkbox_3">
+    Tend my <a href="https://www.alanwsmith.com">digital garden</a>
+  </label>
+</li>
+<li>
+  <input type="checkbox" id="checkbox_4">
+  <label for="checkbox_4">
+    Watch the sunset
+  </label>
+</li>
+<li>
+  <input type="checkbox" id="checkbox_5">
+  <label for="checkbox_5">
+    Wash the dishes
+  </label>
+</li>
+<li>
+  <input type="checkbox" id="checkbox_6">
+  <label for="checkbox_6">
+    <a href="#" id="time_launcher">Start Clock</a>
+  </label>
+</li>
+<li>
+  <input type="checkbox" id="checkbox_7">
+  <label for="checkbox_7">
+    Try to take over the world
+  </label>
+</li>
+
+    <script>
+        const launch_link = document.getElementById('time_launcher');
+        launch_link.addEventListener('click', function(event) { open_timer(event) });
+    </script>
+</ul>
+</body>
+</html>

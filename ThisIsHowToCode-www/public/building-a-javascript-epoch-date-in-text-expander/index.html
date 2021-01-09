@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Building A JavaScript Epoch Date In Text Expander &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto py-5">
+    <a href="/"><h2 class="nav-title">This Is How To Code</h2></a>	
+</div>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Building A JavaScript Epoch Date In Text Expander</h1>
+<div class="post-line"></div>
+
+		
+
+		<h2 id="overview">Overview</h2>
+<ul>
+<li>I want to add dates to my posts, but I don&rsquo;t want the date to be a distraction</li>
+<li>I setup a Text Expander snippet to produce a epoch seconds timestamp</li>
+<li>I got super confused and thrown off by a sample of code</li>
+<li>After the first take, I did dug in and figured out I was right. Seconds since epoch is always the same.</li>
+</ul>
+<h3 id="code">Code</h3>
+<p>The Text Expander Code we ended up with turned out to be this super straight forward line:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">Math.<span style="color:#a6e22e">round</span>( Date.<span style="color:#a6e22e">now</span>() <span style="color:#f92672">/</span> <span style="color:#ae81ff">1000</span>);
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="links">Links</h3>
+<ul>
+<li><a href="epoch-second-test.html">Epoch Second Test We Did</a></li>
+<li>TKTKTK Video on Timezones and epoch and UTC</li>
+<li>TKTKTK Date Format Strings</li>
+<li><a href="https://stackoverflow.com/questions/9456138/how-can-i-get-seconds-since-epoch-in-javascript">datetime - How can I get seconds since epoch in Javascript? - Stack Overflow</a></li>
+<li><a href="https://www.epochconverter.com/">Epoch Converter - Unix Timestamp Converter</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=epoch+date&amp;ie=UTF-8&amp;oe=UTF-8">epoch date - Google Search</a></li>
+<li><a href="https://futurestud.io/tutorials/get-number-of-seconds-since-epoch-in-javascript">Get Number of Seconds Since Epoch in JavaScript</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=javascript+epoch+seconds&amp;ie=UTF-8&amp;oe=UTF-8">javascript epoch seconds - Google Search</a></li>
+<li><a href="https://currentmillis.com/">Current Millis ‐ Milliseconds since Unix Epoch</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now">Date.now() - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime">Date.prototype.getTime() - JavaScript | MDN</a></li>
+<li><a href="https://www.epochconverter.com/">Epoch Converter - Unix Timestamp Converter</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=epoch+date&amp;ie=UTF-8&amp;oe=UTF-8">epoch date - Google Search</a></li>
+<li><a href="https://futurestud.io/tutorials/get-number-of-seconds-since-epoch-in-javascript">Get Number of Seconds Since Epoch in JavaScript</a></li>
+<li><a href="https://unix.stackexchange.com/questions/940/how-can-i-get-a-formatted-date-for-a-unix-timestamp-from-the-command-line">How can I get a formatted date for a UNIX timestamp from the command line -&hellip;</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-to-get-seconds-since-epoch-in-javascript/">How to get seconds since epoch in JavaScript? - GeeksforGeeks</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=javascrtit+date+gettime&amp;ie=UTF-8&amp;oe=UTF-8">javascrtit date gettime - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=mac+print+epoch+time&amp;ie=UTF-8&amp;oe=UTF-8">mac print epoch time - Google Search</a></li>
+<li><a href="https://apple.stackexchange.com/questions/135742/time-in-milliseconds-since-epoch-in-the-terminal">macos - Time in milliseconds since epoch in the terminal - Ask Different</a></li>
+<li><a href="https://www.time.gov/">National Institute of Standards and Technology | NIST</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=seconds+since+epoch&amp;ie=UTF-8&amp;oe=UTF-8">seconds since epoch - Google Search</a></li>
+<li><a href="https://www.gnu.org/software/coreutils/manual/html_node/Seconds-since-the-Epoch.html">Seconds since the Epoch (GNU Coreutils)</a></li>
+<li><a href="https://www.youtube.com/watch?v=-5wpm-gesOY&amp;list=LLhgxsceCCl4iX1smQPLn6Dw&amp;index=3092">The Problem with Time &amp; Timezones - Computerphile - YouTube</a></li>
+<li><a href="https://www.google.com/search?newwindow=1&amp;client=safari&amp;rls=en&amp;ei=MWnrX4jtLavy5gKZrquYDQ&amp;q=time+zones+computers+trouble&amp;oq=time+zones+computers+trouble">time zones computers trouble - Google Search</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Unix_time">Unix time - Wikipedia</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/building-a-vanilla-javascript-window-launcher/" class="left arrow">&#8592;</a>
+		<a href="/scratchpad/fstring_test/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        <footer></footer>
+
+    </body>
+</html>

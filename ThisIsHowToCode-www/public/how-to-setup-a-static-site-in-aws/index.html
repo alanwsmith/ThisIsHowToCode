@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>How-To Setup A Static Site In AWS Using Route 53, Certificate Manager, CloudFront, and S3 &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto py-5">
+    <a href="/"><h2 class="nav-title">This Is How To Code</h2></a>	
+</div>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">How-To Setup A Static Site In AWS Using Route 53, Certificate Manager, CloudFront, and S3</h1>
+<div class="post-line"></div>
+
+		
+
+		<h3 id="steps">Steps</h3>
+<ul>
+<li>Make sure you have setup your AWS Account</li>
+<li>Go got <a href="https://aws.amazon.com">https://aws.amazon.com</a></li>
+<li>Click &ldquo;Sign In To the Console&rdquo;</li>
+<li>Search for and click on Route 53</li>
+<li>Scroll down to &ldquo;Register domain&rdquo;</li>
+<li>Put in the domain name you</li>
+</ul>
+<h3 id="before-we-begin">Before We Begin</h3>
+<ul>
+<li>
+<p>Th</p>
+</li>
+<li>
+<p>AWS Changes the design of their pages all the time. Don&rsquo;t be surprised if things look different. Look around a little and you&rsquo;ll find it.</p>
+</li>
+<li>
+<p>TKTKTK Talk about and Add link talking about why to use Route 53 for AWS services.</p>
+</li>
+<li>
+<p>Note that I&rsquo;ve alread got a couple domains setup under &ldquo;Hosted Zones&rdquo;. It&rsquo;ll look a little different for you until you do as well. (TKTKTK put in screenshot showing what it looks like without hosted zones.)</p>
+</li>
+</ul>
+<h3 id="overview">Overview</h3>
+<p>This is how to buy and setup a domain to host a static web site on Amazon&rsquo;s AWS using the S3, CloudFront, Route 53, and Certificate Manager services. The setup includes routing all traffic from the four basic domains to a single address. For example, these three domains:</p>
+<pre><code>- http://example.com/
+- https://example.com/
+- http://www.example.com/
+</code></pre>
+<p>would all redirect to:</p>
+<pre><code>https://www.example.com/ 
+</code></pre>
+<p>You&rsquo;ll need and Amazon AWS account to get started. (TKTKTK Link to AWS Signup Session)</p>
+<h3 id="purchase-your-website-name-aka-domain">Purchase Your Website name (aka) Domain</h3>
+<ul>
+<li><a href="https://console.aws.amazon.com/route53/v2/home#Dashboard">https://console.aws.amazon.com/route53/v2/home#Dashboard</a></li>
+</ul>
+<h1 id="create-the-main-s3-bucket">Create The Main S3 Bucket</h1>
+<ol>
+<li>
+<p>Make an <code>index.html</code> file on your computer. It can be as simple as:</p>
+<pre><code> Hello, World!
+</code></pre>
+</li>
+<li>
+<p>Make an S3 bucket</p>
+</li>
+</ol>
+<hr>
+<p>Original Notes</p>
+<hr>
+<h3 id="process">Process</h3>
+<ul>
+<li>
+<p>Note at the start that you&rsquo;re doing everyting with defaults. Check out the other session for more in depth details about the different options.</p>
+</li>
+<li>
+<p>Start with S3 so the file is there.</p>
+</li>
+<li>
+<p>Do Route 53 next since you&rsquo;ll need that for the cert.</p>
+</li>
+<li>
+<p>Do Cert Manager next since you&rsquo;ll need that for CloudFront.</p>
+</li>
+<li>
+<p>Back to Route 53 to setup the DNS to point the domain toward cloudfront</p>
+</li>
+<li>
+<p>Finish with CloudFront</p>
+</li>
+<li>
+<p>Note that creating the cert can take up to 30 minutes</p>
+</li>
+<li>
+<p>Note that making the CloudFront distribution can take a while</p>
+</li>
+<li>
+<p>Setup S3</p>
+<ul>
+<li>[] Create index.html file</li>
+<li>[] Create S3 bucket</li>
+<li>[] Upload the index.html file to the S3 bucket</li>
+</ul>
+</li>
+<li>
+<p>Setup CloudFront</p>
+<ul>
+<li>
+<p>[] URL: <a href="https://console.aws.amazon.com/cloudfront/home?region=us-east-1#">https://console.aws.amazon.com/cloudfront/home?region=us-east-1#</a></p>
+</li>
+<li>
+<p>[] Click &ldquo;Create Distribution&rdquo; (show what it looks like before you have one)</p>
+</li>
+<li>
+<p>[] On the &ldquo;Select a delivery method for your content&rdquo; page, click &ldquo;Get Started&rdquo; under &ldquo;Web&rdquo;</p>
+</li>
+<li>
+<p>[] On the &ldquo;Create Distribution&rdquo; Page</p>
+<ul>
+<li>Under &ldquo;Origin Domain Name&rdquo; there will be a list of S3 buckets in the dropdown. Pick the bucket you just created. It&rsquo;ll be named with your S3 bucket followed by <code>s3.amazonaws.TKTKTK</code> This is just a name to keep track of things it doesn&rsquo;t have any impact on your setup.</li>
+</ul>
+</li>
+<li>
+<p>[] Origin ID should populate automatically, but if it doesn&rsquo;t you can add <code>S3-BUCKETNAME</code></p>
+</li>
+<li>
+<p>TKTKTK Verify it&rsquo;s fine to skip &ldquo;Restrict Bucket Access&rdquo; as long as you haven&rsquo;t set the S3 bucket to public.</p>
+</li>
+<li>
+<p>TKTKTK show how to setup the Restrict Bucket Access in another video.</p>
+</li>
+<li>
+<p>Switch Viewer Protocol Policy to &ldquo;Redirect HTTP to HTTPS&rdquo;</p>
+</li>
+<li>
+<p>[] Set &ldquo;Compress Objects Automatically&rdquo; to &ldquo;Yes&rdquo;</p>
+</li>
+<li>
+<p>[] Add your domain name to &ldquo;Alternate Domain Names (CNAMES)&rdquo;. Don&rsquo;t put the `</p>
+</li>
+<li>
+<p>[] Make sure CloudFront can talk to S3</p>
+</li>
+<li>
+<p>when setting up the origin, use the domain name from S3, and not the autocomplete one.</p>
+<p>S3 one will look like this:
+thisishowtocode.com.s3-website-us-east-1.amazonaws.com</p>
+<p>Compared to the autocomplete one you shouldn&rsquo;t use that looks like this:
+thisishowtocode.com.s3.amazonaws.com</p>
+</li>
+</ul>
+<p>Note that on the non-www version, don&rsquo;t turn on the HTTP-&gt;HTTPS redirect. That just adds another step in the redirect chain.</p>
+</li>
+<li>
+<p>Route 53</p>
+<ul>
+<li><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started.html">https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started.html</a></li>
+<li>Note on using <code>www</code> vs non-www. <a href="https://www.netlify.com/blog/2017/02/28/to-www-or-not-www/">https://www.netlify.com/blog/2017/02/28/to-www-or-not-www/</a></li>
+<li>Another page on www vs. non - <a href="https://www.yes-www.org">https://www.yes-www.org</a> - <a href="https://www.yes-www.org/why-use-www/">https://www.yes-www.org/why-use-www/</a></li>
+<li>setup the <code>www</code> records as well.</li>
+</ul>
+</li>
+<li>
+<p>Certificate Manager</p>
+<ul>
+<li>
+<p>Setup:</p>
+<ul>
+<li>example.com, and</li>
+<li>*.example.com</li>
+</ul>
+</li>
+<li>
+<p>Show how to do the DNS Validation.</p>
+</li>
+<li>
+<p>Note that you can just click the button to update Route 53.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>In S3 turn on Static Web Hosting,
+flick the switch for Redirect with:</p>
+<pre><code>    www.thisishowtocode.com/
+
+(don't put `https://` at the start)
+
+Set it via the protocol
+
+    https 
+</code></pre>
+<ul>
+<li>CloudFront</li>
+</ul>
+<hr>
+<p>Note that for CloudFront you have to put in a lambda edge function to deal with serving index.html files when only a directory (e.g. <code>/blog/</code> is called)</p>
+<h3 id="plan">Plan</h3>
+<ul>
+<li>Register in Route 53</li>
+<li>Setup Cert in Certificate Manager</li>
+<li>Setup S3 Bucket</li>
+<li>Setup CloudFront</li>
+<li>Tie it All Together</li>
+<li>Add <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-configuring-dnssec.html">https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-configuring-dnssec.html</a></li>
+</ul>
+<h3 id="misc">Misc</h3>
+<p><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html">Some of the notes</a> about setting up the system for <code>www.example.com</code> and the <code>example.com</code> version without the third level domain talk about setting up two S3 buckets. Confirm that that&rsquo;s not necessary.</p>
+<h3 id="links">Links</h3>
+<p>(Get links from the other build parts, but these are some of them)</p>
+<ul>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html#redirect-endpoint-host">(Optional) Configuring a webpage redirect - Amazon Simple Storage Service</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=amazon+cloudfront+redirect+www+traffic+to+non-www&amp;ie=UTF-8&amp;oe=UTF-8">amazon cloudfront redirect www traffic to non-www - Google Search</a></li>
+<li><a href="https://stackoverflow.com/questions/22740084/amazon-s3-redirect-and-cloudfront">Amazon S3 Redirect and Cloudfront - Stack Overflow</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Choosing_between_www_and_non-www_URLs">Choosing between www and non-www URLs - HTTP | MDN</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=cloudfront+redirect&amp;ie=UTF-8&amp;oe=UTF-8">cloudfront redirect - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=cloudfront+redirect+s3+www&amp;ie=UTF-8&amp;oe=UTF-8">cloudfront redirect s3 www - Google Search</a></li>
+<li><a href="https://stackoverflow.com/questions/28675620/cloudfront-redirect-www-to-naked-domain-with-ssl/42869783#42869783">Cloudfront redirect www to naked domain with ssl - Stack Overflow</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=cloudfront+s3+policy&amp;ie=UTF-8&amp;oe=UTF-8">cloudfront s3 policy - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html">Configuring a static website using a custom domain registered with Route 53 -&hellip;</a></li>
+<li><a href="https://thisishowtocode.com/">Failed to open page</a></li>
+<li><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started.html">Getting started with Amazon Route 53 - Amazon Route 53</a></li>
+<li><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html">How internet traffic is routed to your website or web application - Amazon Route 53</a></li>
+<li><a href="https://stackoverflow.com/questions/36265027/how-to-forward-non-www-to-www-with-aws-amazon-cloud-front-behind-https-cloud-fro">How to forward non WWW to WWW with AWS Amazon Cloud front behind HTTPS cloud&hellip;</a></li>
+<li><a href="https://d15pzq9ux7jg75.cloudfront.net/">https://d15pzq9ux7jg75.cloudfront.net</a></li>
+<li><a href="https://d1gvnj3dmmvze0.cloudfront.net/">https://d1gvnj3dmmvze0.cloudfront.net</a></li>
+<li><a href="https://simonecarletti.com/blog/2016/08/redirect-domain-https-amazon-cloudfront/">Redirecting a domain with HTTPS using Amazon S3 and CloudFront — Simone Carletti</a></li>
+<li><a href="https://medium.com/@chrispointon/redirecting-non-www-to-www-website-in-aws-cloudfront-658d97764b42">Redirecting non-www to www website in AWS CloudFront | by Chris Pointon | Medium</a></li>
+<li><a href="https://www.goguardian.com/blog/engineering/redirects-in-aws-cloudfront/">Redirects in AWS CloudFront</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https-viewers-to-cloudfront.html">Requiring HTTPS for Communication Between Viewers and CloudFront - Amazon CloudFront</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html">Restricting Access to Amazon S3 Content by Using an Origin Access Identity -&hellip;</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#private-content-granting-permissions-to-oai">Restricting Access to Amazon S3 Content by Using an Origin Access Identity -&hellip;</a></li>
+<li><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/RoutingToS3Bucket.html">Routing traffic to a website that is hosted in an Amazon S3 bucket - Amazon Route 53</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html">Serving private content with signed URLs and signed cookies - Amazon CloudFront</a></li>
+<li><a href="https://www.netlify.com/blog/2017/02/28/to-www-or-not-www/">To WWW or not WWW | Netlify</a></li>
+<li><a href="https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-access-to-amazon-s3/">Use Your CloudFront Distribution to Restrict Access to an Amazon S3 Bucket</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=using+www+vs+non-www&amp;ie=UTF-8&amp;oe=UTF-8">using www vs non-www - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html">What Is AWS Certificate Manager? - AWS Certificate Manager</a></li>
+<li><a href="https://www.yes-www.org/why-use-www/">Why use www? | www. is not deprecated</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/building-the-site/part-9/" class="left arrow">&#8592;</a>
+		<a href="/building-the-site/part-10/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        <footer></footer>
+
+    </body>
+</html>

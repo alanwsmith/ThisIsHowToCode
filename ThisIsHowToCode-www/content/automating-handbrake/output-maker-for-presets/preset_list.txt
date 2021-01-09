@@ -1,0 +1,26 @@
+Very Fast 1080p30
+Fast 1080p30
+Very Fast 720p30
+Fast 720p30
+HQ 1080p30 Surround
+HQ 720p30 Surround
+Super HQ 1080p30 Surround
+Super HQ 720p30 Surround
+Discord Nitro Large 3-6 Minutes 1080p30
+Discord Nitro Medium 5-10 Minutes 720p30
+Vimeo YouTube HQ 1440p60 2.5K
+Vimeo YouTube HQ 1080p60
+Vimeo YouTube HQ 720p60
+Vimeo YouTube 720p30
+Amazon Fire 1080p30 Surround
+Apple 1080p30 Surround
+H.265 MKV 1080p30
+H.265 MKV 720p30
+H.264 MKV 1080p30
+H.264 MKV 720p30
+VP9 MKV 1080p30
+VP9 MKV 720p30
+VP8 MKV 1080p30
+VP8 MKV 720p30
+Production Max
+Production Standard

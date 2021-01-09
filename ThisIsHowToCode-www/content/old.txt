@@ -1,0 +1,30 @@
+---
+title: This Is How You Program
+---
+
+Hi there!
+
+My name is Alan and this is my new project: A free, comprehensive education in computer programming.
+
+I going to build it piece by piece. Publishing each part as I go. It's a Digital Garden approach. One that will grow and adapt as it progresses.
+
+There's nothing to see here yet. I just bought this site on Dec. 19th, 2020. I'm off for the next two weeks though and this is what I'm going to be spending my time on. So, check back soon to see how things are going.
+
+Some other things:
+
+- Everything on the site will be 100% free.
+
+- This site will not have ads. Ads may have their place, but it's not in education.
+
+- This site won't have invasive tracking. There will be some analytics, but only so I can monitor the site's performance. It'll all be anonymous.
+
+- The content will be licensed in an open source way that will let anyone use it. 
+
+- There will be no requirement to sign up. You can use the site completely anonymously and with no hassle. (There will eventually be user accounts that make it easier to track progress, but they won't be required.)
+
+- This is in no way a money making venture. I'm building this because I love programming and in a very real way I would have been lost without it. I'm standing on the shoulders of giants. It's my duty and my calling to help others up.
+
+
+If you want to reach out, I'm on Twitter and my personal site is alanwsmith.com. Feel free to stop by and say hi.
+
+-a

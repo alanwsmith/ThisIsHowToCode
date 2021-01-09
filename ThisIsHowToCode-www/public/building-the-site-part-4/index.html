@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Building The Site (Part 4) &middot; This Is How You Program</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How You Program" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">This Is How You Program</h2>
+				</a>
+				<ul>
+    
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        
+</div>
+
+		<h1 class="post-title">Building The Site (Part 4)</h1>
+<div class="post-line"></div>
+
+		
+
+		<h2 id="the-plan">The Plan</h2>
+<ul>
+<li>Finish moving in content to be served by Hugo</li>
+</ul>
+<h2 id="the-result">The Result</h2>
+<ul>
+<li>Got stuck working with sub directories. Files wouldn&rsquo;t output where expected.</li>
+<li>Did some troubleshooting by switching Hugo to actually build the site with the plain <code>hugo</code> command instead of serving it from memory with <code>hugo server</code>. This let me look in the <code>public</code> directory at the files that were actually output.</li>
+<li>Finally figured out that if there&rsquo;s a subfolder that you want content rendered it, the folder above has to contain and <code>_index.md</code> file.</li>
+<li>You can&rsquo;t have an <code>index.md</code> and an <code>_index.md</code> at the same time though</li>
+<li>In order to display content from the <code>_index.md</code> file, I added <code>layout: single</code> to it&rsquo;s YAML header.</li>
+</ul>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://gohugo.io/content-management/organization/">Content Organization | Hugo</a></li>
+<li><a href="https://github.com/devcows/hugo-universal-theme">devcows/hugo-universal-theme: Port of the Universal theme to Hugo</a></li>
+<li><a href="https://gohugo.io/getting-started/directory-structure/">Directory Structure | Hugo</a></li>
+<li><a href="https://github.com/EmielH/tale-hugo">EmielH/tale-hugo: A port of the Tale theme for Hugo. Tale is a minimal theme&hellip;</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=hugo+directory+structure&amp;ie=UTF-8&amp;oe=UTF-8">hugo directory structure - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=hugo+lower+level+pages+not+showing+up&amp;ie=UTF-8&amp;oe=UTF-8">hugo lower level pages not showing up - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=hugo+themes&amp;ie=UTF-8&amp;oe=UTF-8">hugo themes - Google Search</a></li>
+<li><a href="https://github.com/gohugoio/hugo/issues/465">Multi-level sections (tree) · Issue #465 · gohugoio/hugo</a></li>
+<li><a href="https://brettterpstra.com/projects/nvalt/">nvALT - BrettTerpstra.com</a></li>
+<li><a href="https://discourse.gohugo.io/t/some-pages-not-showing-up/8118/4">Some pages not showing up - support - HUGO</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/automating-handbrake/output-maker-for-customs/encoder-presets/" class="left arrow">&#8592;</a>
+		<a href="/building-the-site-part-3/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2020-12-26 16:05:05.450568 -0500 EST m=&#43;0.118822724">2020</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

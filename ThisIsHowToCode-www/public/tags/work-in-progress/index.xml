@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work In Progress on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/work-in-progress/</link>
+    <description>Recent content in Work In Progress on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jan 2021 22:10:54 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/work-in-progress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How-To Setup A Static Site In AWS Using Route 53, Certificate Manager, CloudFront, and S3</title>
+      <link>https://www.thisishowtocode.com/how-to-setup-a-static-site-in-aws/</link>
+      <pubDate>Fri, 01 Jan 2021 22:10:54 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/how-to-setup-a-static-site-in-aws/</guid>
+      <description>Steps  Make sure you have setup your AWS Account Go got https://aws.amazon.com Click &amp;ldquo;Sign In To the Console&amp;rdquo; Search for and click on Route 53 Scroll down to &amp;ldquo;Register domain&amp;rdquo; Put in the domain name you  Before We Begin   Th
+  AWS Changes the design of their pages all the time. Don&amp;rsquo;t be surprised if things look different. Look around a little and you&amp;rsquo;ll find it.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 6)</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-6/</guid>
+      <description>Notes Amazon changes their web console all the time. Don&amp;rsquo;t be surprised if things look different and you have to search for them a little.
+The Plan  Get the site served via CloudFront over HTTPS.  The Details   Started off by showing where we left off with an S3 bucket being served out directly via it&amp;rsquo;s &amp;ldquo;Static website hosting&amp;rdquo; option property. We turned that off since we only want traffic to be able to hit the bucket via CloudFront.</description>
+    </item>
+    
+    <item>
+      <title>Building The Site (Part 7) - Changing Nameserver from Hover to Route 53</title>
+      <link>https://www.thisishowtocode.com/building-the-site/part-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/building-the-site/part-7/</guid>
+      <description>Overview I registered the ThisIsHowYouProgram.com domain on Hover. I already had an account there and when I woke up at 3 in the morning with the idea for the site that&amp;rsquo;s where I went.
+But, I want to use Amazon&amp;rsquo;s Route 53 service to manage the domain so that everything is in the AWS ecosystem. Route 53 is designed to work with CloudFront in a way that other systems can&amp;rsquo;t (via an ALIAS record)</description>
+    </item>
+    
+  </channel>
+</rss>

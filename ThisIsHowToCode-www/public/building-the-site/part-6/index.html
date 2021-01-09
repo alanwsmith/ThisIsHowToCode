@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Building The Site (Part 6) &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto py-5">
+    <a href="/"><h2 class="nav-title">This Is How To Code</h2></a>	
+</div>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Building The Site (Part 6)</h1>
+<div class="post-line"></div>
+
+		
+
+		<h3 id="notes">Notes</h3>
+<p>Amazon changes their web console all the time. Don&rsquo;t be surprised if things look different and you have to search for them a little.</p>
+<h3 id="the-plan">The Plan</h3>
+<ul>
+<li>Get the site served via CloudFront over HTTPS.</li>
+</ul>
+<h3 id="the-details">The Details</h3>
+<ul>
+<li>
+<p>Started off by showing where we left off with an S3 bucket being served out directly via it&rsquo;s &ldquo;Static website hosting&rdquo; option property. We turned that off since we only want traffic to be able to hit the bucket via CloudFront.</p>
+</li>
+<li>
+<p>Once that was turned off, we jumped through the notes I put together to setup CloudFront. It almost worked. For some reason, the permission policy didn&rsquo;t get setup to let CloudFront to have access to the S3 bucket.</p>
+</li>
+<li>
+<p>I found the details for how to setup the necessary policy on <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#private-content-creating-oai">this page</a>. It looks like this:</p>
+<pre><code>  {
+      &quot;Version&quot;: &quot;2012-10-17&quot;,
+      &quot;Id&quot;: &quot;PolicyForCloudFrontPrivateContent&quot;,
+      &quot;Statement&quot;: [
+          {
+              &quot;Effect&quot;: &quot;Allow&quot;,
+              &quot;Principal&quot;: {
+                  &quot;AWS&quot;: &quot;arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity EH1HDMB1FH2TC&quot;
+              },
+              &quot;Action&quot;: &quot;s3:GetObject&quot;,
+              &quot;Resource&quot;: &quot;arn:aws:s3:::awsexamplebucket/*&quot;
+          }
+      ]
+  }
+</code></pre>
+</li>
+<li>
+<p>Once that was in place, everything worked like a champ.</p>
+</li>
+</ul>
+<p>This video is another example of how you have to dig into things sometimes. I must have skipped a step, or tweaked something that prevented the permission from being set. It&rsquo;s possible, it was related to something completely different. For example, there was still a policy set on the bucket to allow public access even though it was turned off in another location.</p>
+<p>Who knows?</p>
+<p>The key is that the only way through this stuff sometimes is to go down a rabbit hole.</p>
+<p>So, this one took a lot longer than expected, but if I hit the issue again, I&rsquo;ll know what to do (And you know too since you&rsquo;ve seen it 👍)</p>
+<h3 id="prep-work">Prep Work</h3>
+<ul>
+<li>
+<p>[] show existing URL:</p>
+<pre><code>  http://thisishowyouprogram.com.s3-website-us-east-1.amazonaws.com
+</code></pre>
+</li>
+<li>
+<p>[] Turn off public access for the S3 buckets (this is just because we turned it on in the last video, but we&rsquo;re going to use an S3 API instead because it follows the principal of Least Privilege  approach)</p>
+</li>
+</ul>
+<h3 id="actual-work">Actual Work</h3>
+<p>NOTE: Make the cert before you do the CloudFront distritbution because you can&rsquo;t get to it otherwise without refreshing.</p>
+<p>NOTE: Could not update S3 permissions.</p>
+<ul>
+<li>
+<p>[] Create a new distribution in CloudFront - using Web distribution</p>
+<ul>
+<li>
+<p>[] Set Origin Domain Name to the S3 bucket name.</p>
+</li>
+<li>
+<p>[] Check &ldquo;Yes&rdquo; for &ldquo;Restrict Bucket Access&rdquo;</p>
+</li>
+<li>
+<p>[] Set &ldquo;Origin Access Identity&rdquo; to &ldquo;Create A New Identity&rdquo;</p>
+</li>
+<li>
+<p>[] Add Comment under &ldquo;Origin Access Identity&rdquo; with:</p>
+<pre><code>  cloudfront-thisishowyouprogram
+</code></pre>
+</li>
+<li>
+<p>[] Set &ldquo;Grant Read Permissions on Bucket&rdquo; to &ldquo;Yes, Update Bucket Policy&rdquo;</p>
+</li>
+<li>
+<p>[] Tick the box for &ldquo;Redirect HTTP to HTTPS&rdquo;</p>
+</li>
+<li>
+<p>[] Under Distribution Settings -&gt; Alternate Domain Names (CNAME), enter:</p>
+<pre><code>  thisishowyouprogram.com
+</code></pre>
+</li>
+<li>
+<p>[] Choose custom SSL cert (which is required if you&rsquo;re using a custom domain name)</p>
+</li>
+<li>
+<p>[] Click Request or Import a Cert (see about walking through that) Make sure the CNAME matches.</p>
+</li>
+<li>
+<p>[] Set the default root document to:</p>
+<pre><code>  index.html
+</code></pre>
+</li>
+<li>
+<p>[] Click Create Distribution</p>
+</li>
+<li>
+<p>After some time, the distribution should be up and I think it provides a DNS name that we can point to.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="when-things-went-wrong-and-it-failed-to-update-the-s3-bucket-policy">When things went wrong and it failed to update the S3 bucket Policy</h3>
+<p>Found the OAI user ID on:</p>
+<pre><code>https://console.aws.amazon.com/cloudfront/home?region=us-east-1#oai:
+</code></pre>
+<p>TODO Check with AWS folks about 38 min in showing IDs for OAI</p>
+<h3 id="links">Links</h3>
+<ul>
+<li>TKTKTKT - Video on CDNs - CloudFront, Akamai, etc&hellip;</li>
+<li><a href="https://aws.amazon.com/certificate-manager/">AWS Certificate Manager - Amazon Web Services (AWS)</a></li>
+<li><a href="https://aws.amazon.com/certificate-manager/features/">AWS Certificate Manager features - Amazon Web Services (AWS)</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=aws+s3+cloudfront+allow&amp;ie=UTF-8&amp;oe=UTF-8">aws s3 cloudfront allow - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=cloudfront&amp;ie=UTF-8&amp;oe=UTF-8">cloudfront - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html">Configuring a static website using a custom domain registered with Route 53 -&hellip;</a></li>
+<li><a href="https://aws.amazon.com/cloudfront/getting-started/S3/">Content Delivery Network Tutorials | CDN, Setting up Amazon S3 Distribution|&hellip;</a></li>
+<li><a href="https://www.youtube.com/watch?v=lB4DTqMEumY">Deploy static website to AWS with HTTPS - S3, Route 53, CloudFront,&hellip;</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.SimpleDistribution.html">Getting started with a simple CloudFront distribution - Amazon CloudFront</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=gettings+an+amazon+ssl+cert&amp;ie=UTF-8&amp;oe=UTF-8">gettings an amazon ssl cert - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html">Hosting a static website using Amazon S3 - Amazon Simple Storage Service</a></li>
+<li><a href="https://www.youtube.com/watch?v=DiIaoIcoKNY">How do I use Amazon CloudFront to serve a static website hosted on Amazon S3? - YouTube</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html">Restricting Access to Amazon S3 Content by Using an Origin Access Identity -&hellip;</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#private-content-creating-oai">Restricting Access to Amazon S3 Content by Using an Origin Access Identity -&hellip;</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/ServingCompressedFiles.html">Serving compressed files - Amazon CloudFront</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/setting-up-cloudfront.html">Setting up Amazon CloudFront - Amazon CloudFront</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=setup+aws+cloudfront&amp;ie=UTF-8&amp;oe=UTF-8">setup aws cloudfront - Google Search</a></li>
+<li><a href="https://www.google.com/search?client=safari&amp;rls=en&amp;q=setup+cloudfront&amp;ie=UTF-8&amp;oe=UTF-8">setup cloudfront - Google Search</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-cloudfront-walkthrough.html">Speeding up your website with Amazon CloudFront - Amazon Simple Storage Service</a></li>
+<li><a href="https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/">Use CloudFront to serve a static website hosted on Amazon S3</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/building-the-site/part-7/" class="left arrow">&#8592;</a>
+		<a href="/building-the-site/part-5/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        <footer></footer>
+
+    </body>
+</html>
