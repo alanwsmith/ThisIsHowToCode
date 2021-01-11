@@ -153,3 +153,11 @@ Checklist
 
 
 thje quick bornw  ofox jumps over the layz dog. 
+
+
+### Top 2
+
+- Camera is above the monitor. Way back. 
+- Camera is cropped in to just the bottom of the keyboard. 
+- Monitor is skewed way out of the way. Faked where I was looking for the examples. 
+
