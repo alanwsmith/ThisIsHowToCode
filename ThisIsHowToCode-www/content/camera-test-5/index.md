@@ -152,12 +152,159 @@ Checklist
 - [x] Lean back stretch arms 
 
 
-thje quick bornw  ofox jumps over the layz dog. 
-
 
 ### Top 2
 
-- Camera is above the monitor. Way back. 
+
+- Camera (90D) is above the monitor. Way back. 
 - Camera is cropped in to just the bottom of the keyboard. 
 - Monitor is skewed way out of the way. Faked where I was looking for the examples. 
+
+Checklist 
+
+
+- [x] Take a photo of the camera position 
+- [x] Type some code looking at the monitor 
+- [x] Talk the the camera some
+- [x] Lean in and look
+- [x] Lean back stretch arms 
+
+
+### Top 3
+
+- Camera (90D) is above the monitor. Way back. 
+- Camera is elevated a little above the top of the monitor 
+
+Checklist 
+
+
+- [x] Take a photo of the camera position 
+- [x] Type some code looking at the monitor 
+- [x] Talk the the camera some
+- [x] Lean in and look
+- [x] Lean back stretch arms 
+
+
+
+
+
+
+
+
+### Top 4 (ID: 14)
+
+- Camera changed to 5D mk III for full frame
+- Lens front just above the edge of the desk with th 16-35mm
+- Showing a little bit in front of the keyboard 
+- monitor is behind the desk about an inche
+- bottom of the monitor is basically in line with the top of the desk 
+
+Checklist 
+
+
+- [x] Take a photo of the camera position 
+- [x] Type some code looking at the monitor 
+- [x] Talk the the camera some
+- [x] Lean in and look
+- [x] Lean back stretch arms 
+
+
+
+
+
+### Top 5 (ID: 15)
+
+- Back to th 90D
+- Camera is as up against the sound pannel that hangs on the wall. 
+- bottom of the front lens element is just above eye level when sitting naturally
+- Setup the key light to be just above the camera. (might be worth playing with the ring light)
+
+Checklist 
+
+
+- [x] Take a photo of the camera position 
+- [x] Type some code looking at the monitor 
+- [x] Talk the the camera some
+- [x] Lean in and look
+- [x] Lean back stretch arms 
+
+
+
+### Top 6 (ID: 16)
+
+- Light Check 
+- Canon 90D against sound panel/wall
+- Ring light around the lens
+- Hair light directly overhead 
+- Check photo for lighting Setup
+- Faked as if monitor was below the camera
+
+Checklist 
+
+- [x] Take a photo of the camera position 
+- [x] Type some code looking at the monitor 
+- [x] Talk the the camera some
+- [x] Lean in and look
+- [x] Lean back stretch arms
+
+
+### Top 7 (ID: 17)
+
+- Same as Top 6, but:
+- Faked as if monitor was above the camera
+- Leaning in was definitely not so good with how much I had to crane my neck
+
+Checklist 
+
+- [x] Take a photo of the camera position 
+- [x] Type some code looking at the monitor 
+- [x] Talk the the camera some
+- [x] Lean in and look
+- [x] Lean back stretch arms
+
+
+### Top 8 (ID: 18)
+
+- No ringlight
+- Raised the camera a little 
+
+
+Checklist 
+
+- [x] Take a photo of the camera position 
+- [x] Type some code looking at the monitor 
+- [x] Talk the the camera some
+- [x] Lean in and look
+- [x] Lean back stretch arms
+
+
+### Top 9 (ID: 19)
+
+- Camera down a little. Trying to mimic the angle of Top 1, but farther back against the wall. It's maybe a couple degrees higher
+- Faking looking at the monitor 
+
+
+- [x] Take a photo of the camera position 
+- [x] Type some code looking at the monitor 
+- [x] Talk the the camera some
+- [x] Lean in and look
+- [x] Lean back stretch arms
+
+
+
+
+### Top 10 (ID: 20)
+
+- Monitor mounted on arm under camera against the wall. 
+- Test run with Canon 90D going through Elgato 4K60 Pro Mk II. 
+- Shure SM58 on boom arm through zoom H5. 
+- Details in the video. 
+
+
+- [x] Take a photo of the camera position 
+- [x] Type some code looking at the monitor 
+- [x] Talk the the camera some
+- [x] Lean in and look
+- [x] Lean back stretch arms
+
 
