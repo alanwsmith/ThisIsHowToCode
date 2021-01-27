@@ -187,10 +187,6 @@ Checklist
 
 
 
-
-
-
-
 ### Top 4 (ID: 14)
 
 - Camera changed to 5D mk III for full frame
@@ -308,3 +304,21 @@ Checklist
 - [x] Lean back stretch arms
 
 
+### Top 11 (ID: 21)
+
+TKTKTKT
+
+
+### Bottom 5 (ID: 22)
+
+- This is with the camera against he wall at the same position that you have for top 11 (ID: 21). 
+- Monitor isn't actuall above the camera, just faking it. 
+- Test run with Canon 90D going through Elgato 4K60 Pro Mk II. 
+- Shure SM58 on boom arm through zoom H5. 
+
+
+- [] Take a photo of the camera position 
+- [] Type some code looking at the monitor 
+- [] Talk the the camera some
+- [] Lean in and look
+- [] Lean back stretch arms

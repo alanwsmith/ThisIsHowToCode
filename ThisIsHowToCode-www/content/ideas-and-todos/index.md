@@ -3,16 +3,37 @@ title: "Ideas and TODOs"
 ---
 
 
-- Examples:
 
-    - Cash register: 
+## Vidoes
 
-        Making change with things like N number of quarters, dimes, and nickels. 
+- Intro
+- Strings: use actual string with those things that kids can put on things.
+- Arrays: Use a tube and put letters in there. 
+    - use the number blocks that start with zero so you can talk about how many spots to move
+
+- Integers vs Floats
+
+    toast, where you have a toaster that only does full pieces of toast vs toaster over than can do parts - then photoshop one that can do huge numbers
+
+- intro to git
 
 
 
+### Projects
+
+- Chore tracker with count of money
+- Names of dolls, what their favorite animal is, and what their favorite color is
+- class schedule that lets you know how much time you have to talk with your friends based on how far apart the classes are. have to put in what classes you have in each room. Maybe assign classes randomly. Could expand this to figure out where friends can meet in the middle.
+- scoring alert monitor for sports
+- stats keeper for different sports
+- days until kickoff
+
+- do something with The Movie Database. making a list of movies you've seen and ones you want to see
+
+- And image examiner that picks out color patterns from it to make color combos
 
 
+- Maked a set of videos for folks that don't have computers handy. Things they can watch while they are on the bus. Make it a "No computer reuiqred" path
 
 - Make the Git repo
 
@@ -184,4 +205,45 @@ Ideas/TODOs
 - Look at: https://www.freepianomethod.com
 
 - Do things like Fantasy Football 
+
+
+- Examples:
+
+    - Cash register: 
+
+        Making change with things like N number of quarters, dimes, and nickels. 
+
+
+- Think about the idea of documentation from [here](https://documentation.divio.com/) with things split to: Tutorials, How-Tos, Refernece, and Explination. That's inline with the path you were on, with the additons of live coding, and reviews.
+
+- Do reviews of different videos and texts
+
+- show how to do different types of loops in each of the languages
+
+- look at: https://www.renpy.org/
+
+- implement games (e.g. tic tac toe, clue, monoply)
+
+- look into this: https://www.gmail.com/postmaster/
+
+- do an intro duction to git where you use postit notes for commit messages attached to pieces of paper so you can see what's up. Look at min 22 of the first builing the site video for the first time you talked about it
+
+
+- do the game that eric shows where it's a guessing game that pics a randome number then lets you lguess and tells you if you're high or low until you get it. 
+
+- build a web scrapper
+
+- setup dialy prompts. 
+
+- Show how to make issues and PRs in github
+
+- Linked lists - metaphore of sticky notes leading from one to the next. Or, like a scavenger hunt, but with really clear directions to the next thing. 
+
+- Process to automatically post Twitch Vidoes to YouTube?
+
+- Automatic vidoe deployer after you export form DaVinci or Premiere
+
+- setup nextcloud
+
+- Make aws MFA credentials better
 

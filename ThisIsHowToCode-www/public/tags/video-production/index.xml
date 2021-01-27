@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video Production on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/video-production/</link>
+    <description>Recent content in Video Production on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Jan 2021 20:56:40 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/video-production/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Video Production Process (V1) With DaVinci Resolve 17</title>
+      <link>https://www.thisishowtocode.com/video-production-process-v1-with-davinci-resolve/</link>
+      <pubDate>Sat, 09 Jan 2021 20:56:40 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/video-production-process-v1-with-davinci-resolve/</guid>
+      <description>This is the process I go through to assemble a video
+(TKTKTK This page is a work in progress)
+  Rename Media If Necessary
+ If you&amp;rsquo;re importing from a bunch of clips from multiple sources, rename the clips with leading &amp;ldquo;01-&amp;rdquo;, &amp;ldquo;02-&amp;rdquo;, etc&amp;hellip; to pair them up and keep them together       Start up DaVinci Resolve
+  Create and name a new project</description>
+    </item>
+    
+  </channel>
+</rss>

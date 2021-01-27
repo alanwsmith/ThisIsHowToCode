@@ -3,6 +3,114 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.thisishowtocode.com/live-coding/</loc>
+    <lastmod>2021-01-16T21:40:24-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-3/</loc>
+    <lastmod>2021-01-16T21:40:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/</loc>
+    <lastmod>2021-01-16T21:40:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/how-to/</loc>
+    <lastmod>2021-01-14T20:54:52-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/how-to/create-a-symbolic-link-in-windows-10/</loc>
+    <lastmod>2021-01-14T20:54:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/tags/needs-video/</loc>
+    <lastmod>2021-01-14T20:54:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/tags/</loc>
+    <lastmod>2021-01-14T20:54:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/tags/windows-10/</loc>
+    <lastmod>2021-01-14T20:54:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/reviews/</loc>
+    <lastmod>2021-01-14T17:49:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/tags/reviews/</loc>
+    <lastmod>2021-01-14T17:49:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/reviews/what-nobody-tells-you-about-documentation/</loc>
+    <lastmod>2021-01-14T17:49:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/tags/automation/</loc>
+    <lastmod>2021-01-14T17:24:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/tags/davinci-resolve/</loc>
+    <lastmod>2021-01-14T17:24:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/tags/python/</loc>
+    <lastmod>2021-01-14T17:24:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/</loc>
+    <lastmod>2021-01-14T17:24:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/setting-up-windows/</loc>
+    <lastmod>2021-01-13T21:27:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/video-production-process-v1-with-davinci-resolve/</loc>
+    <lastmod>2021-01-09T20:56:40-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/tags/video-production/</loc>
+    <lastmod>2021-01-09T20:56:40-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/set_datetime_for_files/</loc>
+    <lastmod>2021-01-09T19:57:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/camera-test-5/</loc>
+    <lastmod>2021-01-09T14:23:39-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/making-a-git-repot-and-choosing-a-license-part-2/</loc>
+    <lastmod>2021-01-08T23:06:54-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.thisishowtocode.com/camera-test-4/</loc>
     <lastmod>2021-01-08T20:20:08-05:00</lastmod>
   </url>
@@ -25,11 +133,6 @@
   
   <url>
     <loc>https://www.thisishowtocode.com/blog/elgato-cam-link-is-a-no-go/</loc>
-    <lastmod>2021-01-07T20:22:10-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.thisishowtocode.com/</loc>
     <lastmod>2021-01-07T20:22:10-05:00</lastmod>
   </url>
   
@@ -110,11 +213,6 @@
   
   <url>
     <loc>https://www.thisishowtocode.com/how-to-setup-a-static-site-in-aws/</loc>
-    <lastmod>2021-01-01T22:10:54-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.thisishowtocode.com/tags/</loc>
     <lastmod>2021-01-01T22:10:54-05:00</lastmod>
   </url>
   
@@ -209,6 +307,10 @@
   
   <url>
     <loc>https://www.thisishowtocode.com/ideas-and-todos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.thisishowtocode.com/introduction/</loc>
   </url>
   
   <url>

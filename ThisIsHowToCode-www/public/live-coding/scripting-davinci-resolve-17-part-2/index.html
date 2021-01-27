@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Scripting DaVinci Resolve 17 (Part 2) &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+	
+
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto mt-6 py-2 bg-gray-100 px-2">
+</div>
+
+        
+
+<main>
+
+	
+    <div class="container max-w-screen-lg mx-auto py-5">
+
+		<h1>Work-In-Progress</h1>
+
+		<h3>This post is a work in progress. It doesn't have formatting and is probable incomplete. I'm posting it in it's current state in the spirit of learning in public.</h3>
+		<hr><br><hr>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h3 class="post-title">Scripting DaVinci Resolve 17 (Part 2)</h3>
+<div class="post-line"></div>
+
+		
+
+		<h2 id="overview">Overview</h2>
+<p>Took two hours to figure out how to get a script to run. Now I can acutally try to do something with them.</p>
+<p>This is a lot of me looking at other code and documentation to try to figure out how to do what I&rsquo;m after. There&rsquo;s very little online about this. Depending on what I find, it has me thinking about Adobe scripting. Setting a greenscreen was much easier on DaVinci, but if I only have to define it once in Adobe and can script it. That would be worth looking at.</p>
+<h3 id="notes">Notes:</h3>
+<ul>
+<li>
+<p>Script file location:</p>
+<p>C:\Users\alan\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility\davinci_resolve_17_script_test_1.py</p>
+</li>
+<li>
+<p>Doc folder:</p>
+<p>C:\ProgramData\Blackmagic Design\DaVinci Resolve\Support\Developer\Scripting</p>
+</li>
+<li>
+<p>via: This Page: <a href="https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=103007">https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=103007</a> there&rsquo;s a <code>GetHelp()</code> command you can run. e.g.</p>
+<pre><code>  resolve = app.GetResolve()
+  print(resolve.GetHelp())
+</code></pre>
+<p>And then for the classes:</p>
+<pre><code>  resolve = app.GetResolve()
+  print(resolve.GetHelp('Loader'))
+</code></pre>
+<p>That script outputs the lists of classes.</p>
+<p>(TKTKTK link to file that has teh output list of all the classes that&rsquo;s in the same folder as this file)</p>
+</li>
+<li>
+<p>This is a notes from the TKTKTKT-PATH Documentation:</p>
+<p>Getting values:</p>
+<p>Invoke &ldquo;Project:GetSetting&rdquo;, &ldquo;Timeline:GetSetting&rdquo; or &ldquo;MediaPoolItem:GetClipProperty&rdquo; with the appropriate property key.</p>
+<p>To get a snapshot of all queryable properties (keys and values), you can call &ldquo;Project:GetSetting&rdquo;, &ldquo;Timeline:GetSetting&rdquo; or &ldquo;MediaPoolItem:GetClipProperty&rdquo; without parameters (or with a NoneType or a blank property key).</p>
+<p>Using specific keys to query individual properties will be faster. Note that getting a property using an invalid key will return a trivial result.</p>
+</li>
+</ul>
+<h3 id="links">Links</h3>
+<ul>
+<li><a href="https://gist.github.com/X-Raym/2f2bf453fc481b9cca624d7ca0e19de8">https://gist.github.com/X-Raym/2f2bf453fc481b9cca624d7ca0e19de8</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=102648">https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=102648</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=53385">https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=53385</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=22&amp;t=42488">https://forum.blackmagicdesign.com/viewtopic.php?f=22&amp;t=42488</a></li>
+<li><a href="https://documents.blackmagicdesign.com/UserManuals/Fusion8_Scripting_Guide.pdf">https://documents.blackmagicdesign.com/UserManuals/Fusion8_Scripting_Guide.pdf</a></li>
+</ul>
+
+
+		
+	</div>
+
+
+	
+	</div>
+</main>
+
+
+        <footer>
+    <div class="container max-w-screen-lg mx-auto py-5">
+    <p>    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ThisIsHowToCode.com</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.alanwsmith.com/" property="cc:attributionName" rel="cc:attributionURL">Alan W. Smith</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://www.thisishowtocode.com/" rel="dct:source">https://www.thisishowtocode.com/</a>.
+</p>
+<p>
+    <a href="/privacy/">privacy policy</a></p>
+</div>
+</footer>
+
+    </body>
+</html>

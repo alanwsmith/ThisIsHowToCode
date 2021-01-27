@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/python/</link>
+    <description>Recent content in Python on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Jan 2021 17:24:08 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scripting DaVinci Resolve 17 (Part 2)</title>
+      <link>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/</link>
+      <pubDate>Thu, 14 Jan 2021 17:24:08 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/</guid>
+      <description>Overview Took two hours to figure out how to get a script to run. Now I can acutally try to do something with them.
+This is a lot of me looking at other code and documentation to try to figure out how to do what I&amp;rsquo;m after. There&amp;rsquo;s very little online about this. Depending on what I find, it has me thinking about Adobe scripting. Setting a greenscreen was much easier on DaVinci, but if I only have to define it once in Adobe and can script it.</description>
+    </item>
+    
+  </channel>
+</rss>

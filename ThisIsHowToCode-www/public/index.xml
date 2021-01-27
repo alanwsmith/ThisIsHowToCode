@@ -6,7 +6,115 @@
     <description>Recent content on This Is How To Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Jan 2021 20:22:10 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jan 2021 21:40:24 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scripting DaVinci Resolve 17 - Part 3</title>
+      <link>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-3/</link>
+      <pubDate>Sat, 16 Jan 2021 21:40:24 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-3/</guid>
+      <description>(Note: I&amp;rsquo;m using a new keyboard in this one, so there, a bunch of me banging around)
+Picking up where we left off in part 2, trying to see what we can do with the automation.
+  made a help_text.py file that dumps out the output stuff. need to compare it to the read me to see if there&amp;rsquo;s more stuff in it.
+  it doesn&amp;rsquo;t look like there&amp;rsquo;s a way to add tracks via a script.</description>
+    </item>
+    
+    <item>
+      <title>How-To Create A Symbolic Link In Windows 10</title>
+      <link>https://www.thisishowtocode.com/how-to/create-a-symbolic-link-in-windows-10/</link>
+      <pubDate>Thu, 14 Jan 2021 20:54:52 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/how-to/create-a-symbolic-link-in-windows-10/</guid>
+      <description>To create a symbolic link:
+  Run Command Prompt as an Administrator
+ (This won&#39;t work with PowerShell)   To link a file:
+ mklink PATH_TO_MAKE SOURCE_PATH   And for a directory:
+ mklink /D PATH_TO_MAKE SOURCE_PATH   Notes   See if there&amp;rsquo;s a way to do this with PowerShell
+  Add hard links
+ # file:mklink /H PATH_TO_MAKE SOURCE_PATH# directory:mklink /J PATH_TO_MAKE SOURCE_PATH   </description>
+    </item>
+    
+    <item>
+      <title>What Nobody Tells You About Documentation Review</title>
+      <link>https://www.thisishowtocode.com/reviews/what-nobody-tells-you-about-documentation/</link>
+      <pubDate>Thu, 14 Jan 2021 17:49:00 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/reviews/what-nobody-tells-you-about-documentation/</guid>
+      <description>From the video:
+  Documentation isn&amp;rsquo;t just one thing. It&amp;rsquo;s four:
+ Tutorials How-To Guides Discussions Reference    Documentation needs to be expliciltly structured around one of the four categories
+  Folks need each type at different times
+  They need to be kept distinct
+  Tutorials:
+ Learning oriented Detailed walk-thrus to complete a project Targted at beginners Show them how to acheive something meaningful Hardest part to create and maintain    Tutorials - What Matters:</description>
+    </item>
+    
+    <item>
+      <title>Scripting DaVinci Resolve 17 (Part 2)</title>
+      <link>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/</link>
+      <pubDate>Thu, 14 Jan 2021 17:24:08 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/</guid>
+      <description>Overview Took two hours to figure out how to get a script to run. Now I can acutally try to do something with them.
+This is a lot of me looking at other code and documentation to try to figure out how to do what I&amp;rsquo;m after. There&amp;rsquo;s very little online about this. Depending on what I find, it has me thinking about Adobe scripting. Setting a greenscreen was much easier on DaVinci, but if I only have to define it once in Adobe and can script it.</description>
+    </item>
+    
+    <item>
+      <title>Converting To Windows</title>
+      <link>https://www.thisishowtocode.com/setting-up-windows/</link>
+      <pubDate>Wed, 13 Jan 2021 21:27:13 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/setting-up-windows/</guid>
+      <description>This is where I setup a windows machine.
+Kinda tedious. Probably skip it if I were you.
+This one is just installing stuff. I wouldn&amp;rsquo;t be offended if you just skipped it.
+ Installed VS Code Installed the command line version of Git Cloned down the git repo for ThisIsHowToCode And installed Hugo in a special bonus  </description>
+    </item>
+    
+    <item>
+      <title>My Video Production Process (V1) With DaVinci Resolve 17</title>
+      <link>https://www.thisishowtocode.com/video-production-process-v1-with-davinci-resolve/</link>
+      <pubDate>Sat, 09 Jan 2021 20:56:40 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/video-production-process-v1-with-davinci-resolve/</guid>
+      <description>This is the process I go through to assemble a video
+(TKTKTK This page is a work in progress)
+  Rename Media If Necessary
+ If you&amp;rsquo;re importing from a bunch of clips from multiple sources, rename the clips with leading &amp;ldquo;01-&amp;rdquo;, &amp;ldquo;02-&amp;rdquo;, etc&amp;hellip; to pair them up and keep them together       Start up DaVinci Resolve
+  Create and name a new project</description>
+    </item>
+    
+    <item>
+      <title>Setting The Date And Time Of The Posts</title>
+      <link>https://www.thisishowtocode.com/set_datetime_for_files/</link>
+      <pubDate>Sat, 09 Jan 2021 19:57:52 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/set_datetime_for_files/</guid>
+      <description>I decided when I first started the site that I didn&amp;rsquo;t want dates and times to show up. I&amp;rsquo;ll note when stuff is time sensative and keep things up to date, but dates themselves are a distraction. (I feel the same way about my blog which is why I only do the month and year for them)
+Anyway, I figure out that I can use epoch timestamps for the dates. I&amp;rsquo;m not trying to hide the dates, just obfuscate them and that does a great job.</description>
+    </item>
+    
+    <item>
+      <title>Camera Test 5</title>
+      <link>https://www.thisishowtocode.com/camera-test-5/</link>
+      <pubDate>Sat, 09 Jan 2021 14:23:39 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/camera-test-5/</guid>
+      <description>Overview  Installed the 2700K LED bulbs. Much easier on the eyes Bulbs are about 1/2 stop brighter This one is all about checking different camera positions Monitor is at the same height for each camera test (TKTKTK Confirm this is the case when you&amp;rsquo;re done with the test) Might end up cutting off some of the background for the left and right sides views since the green screen doesn&amp;rsquo;t wrap the entire room VS Code  Editor - Font Size: 15 Editor - Line Height: 19 Window - Zoom Level: 3    Color Balance Prep   Lights say they are 2700K</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Git And Choosing A License (Part 2)</title>
+      <link>https://www.thisishowtocode.com/making-a-git-repot-and-choosing-a-license-part-2/</link>
+      <pubDate>Fri, 08 Jan 2021 23:06:54 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/making-a-git-repot-and-choosing-a-license-part-2/</guid>
+      <description>Overview   I&amp;rsquo;ve decided on a new name:
+ ThisIsHowToCode.com   Creating a new repo
+  Choosing a non-commercial license
+  Links  alanwsmith/ThisIsHowToCode: The GitHub Repo For ThisIsHowToCode.com Choose a License Choose an open source license | Choose a License Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International —&amp;hellip; Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International —&amp;hellip; Licensing a repository - GitHub Docs  </description>
+    </item>
+    
     <item>
       <title>Camera Test 4</title>
       <link>https://www.thisishowtocode.com/camera-test-4/</link>
@@ -306,7 +414,7 @@ But, I want to use Amazon&amp;rsquo;s Route 53 service to manage the domain so t
       
       <guid>https://www.thisishowtocode.com/building-the-site/part-8/</guid>
       <description>Overview   I decided to change the name of the project from:
- This Is How You Program  To:
+ This Is How You Program To:
  This Is How You Code    This is me registering the website domain name
   Details Up to this point, I&amp;rsquo;ve been calling this project. This Is How You Program. Recording on of the episodes, I said &amp;ldquo;This Is How You Code&amp;rdquo; and immediately realized that&amp;rsquo;s a better name.</description>
     </item>
@@ -338,15 +446,24 @@ Solution The solution I ended up with was to combine the ls and awk commands. Th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.thisishowtocode.com/ideas-and-todos/</guid>
-      <description>Examples:
-  Cash register:
-Making change with things like N number of quarters, dimes, and nickels.
-    Make the Git repo
+      <description>Maked a set of videos for folks that don&amp;rsquo;t have computers handy. Things they can watch while they are on the bus. Make it a &amp;ldquo;No computer reuiqred&amp;rdquo; path
+  Make the Git repo
   Use this license: https://creativecommons.org/licenses/by-nc-sa/4.0/
   Do code reading where you look at other folks code in github and analyse it to see what&amp;rsquo;s up with it.
-  Setup a newsletter
-  Figure out what all this mean:
- function sleep(ms) { return new Promise(resolve =&amp;gt; setTimeout(resolve, ms)); }    Figure out how async functions work in JavaScript</description>
+  Setup a newsletter</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://www.thisishowtocode.com/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/introduction/</guid>
+      <description>This is what I&amp;rsquo;m looking at for the introduction video:
+TODO: Make different versions of this with different analogys, like using legos, then cooking stuff, then&amp;hellip; sports stuff?
+DRAFT:
+Hey, folks.
+My name is Alan. For the last 25 years, I&amp;rsquo;ve used what I&amp;rsquo;ve learned from other folks to build a successful coding career that&amp;rsquo;s been better than most people can dream of. Now, it&amp;rsquo;s time for me to give back.</description>
     </item>
     
     <item>

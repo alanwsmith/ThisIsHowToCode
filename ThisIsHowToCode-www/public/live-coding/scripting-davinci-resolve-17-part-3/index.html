@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Scripting DaVinci Resolve 17 - Part 3 &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+	
+
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto mt-6 py-2 bg-gray-100 px-2">
+</div>
+
+        
+
+<main>
+
+	
+    <div class="container max-w-screen-lg mx-auto py-5">
+
+		<h1>Work-In-Progress</h1>
+
+		<h3>This post is a work in progress. It doesn't have formatting and is probable incomplete. I'm posting it in it's current state in the spirit of learning in public.</h3>
+		<hr><br><hr>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h3 class="post-title">Scripting DaVinci Resolve 17 - Part 3</h3>
+<div class="post-line"></div>
+
+		
+
+		<p>(Note: I&rsquo;m using a new keyboard in this one, so there, a bunch of me banging around)</p>
+<p>Picking up where we left off in part 2, trying to see what we can do with the automation.</p>
+<ul>
+<li>
+<p>made a help_text.py file that dumps out the output stuff. need to compare it to the read me to see if there&rsquo;s more stuff in it.</p>
+</li>
+<li>
+<p>it doesn&rsquo;t look like there&rsquo;s a way to add tracks via a script.</p>
+</li>
+<li>
+<p>at the end of the sesison, I stumbled onto something called &ldquo;EDL&rdquo; turns out that&rsquo;s for Edit Decision List. Going to look into those to see if that will work.</p>
+</li>
+</ul>
+<h3 id="links">Links</h3>
+<ul>
+<li><a href="http://timlehr.com/python-scripting-in-davinci-resolve/">http://timlehr.com/python-scripting-in-davinci-resolve/</a></li>
+<li><a href="https://documents.blackmagicdesign.com/UserManuals/Fusion8_Scripting_Guide.pdf">https://documents.blackmagicdesign.com/UserManuals/Fusion8_Scripting_Guide.pdf</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=100770">https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=100770</a></li>
+<li><a href="https://diop.github.io/davinci-resolve-api/#/?id=timeline">https://diop.github.io/davinci-resolve-api/#/?id=timeline</a></li>
+<li><a href="https://deric.github.io/DaVinciResolve-API-Docs/">https://deric.github.io/DaVinciResolve-API-Docs/</a></li>
+<li><a href="https://www.steakunderwater.com/wesuckless/viewtopic.php?t=3116">https://www.steakunderwater.com/wesuckless/viewtopic.php?t=3116</a></li>
+<li><a href="https://gist.github.com/X-Raym/2f2bf453fc481b9cca624d7ca0e19de8">https://gist.github.com/X-Raym/2f2bf453fc481b9cca624d7ca0e19de8</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=94911">https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=94911</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=113040">https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=113040</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=12&amp;t=82788">https://forum.blackmagicdesign.com/viewtopic.php?f=12&amp;t=82788</a></li>
+<li><a href="https://www.steakunderwater.com/wesuckless/viewtopic.php?f=35&amp;t=2012&amp;sid=f37e5dd965a51a8e183af818f92f5126">https://www.steakunderwater.com/wesuckless/viewtopic.php?f=35&amp;t=2012&amp;sid=f37e5dd965a51a8e183af818f92f5126</a></li>
+<li><a href="https://www.w3schools.com/python/ref_string_strip.asp">https://www.w3schools.com/python/ref_string_strip.asp</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=42299">https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=42299</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=32&amp;t=95917">https://forum.blackmagicdesign.com/viewtopic.php?f=32&amp;t=95917</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=33&amp;t=96309">https://forum.blackmagicdesign.com/viewtopic.php?f=33&amp;t=96309</a></li>
+<li><a href="https://blog.frame.io/2019/03/29/conforming-with-resolve/">https://blog.frame.io/2019/03/29/conforming-with-resolve/</a></li>
+<li><a href="https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=117270">https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=117270</a></li>
+<li><a href="https://documents.blackmagicdesign.com/UserManuals/Fusion8_Scripting_Guide.pdf">https://documents.blackmagicdesign.com/UserManuals/Fusion8_Scripting_Guide.pdf</a></li>
+<li></li>
+</ul>
+<hr>
+<p>Found this:</p>
+<p>Timeline
+AddTrack(trackType, audioTrackType)             &ndash;&gt; Bool               # Adds a track of the given type (&ldquo;audio&rdquo;, &ldquo;video&rdquo; or &ldquo;subtitle&rdquo;) to the timeline. The audioTrackType is only needed for audio tracks and is one of &ldquo;mono&rdquo;, &ldquo;stereo&rdquo;, &ldquo;5.1film&rdquo;, &ldquo;7.1film&rdquo;, or &ldquo;adaptive&rdquo;.
+DeleteTrack(trackType, index)                   &ndash;&gt; Bool               # Deletes a track of the given type at the specified index (int). 1 &lt;= index &lt;= GetTrackCount(trackType)
+SetTrackEnable(trackType, index, enable)        &ndash;&gt; Bool               # Enables or disables the given track. The enable parameter is a boolean value.
+GetIsTrackEnabled(trackType, index)             &ndash;&gt; Bool               # Returns whether a track is enabled or not.
+SetTrackLock(trackType, index, lock)            &ndash;&gt; Bool               # Locks or unlocks the given track. The lock parameter is a boolean value.
+GetIsTrackLocked(trackType, index)              &ndash;&gt; Bool               # Returns whether a track is locked or not.
+SetClipsLinked([items], link)                   &ndash;&gt; Bool               # Links or unlinks the given clips (TimelineItem objects). The link parameter is a boolean value.</p>
+<p>TimelineItem
+GetClipEnabled()                                &ndash;&gt; Bool               # Returns whether a clip is enabled or not.
+SetClipEnabled(enable)                          &ndash;&gt; Bool               # Enables or disables a clips. The enable parameter is a boolean value.
+SetNodeLocked(nodeIndex, lock)                  &ndash;&gt; Bool               # Locks or unlocks a Color page node at the given nodeIndex (int). The lock parameter is a boolean value.</p>
+<p>here: <a href="https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=113040">https://forum.blackmagicdesign.com/viewtopic.php?f=21&amp;t=113040</a></p>
+
+
+		
+	</div>
+
+
+	
+	</div>
+</main>
+
+
+        <footer>
+    <div class="container max-w-screen-lg mx-auto py-5">
+    <p>    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ThisIsHowToCode.com</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.alanwsmith.com/" property="cc:attributionName" rel="cc:attributionURL">Alan W. Smith</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://www.thisishowtocode.com/" rel="dct:source">https://www.thisishowtocode.com/</a>.
+</p>
+<p>
+    <a href="/privacy/">privacy policy</a></p>
+</div>
+</footer>
+
+    </body>
+</html>
