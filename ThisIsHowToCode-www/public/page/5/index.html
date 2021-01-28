@@ -38,7 +38,10 @@
           <br>
           <hr>
           <h3>Hi there!</h3>
-          <p>My name is Alan. For the past twenty years I've had a successful career writing code based on what I learned from the folks who came before me. For the next twenty, it's time to give back. This site is how I'm doing that. Building it into a free, comprehensive education in computer programming.</p>
+          <img class="float-right" src="/images/headshot-v1.jpg"
+          width="90" height="90">
+          <p>My name is Alan. For twenty-five years I've used what I learned from other folks to build a successful career writing code. Now, it's time for me to give back. For the next twenty-five, I'm builing this site into a free, comprehensice way to learn how to code. </p>
+          
           <hr>
           <br>
           <hr>
@@ -53,6 +56,19 @@
             <p>Well, not much. I started the site Dec. 19th, 2020. The reason you're seeing it so early (and with no instructional videos yet) is that I'm coding it in public. Showing what it's like to build a project like this from scratch. It's like a Digital Garden where I'm inviting you in while I'm still tilling the soil.</p>
 
         </div>
+
+        <div class="px-2">
+
+          <h3>The First Video</h3>
+          <p>This first video isn't instructdional. </p>
+          <p>There are going to be a few differetn types of videos: Fundamentals, Tutorials, How-Tos, and Live Coding. Right now, all the videos are Live Coding showing me building the site and getting everything setup. This is the first vidoe in that series. </p>
+          <p>This isn't the first instructual video. It's the first in the series where I show the behind the scenes of building the site. </p>
+          <p>I didn't really mean it to be that much of an introduction, but that's what it turned into.</p>
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/493198171?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          (yep, the name was originally going to be "This Is How You Program". Less than a month in and the name changed.)
+        </div>
+
+
 
         <div class="px-2">
 
@@ -134,16 +150,7 @@
 
         </div>
 
-        <div class="px-2">
-
-          <hr><br>
-          <h3>The First Video</h3>
-          <p>This isn't the first instructual video. It's the first in the series where I show the behind the scenes of building the site. </p>
-          <p>I didn't really mean it to be that much of an introduction, but that's what it turned into.</p>
-          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/493198171?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          (yep, the name was originally going to be "This Is How You Program". Less than a month in and the name changed.)
-        </div>
-
+  
         <div class="px-2">
           
       <br>
@@ -177,6 +184,109 @@
 		
 			
     <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-4/" class="catalogue-item">Building The Site (Part 4)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            The Plan  Finish moving in content to be served by Hugo  The Result  Got stuck working with sub directories. Files wouldn&rsquo;t output where expected. Did some troubleshooting by switching Hugo to actually build the site with the plain hugo command instead of serving it from memory with hugo server. This let me look in the public directory at the files that were actually output. Finally figured out that if there&rsquo;s a subfolder that you want content rendered it, the folder above has to contain and _index.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-5/" class="catalogue-item">Building The Site (Part 5)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            We got a web site live!
+Well, it&rsquo;s just a page and it&rsquo;s not on the domain we want and it&rsquo;s not secure, but it&rsquo;s live!
+We setup basic hosting on Amazon S3. The goal is to use CloudFront and that&rsquo;s where we started, but this turned out to be a good first step. A test just to make sure the pipes are working and to get us moving.
+Next steps are in the next video.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-6/" class="catalogue-item">Building The Site (Part 6)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Notes Amazon changes their web console all the time. Don&rsquo;t be surprised if things look different and you have to search for them a little.
+The Plan  Get the site served via CloudFront over HTTPS.  The Details   Started off by showing where we left off with an S3 bucket being served out directly via it&rsquo;s &ldquo;Static website hosting&rdquo; option property. We turned that off since we only want traffic to be able to hit the bucket via CloudFront.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-7/" class="catalogue-item">Building The Site (Part 7) - Changing Nameserver from Hover to Route 53</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Overview I registered the ThisIsHowYouProgram.com domain on Hover. I already had an account there and when I woke up at 3 in the morning with the idea for the site that&rsquo;s where I went.
+But, I want to use Amazon&rsquo;s Route 53 service to manage the domain so that everything is in the AWS ecosystem. Route 53 is designed to work with CloudFront in a way that other systems can&rsquo;t (via an ALIAS record)
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-8/" class="catalogue-item">Building The Site (Part 8)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Overview   I decided to change the name of the project from:
+ This Is How You Program To:
+ This Is How You Code    This is me registering the website domain name
+  Details Up to this point, I&rsquo;ve been calling this project. This Is How You Program. Recording on of the episodes, I said &ldquo;This Is How You Code&rdquo; and immediately realized that&rsquo;s a better name.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/how-to-build-a-javascript-timer/" class="catalogue-item">How-To Build A Javascript Timer</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Overview Make a browser based javascript timer that:
+ Updates once every five minutes Turns the numbers yellow at 50 minutes Turns the numbers red at 60 minutes  The original building of this is at TKTKTKT
+Documents from the Grimoire  js- Sleep js- Document Ready - DOMContentLoaded  
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/how-to-sort-by-size-on-the-command-line/" class="catalogue-item">How-To: Sort By Size On The Command Line</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Goal I&rsquo;ve got 1,142 sample video files with various compressions settings that I built with an automatic Handbrake script. The files show up sorted by name, but I want them sorted by size to get a better idea of which ones I should look at.
+Solution The solution I ended up with was to combine the ls and awk commands. The ls command does the listing an sorting while the awk command parses the data down to just the columns I need.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/ideas-and-todos/" class="catalogue-item">Ideas and TODOs</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Vidoes   Intro
+  Strings: use actual string with those things that kids can put on things.
+  Arrays: Use a tube and put letters in there.
+ use the number blocks that start with zero so you can talk about how many spots to move    Integers vs Floats
+toast, where you have a toaster that only does full pieces of toast vs toaster over than can do parts - then photoshop one that can do huge numbers
+        </p>
+    </div>
+
+
+		
+			
+    <div>
         <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/introduction/" class="catalogue-item">Introduction</a></h3>
         <div class="catalogue-line"></div>
         <p>
@@ -195,114 +305,9 @@ My name is Alan. For the last 25 years, I&rsquo;ve used what I&rsquo;ve learned 
         <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-1/" class="catalogue-item">Introduction - Building The Site (Part 1)</a></h3>
         <div class="catalogue-line"></div>
         <p>
-            This is it. The kick off.
+            Overview This is it. The kick off.
 Mission Build free tools that teach people of all ages, abilities, classes, education levels, genders, orientations, races, and religions how to program while giving them the confidence to take on the world.
-Links  Choose A License My Mission Statement GitHub This Is How You Program GitHub Repo Visual Studio Code GitHub Pages  
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-a-javascript-timer/" class="catalogue-item">JavaScript Timer</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            This is our JavaScript Timer. It&rsquo;s what I use to keep track of time when recording videos. The basic details are:
- The timer starts when the page is opened The number displayed only updates every 300 seconds (which is 5 minutes) The way we do this is by using the % operator. It gives us the remainder of one number divided by another. Using this, we can see when the remainder of our target number is zero and know that we hit something that divides by it directly.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/checklist-for-starting-a-video/" class="catalogue-item">Making A Checklist</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Overview Creating a basic checklist that I&rsquo;ll use to get setup to make a video.
-Notes I mentioned radio buttons but forgot to talk about them. Here&rsquo;s another video that talks about the difference (TKTKTKTK radio buttons vs checkboxes).
-I missed changing the ids for the checkboxes and the labels the first time through. Oops. I caught it when I started to use the checklist. So, there&rsquo;s a quick addendum showing where I goofed and the fix.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/marketing/" class="catalogue-item">Marketing Ideas</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Get email news letters up on the site
-  Once you get email news letters up, put the site in for: https://github.com/jackmcdade/weird-wide-webring
-  Once you get email newsletters setup publish your font size findings.
-  Do your personal site on there too.
-  Put your streams up.
-  [] Publish the videos where you show the resolution differences between 1080p and 1920x1080 on Mac.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/obs-audio-video-sync-helper/" class="catalogue-item">OBS Audio Video Sync Calibration Tool - Part 1</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            I had some problems with audio/video syncing on some of my recordings. They turned out to be because of the Windows media player, but I wanted to make sure.
-TODO: Take the last message about things working onto Part-2
- Audacity ® | Free, open source, cross-platform audio software for multi-track&hellip; Audio to Base64 | Base64 Encode | Base64 Converter | Base64 Beep Sounds | Free Sound Effects | Beep Sound Clips | Sound Bites Can I use&hellip; Support tables for HTML5, CSS3, etc Edit fiddle - JSFiddle - Code Playground Electronic Chime Sounds | Effects | Sound Bites | Sound Clips from SoundBible.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/playing-around-with-list-style-in-css/" class="catalogue-item">Playing Around With list-style In CSS</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Overview The Tailwind CSS framework I use for my site clears out default styles including the bullets that normally show up on lists. This video is playing around with list-style to put them back in.
-Links  : The External Resource Link element - HTML: HyperText Markup Language | MDN css rem - Google Search link css call - Google Search list-style - CSS: Cascading Style Sheets | MDN list-style - Google Search list-style css - Google Search Rem in CSS: Understanding and Using rem Units - SitePoint  
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/setting-up-an-aws-account/" class="catalogue-item">Setting Up An AWS Account</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Overview This video is about getting started with an Amazon Web Services (AWS) Account. You&rsquo;ll need a credit card, phone number, and email address.
-The first thing to setup is a &ldquo;Root&rdquo; account. It has the power to do everything. It is THE main account. Because it&rsquo;s so powerful, you actually don&rsquo;t use it for much. Instead you create other user accounts in the AWS Identity and Access Management (also know as IAM) service and use them.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/setting-up-mfa-on-aws-accounts/" class="catalogue-item">Setting Up Multi-Factor Authentication (MFA) On AWS Accounts</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            In This Episode Started out by talking a little about what Multi-Factor Authentication (MFA) is and why you&rsquo;d want to use it.
-Added MFA to the web console user which was no problem.
-Adding it to the CLI user turned into more of a trick. I thought all you had to do was assign MFA to a programatic access user and it would be enforced, but that&rsquo;s not the case. The Access Key and Secret Key still work just fine.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/notes/setup-a-static-site-with-aws-s3-cloudfront-certificate-manager-and-route-53/" class="catalogue-item">Setup A Static Site With AWS  S3 CloudFront Certificate Manager And Route 53</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            If your domain is registered on another site, that&rsquo;s fine. You can send over the name server and then decide if you want to transfer to Route 53.
-  Register Domain Name
-  There are two ways to setup.
-  Links  TKTKTK How to register in other services TKTKTK How to point over to Route 53 from other services by updating the name servers.  
+Links  This is it: My Mission Statement I used Choose A License in this video. In a later session I revist the license and use Creative Commons instead. I&rsquo;m using GitHub to house the version control repository for the project.
         </p>
     </div>
 

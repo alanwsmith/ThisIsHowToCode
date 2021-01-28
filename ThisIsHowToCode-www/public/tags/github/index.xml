@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/github/</link>
+    <description>Recent content in GitHub on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Jan 2021 22:06:04 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting Up GitHub Pages</title>
+      <link>https://www.thisishowtocode.com/live-coding/setting-up-github-pages/</link>
+      <pubDate>Wed, 20 Jan 2021 22:06:04 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/setting-up-github-pages/</guid>
+      <description> Quick example of showing how to setup a GitHub Pages repo.  Prerequsites  GitHub Desktop GitHub Account  </description>
+    </item>
+    
+  </channel>
+</rss>

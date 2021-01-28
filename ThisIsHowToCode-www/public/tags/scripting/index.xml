@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scripting on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/scripting/</link>
+    <description>Recent content in Scripting on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Jan 2021 22:04:31 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 2)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-2/</link>
+      <pubDate>Mon, 25 Jan 2021 22:04:31 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-2/</guid>
+      <description>Picking up where we left off.
+Got a PowerShell script setup that watches a specific folder and runs an ffmpeg command to process any gif files and place them in a new directory before deleting the original.
+This was my first time using PowerShell to script something. It&amp;rsquo;s very different from what I&amp;rsquo;m used to, but I can see the appeal. Definitely going to take some getting used to.
+TKTKTK: Make a How-To out of this one</description>
+    </item>
+    
+  </channel>
+</rss>

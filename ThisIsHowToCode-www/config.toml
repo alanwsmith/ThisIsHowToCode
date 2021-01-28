@@ -2,3 +2,4 @@ baseURL = "https://www.thisishowtocode.com/"
 languageCode = "en-us"
 title = "This Is How To Code"
 theme = "tale"
+ignoreFiles = [ "\\.mkv$", "\\.mp4$", "\\.prproj$" ]

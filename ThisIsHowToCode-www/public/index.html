@@ -38,7 +38,10 @@
           <br>
           <hr>
           <h3>Hi there!</h3>
-          <p>My name is Alan. For the past twenty years I've had a successful career writing code based on what I learned from the folks who came before me. For the next twenty, it's time to give back. This site is how I'm doing that. Building it into a free, comprehensive education in computer programming.</p>
+          <img class="float-right" src="/images/headshot-v1.jpg"
+          width="90" height="90">
+          <p>My name is Alan. For twenty-five years I've used what I learned from other folks to build a successful career writing code. Now, it's time for me to give back. For the next twenty-five, I'm builing this site into a free, comprehensice way to learn how to code. </p>
+          
           <hr>
           <br>
           <hr>
@@ -53,6 +56,19 @@
             <p>Well, not much. I started the site Dec. 19th, 2020. The reason you're seeing it so early (and with no instructional videos yet) is that I'm coding it in public. Showing what it's like to build a project like this from scratch. It's like a Digital Garden where I'm inviting you in while I'm still tilling the soil.</p>
 
         </div>
+
+        <div class="px-2">
+
+          <h3>The First Video</h3>
+          <p>This first video isn't instructdional. </p>
+          <p>There are going to be a few differetn types of videos: Fundamentals, Tutorials, How-Tos, and Live Coding. Right now, all the videos are Live Coding showing me building the site and getting everything setup. This is the first vidoe in that series. </p>
+          <p>This isn't the first instructual video. It's the first in the series where I show the behind the scenes of building the site. </p>
+          <p>I didn't really mean it to be that much of an introduction, but that's what it turned into.</p>
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/493198171?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          (yep, the name was originally going to be "This Is How You Program". Less than a month in and the name changed.)
+        </div>
+
+
 
         <div class="px-2">
 
@@ -134,16 +150,7 @@
 
         </div>
 
-        <div class="px-2">
-
-          <hr><br>
-          <h3>The First Video</h3>
-          <p>This isn't the first instructual video. It's the first in the series where I show the behind the scenes of building the site. </p>
-          <p>I didn't really mean it to be that much of an introduction, but that's what it turned into.</p>
-          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/493198171?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          (yep, the name was originally going to be "This Is How You Program". Less than a month in and the name changed.)
-        </div>
-
+  
         <div class="px-2">
           
       <br>
@@ -177,6 +184,105 @@
 		
 			
     <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/figuring-out-subproccess-stderr-and-stdout/" class="catalogue-item">Capturing STDOUT and STDERR with Python&#39;s subprocess</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            I&rsquo;m not sure how I ended up on the path, but I used to jump through a bunch of hoops to capture both STDOUT and STDERR from Python&rsquo;s subprocess modules. As of 3.7, it&rsquo;s straight forward with the capture_output. It&rsquo;s as easy as:
+response = subprocess.run(['PROCESS_TO_RUN'], capture_output=True) The values are in:
+response.stdoutandresponse.stderr The values are encoded and generally have a newline at the end of them. So you&rsquo;ll want to access them with something like:
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-4/" class="catalogue-item">Making Animated GIFs with Adobe Premiere and ffmpeg (Part 4)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            in this one, figured out how to prevent the console windows form poppin up with shell=True
+Cut the video about 15-20 min before the end since you were just hanging out.
+Links  https://stackoverflow.com/q/1689015/102401 https://www.digitalocean.com/community/tutorials/how-to-use-subprocess-to-run-external-programs-in-python-3 https://superuser.com/q/233348/85635 https://stackoverflow.com/q/764631/102401 https://stackoverflow.com/a/7509054/102401 https://docs.python.org/3/library/subprocess.html https://docs.python.org/3/library/subprocess.html#security-considerations https://docs.python.org/3/library/subprocess.html#security-considerations https://docs.python.org/3/library/shlex.html#shlex.quote  
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-3/" class="catalogue-item">Making Animated GIFs with Adobe Premiere and ffmpeg (part 3)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            edit down the video a little since you cut it to break the stream.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/guidelines/" class="catalogue-item">Guidelines</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Environment  Set Windows display zoom to 350% on 4K monitor to increase size of the UI elements and text Set Windows to Nithlight mode so the color temperature matches the studio lights  Apps  Use bases of black text on white backgrounds Font size height of ??? (TKTKTK determine hight based of UI elements of phones) Setup syntax highlighting to have high contrast Minimize secondary UI elements Eliminate pop-up tooltips Work full screen with each app  Examples  Cut examples to a bare minimum Use semantic HTML for full examples Use the same name sets in examples  How-Tos  These are for folks who know what they are doing and are looking for a specific answer Do basic setup proior to recording so you can jump right in Just show a single path through (i.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-2/" class="catalogue-item">Making Animated GIFs with Adobe Premiere and ffmpeg (Part 2)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Picking up where we left off.
+Got a PowerShell script setup that watches a specific folder and runs an ffmpeg command to process any gif files and place them in a new directory before deleting the original.
+This was my first time using PowerShell to script something. It&rsquo;s very different from what I&rsquo;m used to, but I can see the appeal. Definitely going to take some getting used to.
+TKTKTK: Make a How-To out of this one
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/blog/my-streaming-and-recording-setup-v1/" class="catalogue-item">My Stream/Recording Setup</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            First off, you don&rsquo;t need all this to get started. It took me a year to put this together (not including all the stuff I had from my former life as a photographer). I got started with the built-in webcam. They&rsquo;re prefectly fine for getting up and running.
+With that said, here&rsquo;s what my setup looks like as of January 2021:
+PC  2016 era Windows 10 Desktop PC Insignia 43&quot; 4K TV Moonlander Keyboard Logitech G502 Hero Mouse Elgato 4K60 Pro MK.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-1/" class="catalogue-item">Making Animated GIFs with Adobe Premiere and ffmpeg (Part 1)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            TODO: Get ImageMagik installed and test the conversion in this answer https://superuser.com/a/556031/85635
+I used GIF Brewery to make GIFs on my Mac. Since moving to Windows, I haven&rsquo;t found a good replacement&hellip; Until now.
+In this session, I figure out how to get Adobe Premiere to setup the loop and then export an initial cropped file. Running that through ffmpeg give me a nice quality GIF at whatever size I specify.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/setting-up-github-pages/" class="catalogue-item">Setting Up GitHub Pages</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+             Quick example of showing how to setup a GitHub Pages repo.  Prerequsites  GitHub Desktop GitHub Account  
+        </p>
+    </div>
+
+
+		
+			
+    <div>
         <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-3/" class="catalogue-item">Scripting DaVinci Resolve 17 - Part 3</a></h3>
         <div class="catalogue-line"></div>
         <p>
@@ -201,117 +307,6 @@ Picking up where we left off in part 2, trying to see what we can do with the au
  mklink /D PATH_TO_MAKE SOURCE_PATH   Notes   See if there&rsquo;s a way to do this with PowerShell
   Add hard links
  # file:mklink /H PATH_TO_MAKE SOURCE_PATH# directory:mklink /J PATH_TO_MAKE SOURCE_PATH   
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/reviews/what-nobody-tells-you-about-documentation/" class="catalogue-item">What Nobody Tells You About Documentation Review</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            From the video:
-  Documentation isn&rsquo;t just one thing. It&rsquo;s four:
- Tutorials How-To Guides Discussions Reference    Documentation needs to be expliciltly structured around one of the four categories
-  Folks need each type at different times
-  They need to be kept distinct
-  Tutorials:
- Learning oriented Detailed walk-thrus to complete a project Targted at beginners Show them how to acheive something meaningful Hardest part to create and maintain    Tutorials - What Matters:
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/" class="catalogue-item">Scripting DaVinci Resolve 17 (Part 2)</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Overview Took two hours to figure out how to get a script to run. Now I can acutally try to do something with them.
-This is a lot of me looking at other code and documentation to try to figure out how to do what I&rsquo;m after. There&rsquo;s very little online about this. Depending on what I find, it has me thinking about Adobe scripting. Setting a greenscreen was much easier on DaVinci, but if I only have to define it once in Adobe and can script it.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/setting-up-windows/" class="catalogue-item">Converting To Windows</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            This is where I setup a windows machine.
-Kinda tedious. Probably skip it if I were you.
-This one is just installing stuff. I wouldn&rsquo;t be offended if you just skipped it.
- Installed VS Code Installed the command line version of Git Cloned down the git repo for ThisIsHowToCode And installed Hugo in a special bonus  
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/video-production-process-v1-with-davinci-resolve/" class="catalogue-item">My Video Production Process (V1) With DaVinci Resolve 17</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            This is the process I go through to assemble a video
-(TKTKTK This page is a work in progress)
-  Rename Media If Necessary
- If you&rsquo;re importing from a bunch of clips from multiple sources, rename the clips with leading &ldquo;01-&rdquo;, &ldquo;02-&rdquo;, etc&hellip; to pair them up and keep them together       Start up DaVinci Resolve
-  Create and name a new project
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/set_datetime_for_files/" class="catalogue-item">Setting The Date And Time Of The Posts</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            I decided when I first started the site that I didn&rsquo;t want dates and times to show up. I&rsquo;ll note when stuff is time sensative and keep things up to date, but dates themselves are a distraction. (I feel the same way about my blog which is why I only do the month and year for them)
-Anyway, I figure out that I can use epoch timestamps for the dates. I&rsquo;m not trying to hide the dates, just obfuscate them and that does a great job.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/camera-test-5/" class="catalogue-item">Camera Test 5</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Overview  Installed the 2700K LED bulbs. Much easier on the eyes Bulbs are about 1/2 stop brighter This one is all about checking different camera positions Monitor is at the same height for each camera test (TKTKTK Confirm this is the case when you&rsquo;re done with the test) Might end up cutting off some of the background for the left and right sides views since the green screen doesn&rsquo;t wrap the entire room VS Code  Editor - Font Size: 15 Editor - Line Height: 19 Window - Zoom Level: 3    Color Balance Prep   Lights say they are 2700K
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/making-a-git-repot-and-choosing-a-license-part-2/" class="catalogue-item">Setting Up Git And Choosing A License (Part 2)</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Overview   I&rsquo;ve decided on a new name:
- ThisIsHowToCode.com   Creating a new repo
-  Choosing a non-commercial license
-  Links  alanwsmith/ThisIsHowToCode: The GitHub Repo For ThisIsHowToCode.com Choose a License Choose an open source license | Choose a License Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International —&hellip; Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International —&hellip; Licensing a repository - GitHub Docs  
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/camera-test-4/" class="catalogue-item">Camera Test 4</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Canon 90D clean HDMI feed
-  Canon 16-35mm lens at about 18mm
-  f/3.5 - 1/50 with auto ISO (which seems to do great, but will probably lock into a specific at some point)
-  White balance locked at 5200K.
-  Canon 90D thru Elgato Cam Link into OBS at 1920x1080 with 1920x1080 canvas.
-  Desktop into OBS via Elgato 4K60 Pro mk. II.
         </p>
     </div>
 

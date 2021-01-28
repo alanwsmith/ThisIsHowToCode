@@ -38,7 +38,10 @@
           <br>
           <hr>
           <h3>Hi there!</h3>
-          <p>My name is Alan. For the past twenty years I've had a successful career writing code based on what I learned from the folks who came before me. For the next twenty, it's time to give back. This site is how I'm doing that. Building it into a free, comprehensive education in computer programming.</p>
+          <img class="float-right" src="/images/headshot-v1.jpg"
+          width="90" height="90">
+          <p>My name is Alan. For twenty-five years I've used what I learned from other folks to build a successful career writing code. Now, it's time for me to give back. For the next twenty-five, I'm builing this site into a free, comprehensice way to learn how to code. </p>
+          
           <hr>
           <br>
           <hr>
@@ -53,6 +56,19 @@
             <p>Well, not much. I started the site Dec. 19th, 2020. The reason you're seeing it so early (and with no instructional videos yet) is that I'm coding it in public. Showing what it's like to build a project like this from scratch. It's like a Digital Garden where I'm inviting you in while I'm still tilling the soil.</p>
 
         </div>
+
+        <div class="px-2">
+
+          <h3>The First Video</h3>
+          <p>This first video isn't instructdional. </p>
+          <p>There are going to be a few differetn types of videos: Fundamentals, Tutorials, How-Tos, and Live Coding. Right now, all the videos are Live Coding showing me building the site and getting everything setup. This is the first vidoe in that series. </p>
+          <p>This isn't the first instructual video. It's the first in the series where I show the behind the scenes of building the site. </p>
+          <p>I didn't really mean it to be that much of an introduction, but that's what it turned into.</p>
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/493198171?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          (yep, the name was originally going to be "This Is How You Program". Less than a month in and the name changed.)
+        </div>
+
+
 
         <div class="px-2">
 
@@ -134,16 +150,7 @@
 
         </div>
 
-        <div class="px-2">
-
-          <hr><br>
-          <h3>The First Video</h3>
-          <p>This isn't the first instructual video. It's the first in the series where I show the behind the scenes of building the site. </p>
-          <p>I didn't really mean it to be that much of an introduction, but that's what it turned into.</p>
-          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/493198171?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          (yep, the name was originally going to be "This Is How You Program". Less than a month in and the name changed.)
-        </div>
-
+  
         <div class="px-2">
           
       <br>
@@ -177,6 +184,108 @@
 		
 			
     <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-11/" class="catalogue-item">Building The Site (Part 11) - Making A Basic Deployer</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Overview Started to build the deployer in the last session but found an issue where links weren&rsquo;t working. Now that that&rsquo;s solved, it&rsquo;s back to the deployer.
+ EDIT: Points about 10:40 and some beffore when it showed the Access Key. Check all termial hits.
+Make sure to edit out when you fire up keychain access.
+Steps to do  Build the site Deploy the site Invalidate the site  aws cloudfront create-invalidation &ndash;distribution-id E16XG7IV228BY3 &ndash;paths &ldquo;/*&rdquo;
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/think-of-variables-like-placeholders/" class="catalogue-item">Think Of Variables As Place Holders</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            We can think of variables like placeholders where the computer puts in the stuff for us.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-10/" class="catalogue-item">Building The Site (Part 10) - Building A Deployer but then dealing with index files not showing up</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Started off by building a deployer but then discovered our index.html files weren&rsquo;t showing up. Fix is a Lambda@Edge function that looks for calls that need to add the files and adds them.
+Was thinking about trying to remove the trailing slashes, but that&rsquo;s begging for problems. Also, realized that it would take hacking Hugo itself to deal with removing the slashes since it puts them in the URLs when it makes them.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/how-to-setup-a-static-site-in-aws/" class="catalogue-item">How-To Setup A Static Site In AWS Using Route 53, Certificate Manager, CloudFront, and S3</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Steps  Make sure you have setup your AWS Account Go got https://aws.amazon.com Click &ldquo;Sign In To the Console&rdquo; Search for and click on Route 53 Scroll down to &ldquo;Register domain&rdquo; Put in the domain name you  Before We Begin   Th
+  AWS Changes the design of their pages all the time. Don&rsquo;t be surprised if things look different. Look around a little and you&rsquo;ll find it.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-9/" class="catalogue-item">Building The Site (Part 9) - Configuring the Domains With Redirects</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            The Plan   Setup both domains:
+ thisishowtocode.com, and www.thisishowtocode.com    Make sure they both have SSL/TLS certs
+  Redirect traffic from the non-www to the www version.
+  Process  Create S3 bucket  Links   SSL/TLS Certs -
+  TKTKTKT CNAME - DNS Types.
+    http://ThisIsHowToCode.com https://ThisIsHowToCode.com http://www.ThisIsHowToCode.com  -&gt; https://www.ThisIsHowToCode.com
+ TODO: confirm we don&rsquo;t need static hosting on the www.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/scratchpad/fstring_test/" class="catalogue-item">Format String Tests</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Checking to see if there&rsquo;s a way to create a variable with {} in it and pass it to an f-string for interpretation.
+Doesn&rsquo;t look like that&rsquo;s possible.
+You can add {} to a string variable and then apply .format() later.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-a-javascript-epoch-date-in-text-expander/" class="catalogue-item">Building A JavaScript Epoch Date In Text Expander</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Overview  I want to add dates to my posts, but I don&rsquo;t want the date to be a distraction I setup a Text Expander snippet to produce a epoch seconds timestamp I got super confused and thrown off by a sample of code After the first take, I did dug in and figured out I was right. Seconds since epoch is always the same.  Code The Text Expander Code we ended up with turned out to be this super straight forward line:
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-a-vanilla-javascript-window-launcher/" class="catalogue-item">Building A Vanilla JavaScript Window Launcher</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            In this one I build a little vanilla javascript function to launch my timer window from a link. I can control the size and position of the window to fit just my timer and put it where I want on the screen.
+I start off with a button and then move to an &lt;a&gt; anchor tag. While doing the anchor tag I discovered I couldn&rsquo;t pass parameters to a function called by addEventListener.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
         <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-2/" class="catalogue-item">Building The Site (part 2)</a></h3>
         <div class="catalogue-line"></div>
         <p>
@@ -192,109 +301,6 @@
         <div class="catalogue-line"></div>
         <p>
             Overview  Adding content into the site.  Links  Video on how ports work Schema.org - Schema.org  
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-4/" class="catalogue-item">Building The Site (Part 4)</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            The Plan  Finish moving in content to be served by Hugo  The Result  Got stuck working with sub directories. Files wouldn&rsquo;t output where expected. Did some troubleshooting by switching Hugo to actually build the site with the plain hugo command instead of serving it from memory with hugo server. This let me look in the public directory at the files that were actually output. Finally figured out that if there&rsquo;s a subfolder that you want content rendered it, the folder above has to contain and _index.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-5/" class="catalogue-item">Building The Site (Part 5)</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            We got a web site live!
-Well, it&rsquo;s just a page and it&rsquo;s not on the domain we want and it&rsquo;s not secure, but it&rsquo;s live!
-We setup basic hosting on Amazon S3. The goal is to use CloudFront and that&rsquo;s where we started, but this turned out to be a good first step. A test just to make sure the pipes are working and to get us moving.
-Next steps are in the next video.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-6/" class="catalogue-item">Building The Site (Part 6)</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Notes Amazon changes their web console all the time. Don&rsquo;t be surprised if things look different and you have to search for them a little.
-The Plan  Get the site served via CloudFront over HTTPS.  The Details   Started off by showing where we left off with an S3 bucket being served out directly via it&rsquo;s &ldquo;Static website hosting&rdquo; option property. We turned that off since we only want traffic to be able to hit the bucket via CloudFront.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-7/" class="catalogue-item">Building The Site (Part 7) - Changing Nameserver from Hover to Route 53</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Overview I registered the ThisIsHowYouProgram.com domain on Hover. I already had an account there and when I woke up at 3 in the morning with the idea for the site that&rsquo;s where I went.
-But, I want to use Amazon&rsquo;s Route 53 service to manage the domain so that everything is in the AWS ecosystem. Route 53 is designed to work with CloudFront in a way that other systems can&rsquo;t (via an ALIAS record)
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/building-the-site/part-8/" class="catalogue-item">Building The Site (Part 8)</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Overview   I decided to change the name of the project from:
- This Is How You Program To:
- This Is How You Code    This is me registering the website domain name
-  Details Up to this point, I&rsquo;ve been calling this project. This Is How You Program. Recording on of the episodes, I said &ldquo;This Is How You Code&rdquo; and immediately realized that&rsquo;s a better name.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/how-to-build-a-javascript-timer/" class="catalogue-item">How-To Build A Javascript Timer</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Overview Make a browser based javascript timer that:
- Updates once every five minutes Turns the numbers yellow at 50 minutes Turns the numbers red at 60 minutes  The original building of this is at TKTKTKT
-Documents from the Grimoire  js- Sleep js- Document Ready - DOMContentLoaded  
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/how-to-sort-by-size-on-the-command-line/" class="catalogue-item">How-To: Sort By Size On The Command Line</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Goal I&rsquo;ve got 1,142 sample video files with various compressions settings that I built with an automatic Handbrake script. The files show up sorted by name, but I want them sorted by size to get a better idea of which ones I should look at.
-Solution The solution I ended up with was to combine the ls and awk commands. The ls command does the listing an sorting while the awk command parses the data down to just the columns I need.
-        </p>
-    </div>
-
-
-		
-			
-    <div>
-        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/ideas-and-todos/" class="catalogue-item">Ideas and TODOs</a></h3>
-        <div class="catalogue-line"></div>
-        <p>
-            Maked a set of videos for folks that don&rsquo;t have computers handy. Things they can watch while they are on the bus. Make it a &ldquo;No computer reuiqred&rdquo; path
-  Make the Git repo
-  Use this license: https://creativecommons.org/licenses/by-nc-sa/4.0/
-  Do code reading where you look at other folks code in github and analyse it to see what&rsquo;s up with it.
-  Setup a newsletter
         </p>
     </div>
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ffmpeg on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/ffmpeg/</link>
+    <description>Recent content in ffmpeg on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Jan 2021 22:04:31 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 2)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-2/</link>
+      <pubDate>Mon, 25 Jan 2021 22:04:31 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-2/</guid>
+      <description>Picking up where we left off.
+Got a PowerShell script setup that watches a specific folder and runs an ffmpeg command to process any gif files and place them in a new directory before deleting the original.
+This was my first time using PowerShell to script something. It&amp;rsquo;s very different from what I&amp;rsquo;m used to, but I can see the appeal. Definitely going to take some getting used to.
+TKTKTK: Make a How-To out of this one</description>
+    </item>
+    
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 1)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-1/</link>
+      <pubDate>Sun, 24 Jan 2021 23:05:28 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-1/</guid>
+      <description>TODO: Get ImageMagik installed and test the conversion in this answer https://superuser.com/a/556031/85635
+I used GIF Brewery to make GIFs on my Mac. Since moving to Windows, I haven&amp;rsquo;t found a good replacement&amp;hellip; Until now.
+In this session, I figure out how to get Adobe Premiere to setup the loop and then export an initial cropped file. Running that through ffmpeg give me a nice quality GIF at whatever size I specify.</description>
+    </item>
+    
+  </channel>
+</rss>
