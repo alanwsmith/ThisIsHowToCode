@@ -21,6 +21,7 @@ title: "Ideas and TODOs"
 
 ### Projects
 
+- Use this to come up with proejcts with APIs: - https://devresourc.es/ (e.g. weather)
 - Chore tracker with count of money
 - Names of dolls, what their favorite animal is, and what their favorite color is
 - class schedule that lets you know how much time you have to talk with your friends based on how far apart the classes are. have to put in what classes you have in each room. Maybe assign classes randomly. Could expand this to figure out where friends can meet in the middle.
@@ -246,4 +247,8 @@ Ideas/TODOs
 - setup nextcloud
 
 - Make aws MFA credentials better
+
+- Different Array Methods:  https://twitter.com/denicmarko/status/1354392329373822976?s=20
+
+
 
