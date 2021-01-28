@@ -6,7 +6,198 @@
     <description>Recent content on This Is How To Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Jan 2021 20:22:10 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jan 2021 22:04:25 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Capturing STDOUT and STDERR with Python&#39;s subprocess</title>
+      <link>https://www.thisishowtocode.com/live-coding/figuring-out-subproccess-stderr-and-stdout/</link>
+      <pubDate>Tue, 26 Jan 2021 22:04:25 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/figuring-out-subproccess-stderr-and-stdout/</guid>
+      <description>I&amp;rsquo;m not sure how I ended up on the path, but I used to jump through a bunch of hoops to capture both STDOUT and STDERR from Python&amp;rsquo;s subprocess modules. As of 3.7, it&amp;rsquo;s straight forward with the capture_output. It&amp;rsquo;s as easy as:
+response = subprocess.run([&#39;PROCESS_TO_RUN&#39;], capture_output=True) The values are in:
+response.stdoutandresponse.stderr The values are encoded and generally have a newline at the end of them. So you&amp;rsquo;ll want to access them with something like:</description>
+    </item>
+    
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 4)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-4/</link>
+      <pubDate>Tue, 26 Jan 2021 20:27:02 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-4/</guid>
+      <description>in this one, figured out how to prevent the console windows form poppin up with shell=True
+Cut the video about 15-20 min before the end since you were just hanging out.
+Links  https://stackoverflow.com/q/1689015/102401 https://www.digitalocean.com/community/tutorials/how-to-use-subprocess-to-run-external-programs-in-python-3 https://superuser.com/q/233348/85635 https://stackoverflow.com/q/764631/102401 https://stackoverflow.com/a/7509054/102401 https://docs.python.org/3/library/subprocess.html https://docs.python.org/3/library/subprocess.html#security-considerations https://docs.python.org/3/library/subprocess.html#security-considerations https://docs.python.org/3/library/shlex.html#shlex.quote  </description>
+    </item>
+    
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (part 3)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-3/</link>
+      <pubDate>Tue, 26 Jan 2021 20:13:42 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-3/</guid>
+      <description>edit down the video a little since you cut it to break the stream.</description>
+    </item>
+    
+    <item>
+      <title>Guidelines</title>
+      <link>https://www.thisishowtocode.com/guidelines/</link>
+      <pubDate>Tue, 26 Jan 2021 14:10:01 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/guidelines/</guid>
+      <description>Environment  Set Windows display zoom to 350% on 4K monitor to increase size of the UI elements and text Set Windows to Nithlight mode so the color temperature matches the studio lights  Apps  Use bases of black text on white backgrounds Font size height of ??? (TKTKTK determine hight based of UI elements of phones) Setup syntax highlighting to have high contrast Minimize secondary UI elements Eliminate pop-up tooltips Work full screen with each app  Examples  Cut examples to a bare minimum Use semantic HTML for full examples Use the same name sets in examples  How-Tos  These are for folks who know what they are doing and are looking for a specific answer Do basic setup proior to recording so you can jump right in Just show a single path through (i.</description>
+    </item>
+    
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 2)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-2/</link>
+      <pubDate>Mon, 25 Jan 2021 22:04:31 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-2/</guid>
+      <description>Picking up where we left off.
+Got a PowerShell script setup that watches a specific folder and runs an ffmpeg command to process any gif files and place them in a new directory before deleting the original.
+This was my first time using PowerShell to script something. It&amp;rsquo;s very different from what I&amp;rsquo;m used to, but I can see the appeal. Definitely going to take some getting used to.
+TKTKTK: Make a How-To out of this one</description>
+    </item>
+    
+    <item>
+      <title>My Stream/Recording Setup</title>
+      <link>https://www.thisishowtocode.com/blog/my-streaming-and-recording-setup-v1/</link>
+      <pubDate>Mon, 25 Jan 2021 13:12:31 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/blog/my-streaming-and-recording-setup-v1/</guid>
+      <description>First off, you don&amp;rsquo;t need all this to get started. It took me a year to put this together (not including all the stuff I had from my former life as a photographer). I got started with the built-in webcam. They&amp;rsquo;re prefectly fine for getting up and running.
+With that said, here&amp;rsquo;s what my setup looks like as of January 2021:
+PC  2016 era Windows 10 Desktop PC Insignia 43&amp;quot; 4K TV Moonlander Keyboard Logitech G502 Hero Mouse Elgato 4K60 Pro MK.</description>
+    </item>
+    
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 1)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-1/</link>
+      <pubDate>Sun, 24 Jan 2021 23:05:28 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-1/</guid>
+      <description>TODO: Get ImageMagik installed and test the conversion in this answer https://superuser.com/a/556031/85635
+I used GIF Brewery to make GIFs on my Mac. Since moving to Windows, I haven&amp;rsquo;t found a good replacement&amp;hellip; Until now.
+In this session, I figure out how to get Adobe Premiere to setup the loop and then export an initial cropped file. Running that through ffmpeg give me a nice quality GIF at whatever size I specify.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up GitHub Pages</title>
+      <link>https://www.thisishowtocode.com/live-coding/setting-up-github-pages/</link>
+      <pubDate>Wed, 20 Jan 2021 22:06:04 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/setting-up-github-pages/</guid>
+      <description> Quick example of showing how to setup a GitHub Pages repo.  Prerequsites  GitHub Desktop GitHub Account  </description>
+    </item>
+    
+    <item>
+      <title>Scripting DaVinci Resolve 17 - Part 3</title>
+      <link>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-3/</link>
+      <pubDate>Sat, 16 Jan 2021 21:40:24 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-3/</guid>
+      <description>(Note: I&amp;rsquo;m using a new keyboard in this one, so there, a bunch of me banging around)
+Picking up where we left off in part 2, trying to see what we can do with the automation.
+  made a help_text.py file that dumps out the output stuff. need to compare it to the read me to see if there&amp;rsquo;s more stuff in it.
+  it doesn&amp;rsquo;t look like there&amp;rsquo;s a way to add tracks via a script.</description>
+    </item>
+    
+    <item>
+      <title>How-To Create A Symbolic Link In Windows 10</title>
+      <link>https://www.thisishowtocode.com/how-to/create-a-symbolic-link-in-windows-10/</link>
+      <pubDate>Thu, 14 Jan 2021 20:54:52 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/how-to/create-a-symbolic-link-in-windows-10/</guid>
+      <description>To create a symbolic link:
+  Run Command Prompt as an Administrator
+ (This won&#39;t work with PowerShell)   To link a file:
+ mklink PATH_TO_MAKE SOURCE_PATH   And for a directory:
+ mklink /D PATH_TO_MAKE SOURCE_PATH   Notes   See if there&amp;rsquo;s a way to do this with PowerShell
+  Add hard links
+ # file:mklink /H PATH_TO_MAKE SOURCE_PATH# directory:mklink /J PATH_TO_MAKE SOURCE_PATH   </description>
+    </item>
+    
+    <item>
+      <title>What Nobody Tells You About Documentation Review</title>
+      <link>https://www.thisishowtocode.com/reviews/what-nobody-tells-you-about-documentation/</link>
+      <pubDate>Thu, 14 Jan 2021 17:49:00 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/reviews/what-nobody-tells-you-about-documentation/</guid>
+      <description>From the video:
+  Documentation isn&amp;rsquo;t just one thing. It&amp;rsquo;s four:
+ Tutorials How-To Guides Discussions Reference    Documentation needs to be expliciltly structured around one of the four categories
+  Folks need each type at different times
+  They need to be kept distinct
+  Tutorials:
+ Learning oriented Detailed walk-thrus to complete a project Targted at beginners Show them how to acheive something meaningful Hardest part to create and maintain    Tutorials - What Matters:</description>
+    </item>
+    
+    <item>
+      <title>Scripting DaVinci Resolve 17 (Part 2)</title>
+      <link>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/</link>
+      <pubDate>Thu, 14 Jan 2021 17:24:08 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/</guid>
+      <description>Overview Took two hours to figure out how to get a script to run. Now I can acutally try to do something with them.
+This is a lot of me looking at other code and documentation to try to figure out how to do what I&amp;rsquo;m after. There&amp;rsquo;s very little online about this. Depending on what I find, it has me thinking about Adobe scripting. Setting a greenscreen was much easier on DaVinci, but if I only have to define it once in Adobe and can script it.</description>
+    </item>
+    
+    <item>
+      <title>Converting To Windows</title>
+      <link>https://www.thisishowtocode.com/setting-up-windows/</link>
+      <pubDate>Wed, 13 Jan 2021 21:27:13 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/setting-up-windows/</guid>
+      <description>This is where I setup a windows machine.
+Kinda tedious. Probably skip it if I were you.
+This one is just installing stuff. I wouldn&amp;rsquo;t be offended if you just skipped it.
+ Installed VS Code Installed the command line version of Git Cloned down the git repo for ThisIsHowToCode And installed Hugo in a special bonus  </description>
+    </item>
+    
+    <item>
+      <title>My Video Production Process (V1) With DaVinci Resolve 17</title>
+      <link>https://www.thisishowtocode.com/video-production-process-v1-with-davinci-resolve/</link>
+      <pubDate>Sat, 09 Jan 2021 20:56:40 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/video-production-process-v1-with-davinci-resolve/</guid>
+      <description>This is the process I go through to assemble a video
+(TKTKTK This page is a work in progress)
+  Rename Media If Necessary
+ If you&amp;rsquo;re importing from a bunch of clips from multiple sources, rename the clips with leading &amp;ldquo;01-&amp;rdquo;, &amp;ldquo;02-&amp;rdquo;, etc&amp;hellip; to pair them up and keep them together       Start up DaVinci Resolve
+  Create and name a new project</description>
+    </item>
+    
+    <item>
+      <title>Setting The Date And Time Of The Posts</title>
+      <link>https://www.thisishowtocode.com/set_datetime_for_files/</link>
+      <pubDate>Sat, 09 Jan 2021 19:57:52 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/set_datetime_for_files/</guid>
+      <description>I decided when I first started the site that I didn&amp;rsquo;t want dates and times to show up. I&amp;rsquo;ll note when stuff is time sensative and keep things up to date, but dates themselves are a distraction. (I feel the same way about my blog which is why I only do the month and year for them)
+Anyway, I figure out that I can use epoch timestamps for the dates. I&amp;rsquo;m not trying to hide the dates, just obfuscate them and that does a great job.</description>
+    </item>
+    
+    <item>
+      <title>Camera Test 5</title>
+      <link>https://www.thisishowtocode.com/camera-test-5/</link>
+      <pubDate>Sat, 09 Jan 2021 14:23:39 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/camera-test-5/</guid>
+      <description>Overview  Installed the 2700K LED bulbs. Much easier on the eyes Bulbs are about 1/2 stop brighter This one is all about checking different camera positions Monitor is at the same height for each camera test (TKTKTK Confirm this is the case when you&amp;rsquo;re done with the test) Might end up cutting off some of the background for the left and right sides views since the green screen doesn&amp;rsquo;t wrap the entire room VS Code  Editor - Font Size: 15 Editor - Line Height: 19 Window - Zoom Level: 3    Color Balance Prep   Lights say they are 2700K</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Git And Choosing A License (Part 2)</title>
+      <link>https://www.thisishowtocode.com/making-a-git-repot-and-choosing-a-license-part-2/</link>
+      <pubDate>Fri, 08 Jan 2021 23:06:54 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/making-a-git-repot-and-choosing-a-license-part-2/</guid>
+      <description>Overview   I&amp;rsquo;ve decided on a new name:
+ ThisIsHowToCode.com   Creating a new repo
+  Choosing a non-commercial license
+  Links  alanwsmith/ThisIsHowToCode: The GitHub Repo For ThisIsHowToCode.com Choose a License Choose an open source license | Choose a License Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International —&amp;hellip; Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International —&amp;hellip; Licensing a repository - GitHub Docs  </description>
+    </item>
+    
     <item>
       <title>Camera Test 4</title>
       <link>https://www.thisishowtocode.com/camera-test-4/</link>
@@ -306,7 +497,7 @@ But, I want to use Amazon&amp;rsquo;s Route 53 service to manage the domain so t
       
       <guid>https://www.thisishowtocode.com/building-the-site/part-8/</guid>
       <description>Overview   I decided to change the name of the project from:
- This Is How You Program  To:
+ This Is How You Program To:
  This Is How You Code    This is me registering the website domain name
   Details Up to this point, I&amp;rsquo;ve been calling this project. This Is How You Program. Recording on of the episodes, I said &amp;ldquo;This Is How You Code&amp;rdquo; and immediately realized that&amp;rsquo;s a better name.</description>
     </item>
@@ -338,15 +529,24 @@ Solution The solution I ended up with was to combine the ls and awk commands. Th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.thisishowtocode.com/ideas-and-todos/</guid>
-      <description>Examples:
-  Cash register:
-Making change with things like N number of quarters, dimes, and nickels.
-    Make the Git repo
-  Use this license: https://creativecommons.org/licenses/by-nc-sa/4.0/
-  Do code reading where you look at other folks code in github and analyse it to see what&amp;rsquo;s up with it.
-  Setup a newsletter
-  Figure out what all this mean:
- function sleep(ms) { return new Promise(resolve =&amp;gt; setTimeout(resolve, ms)); }    Figure out how async functions work in JavaScript</description>
+      <description>Vidoes   Intro
+  Strings: use actual string with those things that kids can put on things.
+  Arrays: Use a tube and put letters in there.
+ use the number blocks that start with zero so you can talk about how many spots to move    Integers vs Floats
+toast, where you have a toaster that only does full pieces of toast vs toaster over than can do parts - then photoshop one that can do huge numbers</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://www.thisishowtocode.com/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/introduction/</guid>
+      <description>This is what I&amp;rsquo;m looking at for the introduction video:
+TODO: Make different versions of this with different analogys, like using legos, then cooking stuff, then&amp;hellip; sports stuff?
+DRAFT:
+Hey, folks.
+My name is Alan. For the last 25 years, I&amp;rsquo;ve used what I&amp;rsquo;ve learned from other folks to build a successful coding career that&amp;rsquo;s been better than most people can dream of. Now, it&amp;rsquo;s time for me to give back.</description>
     </item>
     
     <item>
@@ -355,9 +555,9 @@ Making change with things like N number of quarters, dimes, and nickels.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.thisishowtocode.com/building-the-site/part-1/</guid>
-      <description>This is it. The kick off.
+      <description>Overview This is it. The kick off.
 Mission Build free tools that teach people of all ages, abilities, classes, education levels, genders, orientations, races, and religions how to program while giving them the confidence to take on the world.
-Links  Choose A License My Mission Statement GitHub This Is How You Program GitHub Repo Visual Studio Code GitHub Pages  </description>
+Links  This is it: My Mission Statement I used Choose A License in this video. In a later session I revist the license and use Creative Commons instead. I&amp;rsquo;m using GitHub to house the version control repository for the project.</description>
     </item>
     
     <item>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Setting The Date And Time Of The Posts &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+	
+
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto mt-6 py-2 bg-gray-100 px-2">
+</div>
+
+        
+
+<main>
+
+	
+    <div class="container max-w-screen-lg mx-auto">
+
+		<h3 class="text-center">~</h3>
+		<h2 class="text-center">Work-In-Progress</h2>
+		<h3>This post is a work in progress. It doesn't have formatting and is probably incomplete. I'm posting it in it's current state in the spirit of the <a href="https://maggieappleton.com/garden-history">digital garden</a> and learning in public.</h3>
+		<h3 class="text-center">~</h3>
+		<br><br>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Setting The Date And Time Of The Posts</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>I decided when I first started the site that I didn&rsquo;t want dates and times to show up. I&rsquo;ll note when stuff is time sensative and keep things up to date, but dates themselves are a distraction. (I feel the same way about my blog which is why I only do the month and year for them)</p>
+<p>Anyway, I figure out that I can use epoch timestamps for the dates. I&rsquo;m not trying to hide the dates, just obfuscate them and that does a great job.</p>
+<p>The trick is that I made a whole bunhc of posts without dates in the YAML front matter. The good news is that I can still figure out when the dates are.</p>
+<p>I ran this command on my mac to pull the <code>stat</code> data for each file in the content directory.</p>
+<pre><code>find . -name '*.md' -exec stat {} +
+</code></pre>
+<p>It finds all the <code>.md</code> (markdown) files and runs <code>stat</code> on them. That command outputs some details including (TKTKTK I think it&rsquo;s when the inode was created, but need to verify) the TKTKTK timestamp that I can use.</p>
+<p>Now, all I need to do is turn those timestamps into epoch time format and insert them into the files.</p>
+<p>That&rsquo;ll make a good project.</p>
+<p>(Look in the <code>output_from_find.txt</code> for the data to work with)</p>
+<p>NOTE: I&rsquo;m not sure if those are all accurate. Another source to look at is the Videos. Not sure about the timestamps, but the filenames are generally date/time strings.</p>
+
+
+		
+	</div>
+
+
+	
+	</div>
+</main>
+
+
+        <footer>
+    <div class="container max-w-screen-lg mx-auto py-5">
+    <p>    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ThisIsHowToCode.com</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.alanwsmith.com/" property="cc:attributionName" rel="cc:attributionURL">Alan W. Smith</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://www.thisishowtocode.com/" rel="dct:source">https://www.thisishowtocode.com/</a>.
+</p>
+<p>
+    <a href="/privacy/">privacy policy</a></p>
+</div>
+</footer>
+
+    </body>
+</html>

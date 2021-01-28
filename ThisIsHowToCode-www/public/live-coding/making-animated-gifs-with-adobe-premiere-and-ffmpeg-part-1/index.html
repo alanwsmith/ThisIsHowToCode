@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 1) &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+	
+
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto mt-6 py-2 bg-gray-100 px-2">
+</div>
+
+        
+
+<main>
+
+	
+    <div class="container max-w-screen-lg mx-auto">
+
+		<h3 class="text-center">~</h3>
+		<h2 class="text-center">Work-In-Progress</h2>
+		<h3>This post is a work in progress. It doesn't have formatting and is probably incomplete. I'm posting it in it's current state in the spirit of the <a href="https://maggieappleton.com/garden-history">digital garden</a> and learning in public.</h3>
+		<h3 class="text-center">~</h3>
+		<br><br>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Making Animated GIFs with Adobe Premiere and ffmpeg (Part 1)</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>TODO: Get ImageMagik installed and test the conversion in this answer <a href="https://superuser.com/a/556031/85635">https://superuser.com/a/556031/85635</a></p>
+<p>I used <a href="https://gfycat.com/gifbrewery">GIF Brewery</a> to make GIFs on my Mac. Since moving to Windows, I haven&rsquo;t found a good replacement&hellip; Until now.</p>
+<p>In this session, I figure out how to get Adobe Premiere to setup the loop and then export an initial cropped file. Running that through ffmpeg give me a nice quality GIF at whatever size I specify. (Took longer than expected to figure out what was going on with the way the Premiere exports stuff, but I finally got a handle on it.)</p>
+<p>Now that I&rsquo;ve to this working, I can setup some automation so that I only have to do the export from Premiere and the ffmpeg can pick up the files and create the GIFs targated at a certain size.</p>
+<p>The finale ffmpeg command I ended up with is:</p>
+<pre><code>ffmpeg -ss 0 -i neo-blocking.gif -filter_complex &quot;[0:v] fps=12,scale=480:-2,split [a][b];[a] palettegen [p];[b][p] paletteuse&quot; output-1.gif
+</code></pre>
+<p>It was from <a href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/">this page</a>. That one keeps a single pallet for the entire GIF. There&rsquo;s a version with pallets for each from on the page as well:</p>
+<pre><code>ffmpeg -ss 0 -i neo-blocking.gif -filter_complex &quot;[0:v] fps=12,scale=480:-2,split [a][b];[a] palettegen=stats_mode=single [p];[b][p] paletteuse=new=1&quot; output-2.gif
+</code></pre>
+<p>There&rsquo;s another one to try from <a href="https://superuser.com/a/556031/85635">this SuperUser answer</a></p>
+<pre><code>ffmpeg -ss 0 -i neo-blocking.gif -vf &quot;fps=12,scale=480:-2:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&quot; -loop 0 output-3.gif
+</code></pre>
+<p>And:</p>
+<pre><code>ffmpeg -ss 0 -i neo-blocking.gif -vf &quot;fps=12,scale=480:-2:flags=lanczos,split[s0][s1];[s0]palettegen=stats_mode=diff[p];[s1][p]paletteuse&quot; -loop 0 output-4.gif
+</code></pre>
+<p>Where the <code>palettegen</code> is setup to focus only on the moving parts of the image. And this one where the palettegen is setup for each frame:</p>
+<pre><code>ffmpeg -ss 0 -i neo-blocking.gif -vf &quot;fps=12,scale=480:-2:flags=lanczos,split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]paletteuse=new=1&quot; -loop 0 output-5.gif
+</code></pre>
+<h3 id="links">Links</h3>
+<ul>
+<li><a href="https://www.pexels.com/video/close-up-video-of-women-leaning-on-each-other-s-face-4763990/">https://www.pexels.com/video/close-up-video-of-women-leaning-on-each-other-s-face-4763990/</a></li>
+<li><a href="https://www.quora.com/How-do-I-change-the-aspect-ratio-in-Adobe-Premiere-Pro">https://www.quora.com/How-do-I-change-the-aspect-ratio-in-Adobe-Premiere-Pro</a></li>
+<li><a href="https://helpx.adobe.com/premiere-pro/user-guide.html/premiere-pro/using/source-monitor-program-monitor.ug.html#button-editor">https://helpx.adobe.com/premiere-pro/user-guide.html/premiere-pro/using/source-monitor-program-monitor.ug.html#button-editor</a></li>
+<li><a href="https://helpx.adobe.com/premiere-pro/using/playing-assets.html">https://helpx.adobe.com/premiere-pro/using/playing-assets.html</a></li>
+<li><a href="https://video.stackexchange.com/questions/10461/adobe-premiere-pro-cc-crop-a-video-and-export-at-the-exact-cropped-size">https://video.stackexchange.com/questions/10461/adobe-premiere-pro-cc-crop-a-video-and-export-at-the-exact-cropped-size</a></li>
+<li><a href="https://medium.com/@Peter_UXer/small-sized-and-beautiful-gifs-with-ffmpeg-25c5082ed733">https://medium.com/@Peter_UXer/small-sized-and-beautiful-gifs-with-ffmpeg-25c5082ed733</a></li>
+<li><a href="https://superuser.com/a/556031/85635">https://superuser.com/a/556031/85635</a></li>
+<li><a href="https://ffmpeg.org/ffmpeg-filters.html#paletteuse">https://ffmpeg.org/ffmpeg-filters.html#paletteuse</a></li>
+</ul>
+
+
+		
+	</div>
+
+
+	
+	</div>
+</main>
+
+
+        <footer>
+    <div class="container max-w-screen-lg mx-auto py-5">
+    <p>    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ThisIsHowToCode.com</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.alanwsmith.com/" property="cc:attributionName" rel="cc:attributionURL">Alan W. Smith</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://www.thisishowtocode.com/" rel="dct:source">https://www.thisishowtocode.com/</a>.
+</p>
+<p>
+    <a href="/privacy/">privacy policy</a></p>
+</div>
+</footer>
+
+    </body>
+</html>

@@ -124,7 +124,7 @@ But, I want to use Amazon&amp;rsquo;s Route 53 service to manage the domain so t
       
       <guid>https://www.thisishowtocode.com/building-the-site/part-8/</guid>
       <description>Overview   I decided to change the name of the project from:
- This Is How You Program  To:
+ This Is How You Program To:
  This Is How You Code    This is me registering the website domain name
   Details Up to this point, I&amp;rsquo;ve been calling this project. This Is How You Program. Recording on of the episodes, I said &amp;ldquo;This Is How You Code&amp;rdquo; and immediately realized that&amp;rsquo;s a better name.</description>
     </item>
@@ -135,9 +135,9 @@ But, I want to use Amazon&amp;rsquo;s Route 53 service to manage the domain so t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.thisishowtocode.com/building-the-site/part-1/</guid>
-      <description>This is it. The kick off.
+      <description>Overview This is it. The kick off.
 Mission Build free tools that teach people of all ages, abilities, classes, education levels, genders, orientations, races, and religions how to program while giving them the confidence to take on the world.
-Links  Choose A License My Mission Statement GitHub This Is How You Program GitHub Repo Visual Studio Code GitHub Pages  </description>
+Links  This is it: My Mission Statement I used Choose A License in this video. In a later session I revist the license and use Creative Commons instead. I&amp;rsquo;m using GitHub to house the version control repository for the project.</description>
     </item>
     
   </channel>

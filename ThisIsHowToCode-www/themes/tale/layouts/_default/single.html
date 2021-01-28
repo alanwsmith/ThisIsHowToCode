@@ -1,6 +1,15 @@
 {{ define "main" }}
 
 <main>
+
+	
+    <div class="container max-w-screen-lg mx-auto">
+
+		<h3 class="text-center">~</h3>
+		<h2 class="text-center">Work-In-Progress</h2>
+		<h3>This post is a work in progress. It doesn't have formatting and is probably incomplete. I'm posting it in it's current state in the spirit of the <a href="https://maggieappleton.com/garden-history">digital garden</a> and learning in public.</h3>
+		<h3 class="text-center">~</h3>
+		<br><br>
 	<div class="post">
 		{{ partial "single/post-info.html" . }}
 		{{ partial "single/title.html" . }}
@@ -12,6 +21,8 @@
 		{{ partial "single/footer.html" . }}
 	</div>
 
+
+	<!--
 	<div class="pagination">
 		{{- if .PrevPage }}
 		<a href="{{ .PrevPage.RelPermalink }}" class="left arrow">&#8592;</a>
@@ -21,6 +32,8 @@
 		{{- end }}
 
 		<a href="#" class="top">Top</a>
+	</div>
+	-->
 	</div>
 </main>
 

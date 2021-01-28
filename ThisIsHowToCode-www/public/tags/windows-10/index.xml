@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows 10 on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/windows-10/</link>
+    <description>Recent content in Windows 10 on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Jan 2021 20:54:52 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/windows-10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How-To Create A Symbolic Link In Windows 10</title>
+      <link>https://www.thisishowtocode.com/how-to/create-a-symbolic-link-in-windows-10/</link>
+      <pubDate>Thu, 14 Jan 2021 20:54:52 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/how-to/create-a-symbolic-link-in-windows-10/</guid>
+      <description>To create a symbolic link:
+  Run Command Prompt as an Administrator
+ (This won&#39;t work with PowerShell)   To link a file:
+ mklink PATH_TO_MAKE SOURCE_PATH   And for a directory:
+ mklink /D PATH_TO_MAKE SOURCE_PATH   Notes   See if there&amp;rsquo;s a way to do this with PowerShell
+  Add hard links
+ # file:mklink /H PATH_TO_MAKE SOURCE_PATH# directory:mklink /J PATH_TO_MAKE SOURCE_PATH   </description>
+    </item>
+    
+  </channel>
+</rss>

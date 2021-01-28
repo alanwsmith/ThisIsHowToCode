@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title> &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		
+		<link href="/live-coding/index.xml" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+	
+
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto mt-6 py-2 bg-gray-100 px-2">
+</div>
+
+        
+
+<main>
+
+	<div class="catalogue">
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/figuring-out-subproccess-stderr-and-stdout/" class="catalogue-item">Capturing STDOUT and STDERR with Python&#39;s subprocess</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            I&rsquo;m not sure how I ended up on the path, but I used to jump through a bunch of hoops to capture both STDOUT and STDERR from Python&rsquo;s subprocess modules. As of 3.7, it&rsquo;s straight forward with the capture_output. It&rsquo;s as easy as:
+response = subprocess.run(['PROCESS_TO_RUN'], capture_output=True) The values are in:
+response.stdoutandresponse.stderr The values are encoded and generally have a newline at the end of them. So you&rsquo;ll want to access them with something like:
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-4/" class="catalogue-item">Making Animated GIFs with Adobe Premiere and ffmpeg (Part 4)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            in this one, figured out how to prevent the console windows form poppin up with shell=True
+Cut the video about 15-20 min before the end since you were just hanging out.
+Links  https://stackoverflow.com/q/1689015/102401 https://www.digitalocean.com/community/tutorials/how-to-use-subprocess-to-run-external-programs-in-python-3 https://superuser.com/q/233348/85635 https://stackoverflow.com/q/764631/102401 https://stackoverflow.com/a/7509054/102401 https://docs.python.org/3/library/subprocess.html https://docs.python.org/3/library/subprocess.html#security-considerations https://docs.python.org/3/library/subprocess.html#security-considerations https://docs.python.org/3/library/shlex.html#shlex.quote  
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-3/" class="catalogue-item">Making Animated GIFs with Adobe Premiere and ffmpeg (part 3)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            edit down the video a little since you cut it to break the stream.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-2/" class="catalogue-item">Making Animated GIFs with Adobe Premiere and ffmpeg (Part 2)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Picking up where we left off.
+Got a PowerShell script setup that watches a specific folder and runs an ffmpeg command to process any gif files and place them in a new directory before deleting the original.
+This was my first time using PowerShell to script something. It&rsquo;s very different from what I&rsquo;m used to, but I can see the appeal. Definitely going to take some getting used to.
+TKTKTK: Make a How-To out of this one
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-1/" class="catalogue-item">Making Animated GIFs with Adobe Premiere and ffmpeg (Part 1)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            TODO: Get ImageMagik installed and test the conversion in this answer https://superuser.com/a/556031/85635
+I used GIF Brewery to make GIFs on my Mac. Since moving to Windows, I haven&rsquo;t found a good replacement&hellip; Until now.
+In this session, I figure out how to get Adobe Premiere to setup the loop and then export an initial cropped file. Running that through ffmpeg give me a nice quality GIF at whatever size I specify.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/setting-up-github-pages/" class="catalogue-item">Setting Up GitHub Pages</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+             Quick example of showing how to setup a GitHub Pages repo.  Prerequsites  GitHub Desktop GitHub Account  
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-3/" class="catalogue-item">Scripting DaVinci Resolve 17 - Part 3</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            (Note: I&rsquo;m using a new keyboard in this one, so there, a bunch of me banging around)
+Picking up where we left off in part 2, trying to see what we can do with the automation.
+  made a help_text.py file that dumps out the output stuff. need to compare it to the read me to see if there&rsquo;s more stuff in it.
+  it doesn&rsquo;t look like there&rsquo;s a way to add tracks via a script.
+        </p>
+    </div>
+
+
+		
+			
+    <div>
+        <h3 class="catalogue-title"><a href="https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/" class="catalogue-item">Scripting DaVinci Resolve 17 (Part 2)</a></h3>
+        <div class="catalogue-line"></div>
+        <p>
+            Overview Took two hours to figure out how to get a script to run. Now I can acutally try to do something with them.
+This is a lot of me looking at other code and documentation to try to figure out how to do what I&rsquo;m after. There&rsquo;s very little online about this. Depending on what I find, it has me thinking about Adobe scripting. Setting a greenscreen was much easier on DaVinci, but if I only have to define it once in Adobe and can script it.
+        </p>
+    </div>
+
+
+		
+	</div>
+	
+	
+</main>
+
+
+        <footer>
+    <div class="container max-w-screen-lg mx-auto py-5">
+    <p>    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ThisIsHowToCode.com</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.alanwsmith.com/" property="cc:attributionName" rel="cc:attributionURL">Alan W. Smith</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://www.thisishowtocode.com/" rel="dct:source">https://www.thisishowtocode.com/</a>.
+</p>
+<p>
+    <a href="/privacy/">privacy policy</a></p>
+</div>
+</footer>
+
+    </body>
+</html>

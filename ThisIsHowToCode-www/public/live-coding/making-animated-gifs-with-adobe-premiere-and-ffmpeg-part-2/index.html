@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 2) &middot; This Is How To Code</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="This Is How To Code" />
+	</head>
+
+	
+
+
+    <body>
+        
+<div class="container max-w-screen-lg mx-auto mt-6 py-2 bg-gray-100 px-2">
+</div>
+
+        
+
+<main>
+
+	
+    <div class="container max-w-screen-lg mx-auto">
+
+		<h3 class="text-center">~</h3>
+		<h2 class="text-center">Work-In-Progress</h2>
+		<h3>This post is a work in progress. It doesn't have formatting and is probably incomplete. I'm posting it in it's current state in the spirit of the <a href="https://maggieappleton.com/garden-history">digital garden</a> and learning in public.</h3>
+		<h3 class="text-center">~</h3>
+		<br><br>
+	<div class="post">
+		<div class="post-info">
+</div>
+
+		<h1 class="post-title">Making Animated GIFs with Adobe Premiere and ffmpeg (Part 2)</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>Picking up where we left off.</p>
+<p>Got a PowerShell script setup that watches a specific folder and runs an ffmpeg command to process any gif files and place them in a new directory before deleting the original.</p>
+<p>This was my first time using PowerShell to script something. It&rsquo;s very different from what I&rsquo;m used to, but I can see the appeal. Definitely going to take some getting used to.</p>
+<p>TKTKTK: Make a How-To out of this one</p>
+<h3 id="links">Links</h3>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item?view=powershell-7.1">https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item?view=powershell-7.1</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.io.filesystemeventargs?view=net-5.0">https://docs.microsoft.com/en-us/dotnet/api/system.io.filesystemeventargs?view=net-5.0</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.pseventargs.sourceeventargs?view=powershellsdk-7.0.0">https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.pseventargs.sourceeventargs?view=powershellsdk-7.0.0</a></li>
+<li><a href="https://stackoverflow.com/questions/38797889/event-sourceeventargs-attribute-is-returning-a-null-or-empty-object">https://stackoverflow.com/questions/38797889/event-sourceeventargs-attribute-is-returning-a-null-or-empty-object</a></li>
+<li><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/add-content?view=powershell-7.1">https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/add-content?view=powershell-7.1</a></li>
+<li><a href="https://stackoverflow.com/questions/30011267/windows-equivalent-of-touch-i-e-the-node-js-way-to-create-an-index-html">https://stackoverflow.com/questions/30011267/windows-equivalent-of-touch-i-e-the-node-js-way-to-create-an-index-html</a></li>
+<li><a href="https://stackoverflow.com/questions/29066742/watch-file-for-changes-and-run-command-with-powershell">https://stackoverflow.com/questions/29066742/watch-file-for-changes-and-run-command-with-powershell</a></li>
+<li><a href="https://mcpmag.com/articles/2019/05/01/monitor-windows-folder-for-new-files.aspx">https://mcpmag.com/articles/2019/05/01/monitor-windows-folder-for-new-files.aspx</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.io.filesystemwatcher.created?view=net-5.0">https://docs.microsoft.com/en-us/dotnet/api/system.io.filesystemwatcher.created?view=net-5.0</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.io.filesystemwatcher?redirectedfrom=MSDN&amp;view=net-5.0">https://docs.microsoft.com/en-us/dotnet/api/system.io.filesystemwatcher?redirectedfrom=MSDN&amp;view=net-5.0</a></li>
+<li><a href="https://dereknewton.com/2011/05/monitoring-file-system-changes-with-powershell/">https://dereknewton.com/2011/05/monitoring-file-system-changes-with-powershell/</a></li>
+<li><a href="https://social.technet.microsoft.com/Forums/scriptcenter/en-US/c75c7bbd-4e32-428a-b3dc-815d5c42fd36/powershell-check-folder-for-new-files">https://social.technet.microsoft.com/Forums/scriptcenter/en-US/c75c7bbd-4e32-428a-b3dc-815d5c42fd36/powershell-check-folder-for-new-files</a></li>
+<li><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/register-objectevent?view=powershell-7.1">https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/register-objectevent?view=powershell-7.1</a></li>
+<li><a href="https://superuser.com/questions/226828/how-to-monitor-a-folder-and-trigger-a-command-line-action-when-a-file-is-created">https://superuser.com/questions/226828/how-to-monitor-a-folder-and-trigger-a-command-line-action-when-a-file-is-created</a></li>
+<li><a href="https://www.cloudsavvyit.com/2000/how-to-monitor-a-windows-folder-for-new-files-and-take-action/">https://www.cloudsavvyit.com/2000/how-to-monitor-a-windows-folder-for-new-files-and-take-action/</a></li>
+</ul>
+
+
+		
+	</div>
+
+
+	
+	</div>
+</main>
+
+
+        <footer>
+    <div class="container max-w-screen-lg mx-auto py-5">
+    <p>    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ThisIsHowToCode.com</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.alanwsmith.com/" property="cc:attributionName" rel="cc:attributionURL">Alan W. Smith</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://www.thisishowtocode.com/" rel="dct:source">https://www.thisishowtocode.com/</a>.
+</p>
+<p>
+    <a href="/privacy/">privacy policy</a></p>
+</div>
+</footer>
+
+    </body>
+</html>

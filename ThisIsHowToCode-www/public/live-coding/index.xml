@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/live-coding/</link>
+    <description>Recent content on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Jan 2021 22:04:25 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/live-coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Capturing STDOUT and STDERR with Python&#39;s subprocess</title>
+      <link>https://www.thisishowtocode.com/live-coding/figuring-out-subproccess-stderr-and-stdout/</link>
+      <pubDate>Tue, 26 Jan 2021 22:04:25 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/figuring-out-subproccess-stderr-and-stdout/</guid>
+      <description>I&amp;rsquo;m not sure how I ended up on the path, but I used to jump through a bunch of hoops to capture both STDOUT and STDERR from Python&amp;rsquo;s subprocess modules. As of 3.7, it&amp;rsquo;s straight forward with the capture_output. It&amp;rsquo;s as easy as:
+response = subprocess.run([&#39;PROCESS_TO_RUN&#39;], capture_output=True) The values are in:
+response.stdoutandresponse.stderr The values are encoded and generally have a newline at the end of them. So you&amp;rsquo;ll want to access them with something like:</description>
+    </item>
+    
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 4)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-4/</link>
+      <pubDate>Tue, 26 Jan 2021 20:27:02 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-4/</guid>
+      <description>in this one, figured out how to prevent the console windows form poppin up with shell=True
+Cut the video about 15-20 min before the end since you were just hanging out.
+Links  https://stackoverflow.com/q/1689015/102401 https://www.digitalocean.com/community/tutorials/how-to-use-subprocess-to-run-external-programs-in-python-3 https://superuser.com/q/233348/85635 https://stackoverflow.com/q/764631/102401 https://stackoverflow.com/a/7509054/102401 https://docs.python.org/3/library/subprocess.html https://docs.python.org/3/library/subprocess.html#security-considerations https://docs.python.org/3/library/subprocess.html#security-considerations https://docs.python.org/3/library/shlex.html#shlex.quote  </description>
+    </item>
+    
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (part 3)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-3/</link>
+      <pubDate>Tue, 26 Jan 2021 20:13:42 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-3/</guid>
+      <description>edit down the video a little since you cut it to break the stream.</description>
+    </item>
+    
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 2)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-2/</link>
+      <pubDate>Mon, 25 Jan 2021 22:04:31 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-2/</guid>
+      <description>Picking up where we left off.
+Got a PowerShell script setup that watches a specific folder and runs an ffmpeg command to process any gif files and place them in a new directory before deleting the original.
+This was my first time using PowerShell to script something. It&amp;rsquo;s very different from what I&amp;rsquo;m used to, but I can see the appeal. Definitely going to take some getting used to.
+TKTKTK: Make a How-To out of this one</description>
+    </item>
+    
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 1)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-1/</link>
+      <pubDate>Sun, 24 Jan 2021 23:05:28 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-1/</guid>
+      <description>TODO: Get ImageMagik installed and test the conversion in this answer https://superuser.com/a/556031/85635
+I used GIF Brewery to make GIFs on my Mac. Since moving to Windows, I haven&amp;rsquo;t found a good replacement&amp;hellip; Until now.
+In this session, I figure out how to get Adobe Premiere to setup the loop and then export an initial cropped file. Running that through ffmpeg give me a nice quality GIF at whatever size I specify.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up GitHub Pages</title>
+      <link>https://www.thisishowtocode.com/live-coding/setting-up-github-pages/</link>
+      <pubDate>Wed, 20 Jan 2021 22:06:04 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/setting-up-github-pages/</guid>
+      <description> Quick example of showing how to setup a GitHub Pages repo.  Prerequsites  GitHub Desktop GitHub Account  </description>
+    </item>
+    
+    <item>
+      <title>Scripting DaVinci Resolve 17 - Part 3</title>
+      <link>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-3/</link>
+      <pubDate>Sat, 16 Jan 2021 21:40:24 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-3/</guid>
+      <description>(Note: I&amp;rsquo;m using a new keyboard in this one, so there, a bunch of me banging around)
+Picking up where we left off in part 2, trying to see what we can do with the automation.
+  made a help_text.py file that dumps out the output stuff. need to compare it to the read me to see if there&amp;rsquo;s more stuff in it.
+  it doesn&amp;rsquo;t look like there&amp;rsquo;s a way to add tracks via a script.</description>
+    </item>
+    
+    <item>
+      <title>Scripting DaVinci Resolve 17 (Part 2)</title>
+      <link>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/</link>
+      <pubDate>Thu, 14 Jan 2021 17:24:08 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/scripting-davinci-resolve-17-part-2/</guid>
+      <description>Overview Took two hours to figure out how to get a script to run. Now I can acutally try to do something with them.
+This is a lot of me looking at other code and documentation to try to figure out how to do what I&amp;rsquo;m after. There&amp;rsquo;s very little online about this. Depending on what I find, it has me thinking about Adobe scripting. Setting a greenscreen was much easier on DaVinci, but if I only have to define it once in Adobe and can script it.</description>
+    </item>
+    
+  </channel>
+</rss>

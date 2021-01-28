@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adobe Premiere on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/adobe-premiere/</link>
+    <description>Recent content in Adobe Premiere on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2021 23:05:28 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/adobe-premiere/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Animated GIFs with Adobe Premiere and ffmpeg (Part 1)</title>
+      <link>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-1/</link>
+      <pubDate>Sun, 24 Jan 2021 23:05:28 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/live-coding/making-animated-gifs-with-adobe-premiere-and-ffmpeg-part-1/</guid>
+      <description>TODO: Get ImageMagik installed and test the conversion in this answer https://superuser.com/a/556031/85635
+I used GIF Brewery to make GIFs on my Mac. Since moving to Windows, I haven&amp;rsquo;t found a good replacement&amp;hellip; Until now.
+In this session, I figure out how to get Adobe Premiere to setup the loop and then export an initial cropped file. Running that through ffmpeg give me a nice quality GIF at whatever size I specify.</description>
+    </item>
+    
+  </channel>
+</rss>

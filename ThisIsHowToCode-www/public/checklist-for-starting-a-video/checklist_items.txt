@@ -36,5 +36,7 @@ Make sure your collar isn't doing something weird
 Close Discord
 Make sure the click highlighter presentation app is turned on
 Move OBS so you can see it and make sure you don't stay in headshot mode
+For stream: Start up OBS so you can see it on a second monitor or the mac
+Turn on Windows Nite Light so the color balance of the monitor is the same as the lights
 <a href="#" id="time_launcher">Start Clock</a>
 Go...

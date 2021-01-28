@@ -1,0 +1,1 @@
+C:/Users/alan/AppData/Roaming/Blackmagic Design/DaVinci Resolve/Support/Fusion/Scripts/Utility/davinci_resolve_17_script_test_3.py

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reviews on This Is How To Code</title>
+    <link>https://www.thisishowtocode.com/tags/reviews/</link>
+    <description>Recent content in Reviews on This Is How To Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Jan 2021 17:49:00 -0500</lastBuildDate><atom:link href="https://www.thisishowtocode.com/tags/reviews/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Nobody Tells You About Documentation Review</title>
+      <link>https://www.thisishowtocode.com/reviews/what-nobody-tells-you-about-documentation/</link>
+      <pubDate>Thu, 14 Jan 2021 17:49:00 -0500</pubDate>
+      
+      <guid>https://www.thisishowtocode.com/reviews/what-nobody-tells-you-about-documentation/</guid>
+      <description>From the video:
+  Documentation isn&amp;rsquo;t just one thing. It&amp;rsquo;s four:
+ Tutorials How-To Guides Discussions Reference    Documentation needs to be expliciltly structured around one of the four categories
+  Folks need each type at different times
+  They need to be kept distinct
+  Tutorials:
+ Learning oriented Detailed walk-thrus to complete a project Targted at beginners Show them how to acheive something meaningful Hardest part to create and maintain    Tutorials - What Matters:</description>
+    </item>
+    
+  </channel>
+</rss>
